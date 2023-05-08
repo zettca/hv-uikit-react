@@ -1,56 +1,64 @@
+import { HvInputProps } from "@hitachivantara/uikit-react-core";
+
 export const fields = {
   asset: {
-    id: "asset",
+    name: "asset",
     label: "Asset",
     placeholder: "Insert asset name",
-    required: "Asset is required",
+    validationMessages: { requiredError: "Asset is required" },
   },
   location: {
-    id: "location",
+    name: "location",
     label: "Location",
     placeholder: "Insert country",
-    required: "Location is required",
+    validationMessages: { requiredError: "Location is required" },
   },
   project: {
-    id: "project",
+    name: "project",
     label: "Project",
     placeholder: "Insert project name",
-    required: "Project is required",
+    validationMessages: { requiredError: "Project is required" },
   },
   version: {
-    id: "version",
+    name: "version",
     label: "Version",
     placeholder: "Insert version number",
-    required: "Version is required",
+    validationMessages: {
+      requiredError: "Version is required",
+      typeMismatchError: "Version must be a number",
+    },
   },
   name: {
-    id: "name",
+    name: "name",
     label: "Name",
     placeholder: "Insert name",
-    required: "Name is required",
+    validationMessages: { requiredError: "Name is required" },
   },
   description: {
-    id: "description",
+    name: "description",
     label: "Description",
     placeholder: "Insert description",
-    required: "Description is required",
+    validationMessages: { requiredError: "Description is required" },
   },
   date: {
-    id: "date",
+    name: "date",
     label: "date",
     placeholder: "Insert date",
   },
 
   time: {
-    id: "time",
+    name: "time",
     label: "time",
     placeholder: "Insert time",
   },
   public: {
-    id: "public",
+    name: "public",
     label: "public",
   },
-};
+} satisfies Record<
+  string,
+  Pick<HvInputProps, "name" | "label" | "placeholder" | "validationMessages">
+>;
 
 export const continents = [
   "Africa",
@@ -278,6 +286,4 @@ export const countries = [
   ],
 ];
 
-export const allCountries = countries
-  .reduce((acc, val) => acc.concat(val), [])
-  .sort();
+export const allCountries = countries.flat().sort();
