@@ -5,7 +5,7 @@ import MuiCardHeader, {
 import { HvBaseProps } from "@core/types/generic";
 import { ExtractNames } from "@core/utils/classes";
 
-import { useDefaultProps } from "@core/hooks";
+import { useDefaultProps } from "@core/hooks/useDefaultProps";
 
 import { staticClasses, useClasses } from "./Header.styles";
 

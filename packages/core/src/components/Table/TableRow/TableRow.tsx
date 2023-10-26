@@ -9,7 +9,7 @@ import { getVarValue } from "@core/utils/theme";
 import { HvBaseProps } from "@core/types/generic";
 import { useTheme } from "@core/hooks/useTheme";
 
-import { useDefaultProps } from "@core/hooks";
+import { useDefaultProps } from "@core/hooks/useDefaultProps";
 
 import TableContext from "../TableContext";
 import TableSectionContext from "../TableSectionContext";

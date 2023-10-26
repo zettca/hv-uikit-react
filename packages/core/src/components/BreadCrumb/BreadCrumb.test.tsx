@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 
 import { describe, expect, it } from "vitest";
 
-import { HvProvider } from "@core/providers";
+import { HvProvider } from "@core/providers/Provider";
 
 import { HvBreadCrumb } from "./BreadCrumb";
 

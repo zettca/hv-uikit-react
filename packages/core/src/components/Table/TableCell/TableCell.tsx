@@ -16,7 +16,7 @@ import { getVarValue } from "@core/utils/theme";
 import { hexToRgbA } from "@core/utils/hexToRgbA";
 import { useTheme } from "@core/hooks/useTheme";
 
-import { useDefaultProps } from "@core/hooks";
+import { useDefaultProps } from "@core/hooks/useDefaultProps";
 
 import {
   HvTableCellAlign,

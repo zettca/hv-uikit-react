@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 
-import { HvProvider } from "@core/providers";
+import { HvProvider } from "@core/providers/Provider";
 
 import { HvSimpleGrid } from "./SimpleGrid";
 

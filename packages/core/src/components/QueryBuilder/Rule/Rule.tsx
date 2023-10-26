@@ -7,8 +7,8 @@ import { HvGrid } from "@core/components/Grid";
 import { HvButton } from "@core/components/Button";
 import { withTooltip } from "@core/hocs/withTooltip";
 
-import { useDefaultProps } from "@core/hooks";
-import { ExtractNames } from "@core/utils";
+import { useDefaultProps } from "@core/hooks/useDefaultProps";
+import { ExtractNames } from "@core/utils/classes";
 
 import { QueryBuilderContext } from "../Context";
 import { Attribute } from "./Attribute";
