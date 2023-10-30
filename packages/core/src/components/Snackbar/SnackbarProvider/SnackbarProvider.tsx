@@ -12,7 +12,7 @@ import {
 import { clsx } from "clsx";
 
 import { SnackbarOrigin } from "@mui/material/Snackbar";
-import { ClassNameMap } from "@mui/material";
+import { ClassNameMap } from "@mui/material/styles";
 
 import { css } from "@emotion/css";
 

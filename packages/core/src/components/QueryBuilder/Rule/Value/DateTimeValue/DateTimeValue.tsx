@@ -4,7 +4,8 @@ import uniqueId from "lodash/uniqueId";
 
 import dayjs from "dayjs";
 
-import { useMediaQuery, useTheme } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import { HvWarningText } from "@core/components/Forms";
 import { HvTimePicker } from "@core/components/TimePicker";

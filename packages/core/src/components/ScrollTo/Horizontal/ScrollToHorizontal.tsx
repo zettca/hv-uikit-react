@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from "react";
 
 import { useTheme as useMuiTheme } from "@mui/material/styles";
-import { useMediaQuery } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import { theme } from "@hitachivantara/uikit-styles";
 import { CurrentStep } from "@hitachivantara/uikit-react-icons";

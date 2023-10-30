@@ -1,15 +1,10 @@
-import {
-  Drawer as MuiDrawer,
-  DrawerProps as MuiDrawerProps,
-  Backdrop as MuiBackdrop,
-} from "@mui/material";
+import MuiDrawer, { DrawerProps as MuiDrawerProps } from "@mui/material/Drawer";
+import MuiBackdrop from "@mui/material/Backdrop";
 
 import { Close } from "@hitachivantara/uikit-react-icons";
-
 import { theme } from "@hitachivantara/uikit-styles";
 
 import { useDefaultProps } from "@core/hooks/useDefaultProps";
-
 import { HvBaseProps } from "@core/types/generic";
 import { withTooltip } from "@core/hocs/withTooltip";
 import { setId } from "@core/utils/setId";

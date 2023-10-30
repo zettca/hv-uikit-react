@@ -1,7 +1,8 @@
 import { useContext, useMemo } from "react";
 import { Delete } from "@hitachivantara/uikit-react-icons";
 
-import { useMediaQuery, useTheme } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import { HvGrid } from "@core/components/Grid";
 import { HvButton } from "@core/components/Button";
