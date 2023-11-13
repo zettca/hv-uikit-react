@@ -4,9 +4,6 @@ on:
   workflow_dispatch:
   workflow_call:
 
-env:
-  LICENSES_WHITELIST: Apache-2.0\;ISC\;BSD-2-Clause\;BSD-3-Clause\;MIT\;W3C\;Zlib\;CC-BY-4.0
-
 jobs:
   checks:
     name: Static Tests
@@ -19,15 +16,30 @@ jobs:
       - name: Install Dependencies
         uses: ./.github/actions/install-dependencies
 
-      - name: License Check
-        run: |
-          npm exec npx license-checker --onlyAllow ${{ env.LICENSES_WHITELIST }} --workspaces
-
       - name: Run Lint
         run: npm run lint
 
       - name: Run Typecheck
         run: npm run typecheck
+
+  security:
+    name: Security Checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        uses: ./.github/actions/install-dependencies
+
+      - name: License Check
+        env:
+          LICENSES_WHITELIST: Apache-2.0\;ISC\;BSD-2-Clause\;BSD-3-Clause\;MIT\;W3C\;Zlib\;CC-BY-4.0
+        run: npm exec npx license-checker --onlyAllow ${{ env.LICENSES_WHITELIST }} --workspaces
+
+      - name: NPM Audit
+        run: npm audit --workspaces packages/* --omit dev
 
   test:
     name: Unit Tests
