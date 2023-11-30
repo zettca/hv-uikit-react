@@ -55,6 +55,8 @@ For more information, check out the [UnoCSS Vite documentation](https://unocss.d
 
 ## Usage
 
+_**Note:**_ Usage of a [IDE plugin](https://unocss.dev/integrations/vscode) is recommended for a better developer experience.
+
 To use the utility classes, simply add them to a component's `className` prop or to one of the `classes`' keys.
 For a list of the available classes, check out the [Uno Preset documentation](https://unocss.dev/presets/uno#rules).
 Using a [cheat sheet](https://tailwindcomponents.com/cheatsheet) can be useful to ease the learning curve of the classes.
@@ -77,10 +79,11 @@ The utility classes integrate with the Design System theme for colors and sizing
 
 <Canvas>
   <Story name="Layout and theme">
-    <section className="flex flex-row w-400px justify-center gap-sm p-sm">
+    <section className="flex flex-row w-500px justify-center gap-sm p-sm">
       <div className="w-10 h-10 rounded bg-positive" />
       <div className="w-11 h-11 rounded bg-warning" />
       <div className="w-12 h-12 rounded bg-negative" />
+      <div className="w-12 h-12 rounded bg-primary_20" />
     </section>
   </Story>
 </Canvas>
@@ -89,7 +92,7 @@ The utility classes integrate with the Design System theme for colors and sizing
 
 <Canvas>
   <Story name="Breakpoints">
-    <section className="flex flex-col gap-xs text-atmo4">
+    <section className="flex flex-col gap-xs text-atmo1">
       <p className="sm:text-secondary">Breakpoint is SM+</p>
       <p className="md:text-secondary">Breakpoint is MD+</p>
       <p className="lg:text-secondary">Breakpoint is LG+</p>
