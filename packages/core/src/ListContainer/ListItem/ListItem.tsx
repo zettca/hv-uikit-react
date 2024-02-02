@@ -53,6 +53,8 @@ export interface HvListItemProps extends HvBaseProps<HTMLLIElement> {
   value?: any;
   /** A Jss Object used to override or extend the styles applied to the component. */
   classes?: HvListItemClasses;
+  /** @private selectable styles, avoiding interactive */
+  selectable?: boolean;
 }
 
 const applyClassNameAndStateToElement = (
@@ -90,6 +92,7 @@ export const HvListItem = forwardRef<any, HvListItemProps>((props, ref) => {
     role,
     value,
     selected,
+    selectable,
     disabled,
     interactive: interactiveProp,
     condensed: condensedProp,
@@ -183,7 +186,7 @@ export const HvListItem = forwardRef<any, HvListItemProps>((props, ref) => {
         {
           [classes.gutters]: !disableGutters,
           [classes.condensed]: condensed,
-          [classes.interactive]: interactive,
+          [classes.interactive]: interactive || selectable,
           [classes.selected]: selected || props["aria-selected"],
           [classes.disabled]: disabled || props["aria-disabled"],
           [classes.withStartAdornment]: startAdornment != null,

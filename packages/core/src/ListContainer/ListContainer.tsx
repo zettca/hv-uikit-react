@@ -1,4 +1,10 @@
-import React, { useRef, useContext, useMemo, forwardRef } from "react";
+import React, {
+  useRef,
+  useContext,
+  useMemo,
+  forwardRef,
+  isValidElement,
+} from "react";
 
 import { HvBaseProps } from "../types/generic";
 import { useForkRef } from "../hooks/useForkRef";
@@ -64,13 +70,12 @@ export const HvListContainer = forwardRef<
   );
 
   const renderChildren = () => {
-    if (!interactive) {
-      return children;
-    }
+    if (!interactive) return children;
 
-    const anySelected = React.Children.toArray(children)
-      .map((child: any) => child.props.selected && !child.props.disabled)
-      .reduce((result, selected) => result || selected, false);
+    const anySelected = React.Children.toArray(children).some(
+      (child) =>
+        isValidElement(child) && child.props.selected && !child.props.disabled
+    );
 
     return React.Children.map(children, (child: any, i) => {
       const tabIndex =
