@@ -1,4 +1,3 @@
-/* eslint-disable prefer-arrow-callback */
 import { useRef } from "react";
 import { OptionProps } from "@mui/base/Option";
 import { useOption } from "@mui/base/useOption";
@@ -8,7 +7,7 @@ import { HvListItem } from "../ListContainer";
 import { useDefaultProps } from "../hooks/useDefaultProps";
 import { ExtractNames, createClasses } from "../utils/classes";
 import { outlineStyles } from "../utils/focusUtils";
-import { fixedForwardRef } from "./utils";
+import { fixedForwardRef } from "../types/generic";
 
 const { staticClasses, useClasses } = createClasses("HvOption", {
   root: {},

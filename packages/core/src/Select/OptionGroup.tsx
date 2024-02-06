@@ -1,4 +1,3 @@
-/* eslint-disable prefer-arrow-callback */
 import { OptionGroup, OptionGroupProps } from "@mui/base/OptionGroup";
 import { theme } from "@hitachivantara/uikit-styles";
 

@@ -1,4 +1,4 @@
-import { HTMLAttributes } from "react";
+import { HTMLAttributes, forwardRef } from "react";
 
 import type {
   HvExtraProps,
@@ -8,6 +8,7 @@ import type {
 export type { HvExtraProps, HvExtraDeepProps };
 
 type AsProp<C extends React.ElementType> = {
+  /** Custom element type to override the root component */
   component?: C;
 };
 
@@ -17,7 +18,7 @@ type PropsToOmit<C extends React.ElementType, P> = keyof (AsProp<C> & P);
 // Without this the event handlers return any instead of the type for the chosen element
 type FixComponentProps<T> = T extends any ? T : never;
 
-type PolymorphicComponent<
+export type PolymorphicComponent<
   C extends React.ElementType,
   Props = {}
 > = React.PropsWithChildren<Props & AsProp<C>> &
@@ -53,3 +54,10 @@ export type HvExtraDeepPartialProps<T> = Partial<{
   HvExtraProps;
 
 export type Arrayable<T> = T | T[];
+
+/** React.forwardRef with fixed typings */
+export function fixedForwardRef<T, P = {}>(
+  render: (props: P, ref: React.Ref<T>) => React.ReactNode
+): (props: P & React.RefAttributes<T>) => React.ReactNode {
+  return forwardRef(render) as any;
+}

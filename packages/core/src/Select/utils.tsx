@@ -1,13 +1,5 @@
-import { forwardRef } from "react";
 import { SelectOption } from "@mui/base/useOption";
 import { SelectValue } from "@mui/base/useSelect";
-
-/** React.forwardRef with fixed typings */
-export function fixedForwardRef<T, P = {}>(
-  render: (props: P, ref: React.Ref<T>) => React.ReactNode
-): (props: P & React.RefAttributes<T>) => React.ReactNode {
-  return forwardRef(render) as any;
-}
 
 export function defaultRenderValue<Value>(
   options: SelectOption<Value> | SelectOption<Value>[] | null

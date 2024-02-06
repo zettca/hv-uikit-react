@@ -1,4 +1,3 @@
-/* eslint-disable prefer-arrow-callback */
 import React, { useRef, useState } from "react";
 import type { Placement } from "@popperjs/core";
 
@@ -20,6 +19,7 @@ import {
   HvWarningText,
 } from "../Forms";
 import { ExtractNames } from "../utils/classes";
+import { fixedForwardRef } from "../types/generic";
 import { useDefaultProps } from "../hooks/useDefaultProps";
 import { staticClasses, useClasses } from "./Select.styles";
 import { setId } from "../utils/setId";
@@ -27,7 +27,7 @@ import { useUniqueId } from "../hooks/useUniqueId";
 import { HvDropdownButton } from "../BaseDropdown/DropdownButton";
 import { HvDropdownPanel } from "../BaseDropdown/DropdownPanel";
 import { HvTypography } from "../Typography";
-import { defaultRenderValue, fixedForwardRef, isMultiSelect } from "./utils";
+import { defaultRenderValue, isMultiSelect } from "./utils";
 import { HvListContainer } from "../ListContainer";
 
 export { staticClasses as selectClasses };
