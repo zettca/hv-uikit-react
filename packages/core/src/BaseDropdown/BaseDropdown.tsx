@@ -110,7 +110,10 @@ export interface HvBaseDropdownProps extends HvBaseProps {
   /**
    * Attributes applied to the dropdown header element.
    */
-  dropdownHeaderProps?: Partial<HvDropdownButtonProps>;
+  dropdownHeaderProps?: React.DetailedHTMLProps<
+    HvDropdownButtonProps,
+    HTMLDivElement
+  >;
   /**
    * Pass a ref to the dropdown header element.
    */
@@ -174,7 +177,7 @@ export const HvBaseDropdown = forwardRef<HTMLDivElement, HvBaseDropdownProps>(
       dropdownHeaderRefProp,
       dropdownHeaderProps?.ref
     );
-    const handleDropdownHeaderRef = useForkRef(
+    const handleDropdownHeaderRef: any = useForkRef(
       setReferenceElement,
       handleDropdownHeaderRefProp
     );
@@ -376,7 +379,12 @@ export const HvBaseDropdown = forwardRef<HTMLDivElement, HvBaseDropdownProps>(
           arrow: classes.arrow,
         }}
         adornment={adornment}
+        // TODO: review "textbox" role
+        role={ariaRole === "combobox" ? "textbox" : undefined}
         {...headerAriaLabels}
+        style={disabled || readOnly ? { pointerEvents: "none" } : undefined}
+        // Removes the element from the navigation sequence for keyboard focus if disabled
+        tabIndex={disabled ? -1 : 0}
         {...dropdownHeaderProps}
       >
         {placeholder}

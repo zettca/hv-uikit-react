@@ -4,27 +4,34 @@ import { DropDownXS } from "@hitachivantara/uikit-react-icons";
 import { theme } from "@hitachivantara/uikit-styles";
 
 import { useDefaultProps } from "../hooks/useDefaultProps";
-import { HvButton, HvButtonProps } from "../Button";
 import { ExtractNames, createClasses } from "../utils/classes";
+import { outlineStyles } from "../utils/focusUtils";
 
 export const { staticClasses, useClasses } = createClasses("HvDropdownButton", {
   root: {
-    width: "100%",
-    minWidth: "unset",
+    cursor: "pointer",
     userSelect: "none",
     position: "relative",
-    paddingLeft: theme.space.xs,
-    justifyContent: "flex-start",
+    background: theme.colors.atmo1,
+    boxSizing: "border-box",
+    border: `1px solid ${theme.colors.secondary}`,
+    borderRadius: theme.radii.base,
+    "&:hover": {
+      border: `1px solid ${theme.colors.primary}`,
+    },
+    "&:focus": {
+      outline: "none",
+    },
+    "&:focus-visible": {
+      ...outlineStyles,
+      border: `1px solid ${theme.colors.primary}`,
+    },
   },
-  disabled: {
-    color: theme.colors.secondary_60,
-  },
-  readOnly: {},
-
   open: {
-    backgroundColor: theme.colors.atmo1,
-    "&:hover, &:focus-visible": {
-      backgroundColor: theme.colors.atmo1,
+    border: `1px solid ${theme.colors.secondary}`,
+
+    "&:hover": {
+      border: `1px solid ${theme.colors.secondary}`,
     },
   },
   openUp: {
@@ -33,20 +40,50 @@ export const { staticClasses, useClasses } = createClasses("HvDropdownButton", {
   openDown: {
     borderRadius: `${theme.radii.base} ${theme.radii.base} 0px 0px`,
   },
+  disabled: {
+    cursor: "not-allowed",
+    pointerEvents: "none",
+    color: theme.colors.secondary_60,
+    border: `1px solid ${theme.colors.secondary_60}`,
+    background: theme.colors.atmo2,
+    "&:hover": {
+      border: `1px solid ${theme.colors.secondary_60}`,
+    },
+  },
+  readOnly: {
+    cursor: "not-allowed",
+    pointerEvents: "none",
+    border: `1px solid ${theme.colors.secondary_60}`,
+    background: theme.colors.atmo2,
+    userSelect: "text",
+    "&:focus-visible": {
+      outline: "none",
+      border: `1px solid ${theme.colors.secondary_60}`,
+    },
+  },
 
   selection: {
-    color: "inherit",
-    flex: 1,
-    textAlign: "start",
-
+    display: "flex",
+    alignItems: "center",
+    height: "30px",
+    boxSizing: "border-box",
+    paddingLeft: theme.space.xs,
+    paddingRight: theme.sizes.sm,
+  },
+  placeholder: {
+    display: "block",
     overflow: "hidden",
     textOverflow: "ellipsis",
     whiteSpace: "nowrap",
+    ...theme.typography.body,
+    color: theme.colors.secondary_80,
   },
-  placeholder: {},
 
   arrowContainer: {
-    marginRight: -(16 + 1),
+    position: "absolute",
+    pointerEvents: "none",
+    top: -1,
+    right: -1,
   },
   arrow: {
     transition: "rotate 0.2s ease",
@@ -55,16 +92,18 @@ export const { staticClasses, useClasses } = createClasses("HvDropdownButton", {
 
 export type HvDropdownButtonClasses = ExtractNames<typeof useClasses>;
 
-export interface HvDropdownButtonProps extends HvButtonProps {
+export interface HvDropdownButtonProps
+  extends React.HTMLAttributes<HTMLDivElement> {
   readOnly?: boolean;
   open?: boolean;
+  disabled?: boolean;
   placement?: Placement;
   adornment?: React.ReactNode;
   classes?: HvDropdownButtonClasses;
 }
 
 export const HvDropdownButton = forwardRef<
-  HTMLButtonElement,
+  HTMLDivElement,
   HvDropdownButtonProps
 >((props, ref) => {
   const {
@@ -80,20 +119,18 @@ export const HvDropdownButton = forwardRef<
   } = useDefaultProps("HvDropdownButton", props);
   const { classes, cx } = useClasses(classesProp);
 
-  const endIcon = adornment ?? (
+  const downArrow = adornment ?? (
     <DropDownXS
       iconSize="XS"
-      style={{ rotate: open ? "180deg" : undefined }}
       className={classes.arrow}
+      style={{ rotate: open ? "180deg" : undefined }}
     />
   );
 
   return (
-    <HvButton
+    // TODO: migrate to HvButton & style accordingly
+    <div
       ref={ref}
-      type="button"
-      variant="secondarySubtle"
-      disabled={disabled}
       className={cx(classes.root, className, {
         [classes.open]: open,
         [classes.openUp]: placement.includes("top"),
@@ -101,17 +138,16 @@ export const HvDropdownButton = forwardRef<
         [classes.disabled]: disabled,
         [classes.readOnly]: readOnly,
       })}
-      classes={{ endIcon: classes.arrowContainer }}
-      endIcon={endIcon}
       {...others}
     >
       <div className={classes.selection}>
-        {typeof children === "string" ? (
-          <div className={classes.placeholder}>{children}</div>
+        {children && typeof children === "string" ? (
+          <div className={cx(classes.placeholder)}>{children}</div>
         ) : (
           children
         )}
       </div>
-    </HvButton>
+      <div className={classes.arrowContainer}>{adornment || downArrow}</div>
+    </div>
   );
 });
