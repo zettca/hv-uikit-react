@@ -1,18 +1,23 @@
+import { dirname, join } from "node:path";
 import { mergeConfig } from "vite";
 import { StorybookConfig } from "@storybook/react-vite";
 import remarkGfm from "remark-gfm";
 
 import viteConfig from "./vite.config";
 
+function getAbsolutePath(value: string): any {
+  return dirname(require.resolve(join(value, "package.json")));
+}
+
 export default {
   framework: {
-    name: "@storybook/react-vite",
+    name: getAbsolutePath("@storybook/react-vite"),
     options: {},
   },
   stories: [
     "../docs/**/*.mdx",
-    "../docs/**/*.stories.@(tsx|mdx)",
-    "../packages/**/src/**/*.stories.@(ts|tsx|mdx)",
+    "../docs/**/*.stories.tsx",
+    "../packages/**/src/**/*.stories.tsx",
   ],
   core: {
     disableTelemetry: true,
@@ -21,29 +26,16 @@ export default {
     autodocs: true,
   },
   addons: [
-    // "@storybook/addon-actions",
-    "@storybook/addon-controls",
-    "@storybook/addon-toolbars",
-    {
-      name: "@storybook/addon-docs",
-      options: {
-        mdxPluginOptions: {
-          mdxCompileOptions: {
-            remarkPlugins: [remarkGfm],
-          },
-        },
-      },
-    },
-    "@storybook/addon-a11y",
-    "@storybook/addon-links",
+    getAbsolutePath("@storybook/addon-controls"),
+    getAbsolutePath("@storybook/addon-toolbars"),
+    getAbsolutePath("@storybook/addon-docs"),
+    getAbsolutePath("@storybook/addon-a11y"),
+    getAbsolutePath("@storybook/addon-links"),
     __dirname + "/addons/version-selector",
     __dirname + "/addons/theme-selector",
     __dirname + "/addons/mode-selector",
   ],
-  features: {
-    storyStoreV7: true,
-    buildStoriesJson: true,
-  },
+  features: {},
   staticDirs: [
     "./assets",
     {
