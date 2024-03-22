@@ -11,37 +11,28 @@ import { HvFlowSidebar } from "./Sidebar";
 import { HvFlowControls, HvFlowControlsProps } from "./Controls";
 import { HvFlowMinimap } from "./Minimap";
 import { HvFlowBackground } from "./Background";
+import { HvFlowNodeGroups } from "./types";
 
-const nodeGroups = {
+const nodeGroups: HvFlowNodeGroups = {
   asset: {
     label: "Assets",
     color: "cat3_80",
     description: "This is my description 1.",
     icon: <Heart />,
-    items: {
-      boomArm: {
-        type: "boomArm",
-        label: "Boom Arm",
-      },
-      spaceMountain: {
-        type: "spaceMountain",
-        label: "Space Mountain",
-      },
-    },
+    items: [
+      { nodeType: "boomArm", label: "Boom Arm" },
+      { nodeType: "spaceMountain", label: "Space Mountain" },
+    ],
   },
   digitalTwin: {
     label: "Digital Twin",
     color: "cat2_80",
     description: "This is my description 2.",
     icon: <Favorite />,
-    items: {
-      toyStory: {
-        type: "toyStory",
-        label: "Toy Story",
-      },
-    },
+    items: [{ nodeType: "toyStory", label: "Toy Story" }],
   },
 };
+
 const BoomArm = (props) => (
   <HvFlowBaseNode
     title="Asset"

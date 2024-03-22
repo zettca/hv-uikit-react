@@ -34,7 +34,7 @@ export interface HvFlowSidebarGroupProps extends HvFlowNodeGroup {
 export const HvFlowSidebarGroup = ({
   id,
   label,
-  items = {},
+  items = [],
   color,
   description,
   icon,

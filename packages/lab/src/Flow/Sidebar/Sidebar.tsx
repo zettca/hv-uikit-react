@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useDebounceCallback } from "usehooks-ts";
+import { useEffect, useMemo, useState } from "react";
 import {
   DndContextProps,
   DragOverlay,
@@ -13,7 +12,6 @@ import {
   HvDrawer,
   HvDrawerProps,
   HvInput,
-  HvInputProps,
   HvTypography,
   useLabels,
   useUniqueId,
@@ -27,7 +25,7 @@ import {
   HvFlowSidebarGroupItem,
   HvFlowDraggableSidebarGroupItem,
 } from "./SidebarGroup/SidebarGroupItem";
-import { HvFlowNodeGroup, HvFlowNodeGroups } from "../types";
+import { HvFlowNodeGroups } from "../types";
 
 export { staticClasses as flowSidebarClasses };
 
@@ -76,8 +74,8 @@ export const HvFlowSidebar = ({
 
   const { nodeGroups, setExpandedNodeGroups } = useFlowContext();
 
-  const [groups, setGroups] = useState(nodeGroups || {});
-  const [draggingLabel, setDraggingLabel] = useState(undefined);
+  const [filterValue, setFilterValue] = useState("");
+  const [draggingLabel, setDraggingLabel] = useState<string>();
 
   const labels = useLabels(DEFAULT_LABELS, labelsProps);
 
@@ -105,44 +103,36 @@ export const HvFlowSidebar = ({
     onDragStart: handleDragStart,
   });
 
-  const handleSearch: HvInputProps["onChange"] = (event, value) => {
-    if (nodeGroups) {
-      const gps = value
-        ? Object.entries(nodeGroups).reduce<HvFlowNodeGroups>((acc, cur) => {
+  const filteredGroups = useMemo(() => {
+    if (!filterValue || !nodeGroups) return nodeGroups || {};
+
+    return filterValue
+      ? Object.entries(nodeGroups).reduce<HvFlowNodeGroups>(
+          (acc, [groupId, group]) => {
             // Filter items by search
-            const filteredItems = cur[1].items
-              ? Object.entries(cur[1].items)
-                  ?.filter(([, obj]) =>
-                    obj.label.toLowerCase().includes(value.toLowerCase())
-                  )
-                  .reduce<NonNullable<HvFlowNodeGroup["items"]>>(
-                    (items, [key, entry]) => {
-                      items[key] = entry;
-                      return items;
-                    },
-                    {}
-                  )
-              : {};
+            const filteredItems = (group.items || []).filter((item) =>
+              item.label.toLowerCase().includes(filterValue.toLowerCase())
+            );
             const itemsCount = Object.keys(filteredItems).length;
 
             // Only show groups with nodes
             if (itemsCount > 0) {
-              acc[cur[0]] = {
-                ...cur[1],
+              acc[groupId] = {
+                ...group,
                 items: filteredItems,
               };
             }
 
             return acc;
-          }, {})
-        : nodeGroups;
+          },
+          {}
+        )
+      : nodeGroups;
+  }, [filterValue, nodeGroups]);
 
-      setGroups(gps);
-      setExpandedNodeGroups?.(value ? Object.keys(gps) : []);
-    }
-  };
-
-  const handleDebouncedSearch = useDebounceCallback(handleSearch, 500);
+  useEffect(() => {
+    setExpandedNodeGroups?.(filterValue ? Object.keys(filteredGroups) : []);
+  }, [filterValue, filteredGroups, setExpandedNodeGroups]);
 
   return (
     <HvDrawer
@@ -174,24 +164,19 @@ export const HvFlowSidebar = ({
             aria-label={labels?.searchAriaLabel}
             aria-controls={groupsElementId}
             aria-owns={groupsElementId}
-            onChange={handleDebouncedSearch}
+            onChange={(evt, val) => setFilterValue(val.trim())}
             inputProps={{ autoComplete: "off" }}
           />
           <ul id={groupsElementId} className={classes.groupsContainer}>
-            {Object.entries(groups).map(([groupId, group]) => {
+            {Object.entries(filteredGroups).map(([groupId, group]) => {
               if (flatten) {
-                return Object.entries(group.items || {}).map(
-                  ([itemId, item]) => (
-                    <HvFlowDraggableSidebarGroupItem
-                      key={itemId}
-                      id={itemId}
-                      label={item.label}
-                      data={item.data}
-                      type={item.type}
-                      aria-roledescription={labels?.itemAriaRoleDescription}
-                    />
-                  )
-                );
+                return (group.items || []).map((item, i) => (
+                  <HvFlowDraggableSidebarGroupItem
+                    key={`${item.id}-${i}`}
+                    aria-roledescription={labels?.itemAriaRoleDescription}
+                    {...item}
+                  />
+                ));
               }
 
               return (

@@ -43,12 +43,12 @@ export interface HvFlowNodeProps<T = any> extends HvFlowBaseNodeProps<T> {
   actionsIconOnly?: HvActionsGenericProps["iconOnly"];
   /** Node maximum number of actions visible. */
   maxVisibleActions?: HvActionsGenericProps["maxVisibleActions"];
-  /** Node subtitle */
+  /** Node subtitle - this is typically the node "name" */
   subtitle?: string;
   /** Node group ID */
-  group?: string;
-  /** Node group item ID */
-  groupItem?: string;
+  groupId?: string;
+  /** Node ID to match with the `nodeGroups`'s item */
+  nodeId?: string;
   /** Node expanded */
   expanded?: boolean;
   /** Node parameters */
@@ -71,18 +71,18 @@ export const HvFlowNode = ({
   maxVisibleActions = 1,
   expanded = false,
   actionsIconOnly = true,
-  params,
+  params: paramsProp,
   classes: classesProp,
   labels: labelsProps,
   children,
   expandParamsButtonProps,
-  title,
-  subtitle,
+  title: titleProp,
+  subtitle: subtitleProp,
   description,
-  group,
-  groupItem,
-  color,
-  icon,
+  groupId,
+  nodeId,
+  color: colorProp,
+  icon: iconProp,
   ...props
 }: HvFlowNodeProps<unknown>) => {
   const { classes } = useClasses(classesProp);
@@ -91,12 +91,16 @@ export const HvFlowNode = ({
   const labels = useLabels(DEFAULT_LABELS, labelsProps);
   const node = useFlowNode();
 
-  const nodeGroup = (group && nodeGroups && nodeGroups[group]) || undefined;
-  const nodeSubtitle =
-    (groupItem && nodeGroup?.items?.[groupItem]?.label) || subtitle;
-  const nodeTitle = nodeGroup?.label || title;
-  const nodeIcon = nodeGroup?.icon || icon;
-  const nodeColor = nodeGroup?.color || color;
+  const nodeGroup = (groupId && nodeGroups && nodeGroups[groupId]) || undefined;
+  const nodeGroupItem =
+    nodeGroup?.items?.find((item) => item.id === nodeId) ||
+    nodeGroup?.items?.find((item) => item.nodeType === type) ||
+    undefined;
+  const title = titleProp || nodeGroup?.label;
+  const icon = iconProp || nodeGroup?.icon;
+  const color = colorProp || nodeGroup?.color;
+  const subtitle = subtitleProp || nodeGroupItem?.subtitle;
+  const params = paramsProp || nodeGroupItem?.params;
 
   const hasParams = !!(params && params.length > 0);
 
@@ -104,9 +108,9 @@ export const HvFlowNode = ({
     <HvFlowBaseNode
       id={id}
       type={type}
-      title={nodeTitle}
-      icon={nodeIcon}
-      color={nodeColor}
+      title={title}
+      icon={icon}
+      color={color}
       nodeActions={defaultActions}
       classes={classes}
       headerItems={
@@ -141,11 +145,11 @@ export const HvFlowNode = ({
       labels={labels as HvFlowNodeProps["labels"]}
       {...props}
     >
-      {(nodeSubtitle || actions) && (
+      {(subtitle || actions) && (
         <div className={classes.subtitleContainer}>
-          {nodeSubtitle && (
+          {subtitle && (
             <div>
-              <HvTypography>{nodeSubtitle}</HvTypography>
+              <HvTypography>{subtitle}</HvTypography>
             </div>
           )}
           {actions && (

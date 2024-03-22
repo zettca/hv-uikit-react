@@ -6,6 +6,8 @@ import {
 } from "@hitachivantara/uikit-react-core";
 import { HvColorAny } from "@hitachivantara/uikit-styles";
 
+import type { HvFlowNodeProps } from "./Node";
+
 // Node types
 
 /** HvFlowNode component type. @extends React.FC */
@@ -22,11 +24,12 @@ export type HvFlowNodeTypes<NodeData = any> = Record<
   HvFlowNodeComponentType<NodeData>
 >;
 
-export interface HvFlowGroupItem {
-  /** Node type */
-  type: string;
-  label: string;
-  data?: unknown;
+export interface HvFlowGroupItem<NodeData = any>
+  extends Pick<HvFlowNodeProps, "params" | "subtitle"> {
+  id?: string;
+  /** The node identifier registered in `nodeTypes` */
+  nodeType: string;
+  data?: NodeData;
 }
 
 /** Node groups */
@@ -35,7 +38,7 @@ export interface HvFlowNodeGroup {
   description?: string;
   color?: HvColorAny;
   icon?: React.ReactNode;
-  items?: Record<string, HvFlowGroupItem>;
+  items?: HvFlowGroupItem[];
 }
 export type HvFlowNodeGroups<GroupId extends keyof any = string> = Record<
   GroupId,
