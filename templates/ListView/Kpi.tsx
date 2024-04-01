@@ -3,13 +3,12 @@ import {
   HvCard,
   HvCardProps,
   HvLoading,
-  HvTableInstance,
   HvTypography,
   theme,
 } from "@hitachivantara/uikit-react-core";
 import { BottomXS, TopXS } from "@hitachivantara/uikit-react-icons";
 
-import { getStatusIcon, ListViewEntry, TrendData } from "./data";
+import { AssetEvent, getStatusIcon, TrendData } from "./data";
 import { Indicator } from "./Indicator";
 
 const classes = {
@@ -48,10 +47,9 @@ interface KpiProps {
   count?: number;
   color: HvCardProps["statusColor"];
   variation?: string;
-  status: number;
-  instance: HvTableInstance<ListViewEntry, string>;
-  kpiSelection: number | undefined;
-  setKpiSelection: (value: number | undefined) => void;
+  status: AssetEvent["status"];
+  selected?: boolean;
+  onSelect: (status: AssetEvent["status"]) => void;
   trendData?: TrendData;
   loading?: boolean;
 }
@@ -62,32 +60,20 @@ export const Kpi = ({
   color,
   variation,
   status,
-  instance,
-  kpiSelection,
+  selected,
   trendData,
   loading,
-  setKpiSelection,
+  onSelect,
 }: KpiProps) => {
-  const handleKpiClick = () => {
-    setKpiSelection(status);
-    if (status !== kpiSelection) {
-      instance?.setFilter?.("status", `${status}`);
-    } else {
-      instance?.setFilter?.("status", "");
-      setKpiSelection(undefined);
-    }
-  };
-
   return (
     <HvCard
-      id={`kpi${status}`}
       selectable
-      selected={status === kpiSelection}
+      selected={selected}
       bgcolor="atmo1"
       statusColor={color}
-      onClick={handleKpiClick}
+      onClick={() => onSelect(status)}
       className={cx(classes.card, {
-        [classes.selected]: status === kpiSelection,
+        [classes.selected]: selected,
       })}
       icon={getStatusIcon(status)}
       tabIndex={0}
