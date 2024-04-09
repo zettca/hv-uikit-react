@@ -9,14 +9,13 @@ const getDims = (size: number) => ({ width: size, height: size });
 const calcSize = (size: number, isLarger = false) =>
   isLarger ? size + 8 : size;
 
-export const getColorVars = (colorArray: string[]) => {
-  return colorArray.reduce(
-    (acc, value, index) => {
-      acc[`--color-${index}`] = value;
-      return acc;
-    },
-    {} as Record<string, string>,
-  );
+export const getColorVars = (colorArray: string[], hasDefaultColor = false) => {
+  if (hasDefaultColor) return { color: colorArray[0] };
+
+  return colorArray.reduce<Record<string, string>>((acc, value, index) => {
+    acc[`--color-${index}`] = value;
+    return acc;
+  }, {});
 };
 
 /** sizes for the <svg> icon */
@@ -36,7 +35,7 @@ const getSizeStyles = (iconSize: IconSize, iconName: string) => {
 
   return {
     "--size": `${containerSize}px`,
-    "--svgSize": `${calcSize(baseSize, isLarger)}px`,
+    // "--svgSize": `${calcSize(baseSize, isLarger)}px`,
   };
 };
 
@@ -63,6 +62,8 @@ export const getIconColors = (
   if (typeof color === "string") {
     colorArray[0] = color;
   } else if (Array.isArray(color)) {
+    // eslint-disable-next-line prefer-destructuring
+    colorArray[0] = color[0];
     colorArray.forEach((_, i) => {
       colorArray[i] = color[i];
     });
@@ -178,6 +179,7 @@ const IconBaseInternal = (
     svgProps,
     ...others
   } = props;
+  const hasDefaultColor = !palette?.length;
   const colorArray = getIconColors(palette, color, semantic, inverted);
   const iconSize = iconSizeProp ?? (isXS(iconName) ? "XS" : "S");
   const sizeStyles = getIconSize(iconSize, isSemantic(iconName), width, height);
@@ -188,7 +190,7 @@ const IconBaseInternal = (
       ref={ref}
       data-name={iconName}
       style={{
-        ...getColorVars(colorArray),
+        ...getColorVars(colorArray, hasDefaultColor),
         ...getSizeStyles(iconSize, iconName),
         ...styleProp,
       }}
@@ -200,6 +202,8 @@ const IconBaseInternal = (
         role={title ? "img" : "none"}
         // TODO: deprecate width/height in favour of `size`
         style={sizeStyles}
+        // TODO: remove "color0" override where `color`/`currentColor` can be used instead
+        className={hasDefaultColor ? "color0" : undefined}
         {...svgProps}
       >
         {title ? <title>{title}</title> : null}

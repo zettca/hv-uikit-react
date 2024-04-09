@@ -117,14 +117,13 @@ const runUtil = (
       return;
     } // exit early
 
-    let output = transformToJsx(fileData);
-
-    const viewBox = extractSize(output);
-    const colorArray = extractColors(output);
-
-    output = replaceFill(output, colorArray)
+    const viewBox = extractSize(fileData);
+    const svgContent = transformToJsx(fileData)
       // remove svg tag, keeping only the content
       .replace(/<svg.*?>(.*?)<\/svg>;/s, "$1");
+
+    const colorArray = extractColors(svgContent);
+    let output = replaceFill(svgContent, colorArray);
 
     // Wrap it up in a React component
     output = generateComponent(
