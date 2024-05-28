@@ -20,7 +20,7 @@ export const { staticClasses, useClasses } = createClasses(
         padding: theme.space.sm,
       },
       "& > :not(nav:first-of-type)": {
-        borderTop: `3px solid ${theme.colors.atmo2}`,
+        borderTop: `3px solid ${theme.colors.atmo2}`, // TODO: 🎨
         padding: theme.spacing("xs", "sm", "sm", "sm"),
       },
 
@@ -45,7 +45,7 @@ export const { staticClasses, useClasses } = createClasses(
 
     slider: {
       "& > div:first-of-type": {
-        borderBottom: `3px solid ${theme.colors.atmo2}`,
+        borderBottom: `3px solid ${theme.colors.atmo2}`, // TODO: 🎨
       },
     },
 

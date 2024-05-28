@@ -67,7 +67,9 @@ export const { useClasses, staticClasses } = createClasses("HvQueryBuilder", {
   /** Styles applied to the remove button on the top group. */
   topRemoveButton: { position: "absolute", top: -16, right: -16 },
   /** Styles applied to the remove button when disabled on the top group. */
-  topRemoveButtonDisabled: { backgroundColor: theme.colors.atmo2 },
+  topRemoveButtonDisabled: {
+    backgroundColor: theme.colors.backgroundColor,
+  },
   /** Styles applied to the rules container. */
   rulesContainer: {},
   /** Styles applied to the sub rules container. */
@@ -99,7 +101,7 @@ export const { useClasses, staticClasses } = createClasses("HvQueryBuilder", {
   topRulesContainer: {},
   /** Styles applied to the background of buttons to remove transparency */
   buttonBackground: {
-    backgroundColor: theme.colors.atmo2,
+    backgroundColor: theme.colors.backgroundColor,
     display: "inline-flex",
   },
   createConditionButton: {

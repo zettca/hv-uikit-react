@@ -79,7 +79,7 @@ const classes = {
     alignItems: "center",
   }),
   emptyGroup: css({
-    backgroundColor: theme.colors.atmo2,
+    backgroundColor: theme.colors.backgroundColor,
     border: `1px dashed ${theme.colors.atmo4}`,
     padding: theme.space.xs,
     display: "grid",

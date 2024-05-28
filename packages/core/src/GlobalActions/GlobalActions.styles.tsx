@@ -27,7 +27,7 @@ export const { staticClasses, useClasses } = createClasses("HvGlobalActions", {
       display: "flex",
       position: "absolute",
       inset: 0,
-      background: theme.colors.atmo2,
+      background: theme.colors.backgroundColor,
       opacity: "75%",
     },
 

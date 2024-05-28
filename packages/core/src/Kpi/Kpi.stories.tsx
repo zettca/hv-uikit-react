@@ -311,7 +311,7 @@ export const Gauge: StoryObj<HvKpiProps> = {
         width: "110px",
         height: "55px",
         borderRadius: "55px 55px 0px 0px",
-        backgroundColor: theme.colors.atmo2,
+        backgroundColor: theme.colors.backgroundColor,
         bottom: 0,
         left: 0,
         right: 0,
@@ -377,7 +377,7 @@ export const Gauge: StoryObj<HvKpiProps> = {
       <HvCard
         className={classes.root}
         statusColor="positive"
-        bgcolor="atmo2"
+        bgcolor="backgroundColor"
         icon={<Level0Good title="Good" color="positive" />}
       >
         <div className={classes.contentContainer}>
@@ -494,7 +494,7 @@ export const StatusTrain: StoryObj<HvKpiProps> = {
         <HvCard
           className={classes.root}
           statusColor="positive"
-          bgcolor="atmo2"
+          bgcolor="backgroundColor"
           icon={<Level0Good color="positive" />}
         >
           <div className={classes.contentContainer}>
@@ -507,7 +507,7 @@ export const StatusTrain: StoryObj<HvKpiProps> = {
         <HvCard
           className={classes.root}
           statusColor="negative"
-          bgcolor="atmo2"
+          bgcolor="backgroundColor"
           icon={<Level3Bad color="negative" />}
         >
           <div className={classes.contentContainer}>
@@ -627,7 +627,7 @@ export const Small: StoryObj<HvKpiProps> = {
         </HvCard>
         <HvCard
           className={classes.rootLoading}
-          bgcolor="atmo2"
+          bgcolor="backgroundColor"
           classes={{
             semanticBar: classes.semanticBar,
           }}

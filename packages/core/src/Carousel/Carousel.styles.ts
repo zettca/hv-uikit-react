@@ -61,7 +61,7 @@ export const { staticClasses, useClasses } = createClasses("HvCarousel", {
     position: "relative",
     height: 32,
     justifyContent: "center",
-    backgroundColor: theme.colors.atmo2,
+    backgroundColor: theme.colors.backgroundColor,
     border: `1px solid ${theme.colors.atmo4}`,
     gap: theme.space.xs,
     "&:has($dots)": {

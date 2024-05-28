@@ -30,7 +30,7 @@ export const { useClasses, staticClasses } = createClasses("HvChartTooltip", {
   },
   multipleTooltipTitleContainer: {
     padding: `15px ${theme.space.sm}`,
-    borderBottom: `3px solid ${theme.colors.atmo2}`,
+    borderBottom: `3px solid ${theme.colors.atmo2}`, // TODO: 🎨
   },
   multipleTooltipTitle: {
     fontFamily: theme.fontFamily.body,

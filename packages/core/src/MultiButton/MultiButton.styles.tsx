@@ -14,7 +14,7 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
     zIndex: 0,
   },
   multiple: {
-    background: theme.colors.atmo2,
+    background: theme.colors.backgroundColor,
 
     // prevent the focus ring to be hidden by sibling hover background
     "&>.HvIsFocusVisible": {

@@ -19,7 +19,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableRow", {
   footer: {},
   /** Styles applied to the component root when selected. */
   selected: {
-    backgroundColor: theme.colors.atmo2,
+    backgroundColor: theme.colors.backgroundColor,
   },
   /** Styles applied to the component root when expanded. */
   expanded: {

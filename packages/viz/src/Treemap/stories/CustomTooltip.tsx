@@ -22,7 +22,7 @@ const styles = {
     flexDirection: "column",
   }),
   containerBorder: css({
-    borderBottom: `3px solid ${theme.colors.atmo2}`,
+    borderBottom: `3px solid ${theme.colors.atmo2}`, // TODO: 🎨
   }),
   valuesContainer: css({
     display: "flex",

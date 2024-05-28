@@ -123,7 +123,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableCell", {
   stickyColumn: {
     position: "sticky",
     zIndex: 2,
-    backgroundColor: theme.colors.atmo2,
+    backgroundColor: theme.colors.backgroundColor,
 
     "&$groupColumnMostRight+$stickyColumn": {
       borderLeft: 0,

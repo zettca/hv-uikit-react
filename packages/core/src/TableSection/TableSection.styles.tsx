@@ -39,7 +39,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableSection", {
     },
 
     [`& .${tableHeaderClasses.head}`]: {
-      backgroundColor: theme.colors.atmo2,
+      backgroundColor: theme.colors.backgroundColor,
       borderBottomColor: theme.colors.atmo3,
       [`&.${tableHeaderClasses.variantCheckbox}`]: {
         borderRight: "none",
@@ -77,7 +77,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableSection", {
 
     [`& .${paginationClasses.root}`]: {
       margin: 0,
-      backgroundColor: theme.colors.atmo2,
+      backgroundColor: theme.colors.backgroundColor,
       padding: theme.space.xs,
       borderTop: `1px solid ${theme.colors.atmo3}`,
     },

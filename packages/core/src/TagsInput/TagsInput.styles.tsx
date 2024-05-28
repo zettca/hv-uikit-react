@@ -33,7 +33,7 @@ export const { staticClasses, useClasses } = createClasses("HvTagsInput", {
   },
   disabled: {
     "& $tagsList": {
-      backgroundColor: theme.colors.atmo2,
+      backgroundColor: theme.colors.backgroundColor,
       border: `1px solid ${theme.colors.atmo4}`,
 
       "&:focus-within, &:hover": {
@@ -43,7 +43,7 @@ export const { staticClasses, useClasses } = createClasses("HvTagsInput", {
   },
   readOnly: {
     "& $tagsList": {
-      backgroundColor: theme.colors.atmo2,
+      backgroundColor: theme.colors.backgroundColor,
       border: `1px solid ${theme.colors.textDisabled}`,
 
       "&:hover": {

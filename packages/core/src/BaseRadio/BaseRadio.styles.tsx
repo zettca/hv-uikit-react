@@ -43,7 +43,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseRadio", {
     "& svg": {
       border: `1px solid ${theme.colors.border}`,
       backgroundColor: theme.colors.secondary, // TODO: 🎨
-      color: theme.colors.atmo2,
+      color: theme.colors.atmo2, // TODO: 🎨
     },
     "&$semantic": {
       "& svg": {

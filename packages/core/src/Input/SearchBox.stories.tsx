@@ -70,7 +70,7 @@ export const BasicSearch: StoryObj = {
         marginTop: 5,
         padding: 5,
         color: theme.colors.text,
-        backgroundColor: theme.colors.atmo2,
+        backgroundColor: theme.colors.backgroundColor,
       }),
       panel: css({ maxWidth: "610px", marginTop: "20px", padding: "5px" }),
     };
@@ -115,7 +115,7 @@ export const DynamicSearch: StoryObj = {
         marginTop: 5,
         padding: 5,
         color: theme.colors.text,
-        backgroundColor: theme.colors.atmo2,
+        backgroundColor: theme.colors.backgroundColor,
       }),
       panel: css({ maxWidth: "610px", marginTop: "20px", padding: "5px" }),
     };
@@ -216,7 +216,7 @@ export const ScopedSearch: StoryObj = {
         marginTop: 5,
         padding: 5,
         color: theme.colors.text,
-        backgroundColor: theme.colors.atmo2,
+        backgroundColor: theme.colors.backgroundColor,
       }),
       panel: css({
         maxWidth: "610px",
@@ -333,7 +333,7 @@ export const SearchAsYouType: StoryObj = {
         marginTop: 5,
         padding: 5,
         color: theme.colors.text,
-        backgroundColor: theme.colors.atmo2,
+        backgroundColor: theme.colors.backgroundColor,
       }),
       panel: css({
         maxWidth: "610px",

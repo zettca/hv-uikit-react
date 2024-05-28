@@ -90,7 +90,7 @@ export const ExpandColumnRenderer = () => {
                 paddingTop: 0,
                 textAlign: "center",
                 height: 100,
-                backgroundColor: theme.colors.atmo2,
+                backgroundColor: theme.colors.backgroundColor,
                 borderTop: `solid 1px ${theme.colors.atmo4}`,
               }}
             >

@@ -7,7 +7,7 @@ const show = {
   transition: ["top"],
   boxShadow: theme.colors.shadow,
   transitionDuration: "500ms",
-  backgroundColor: theme.colors.atmo2,
+  backgroundColor: theme.colors.backgroundColor,
 };
 
 const hide = {
@@ -30,7 +30,7 @@ export const { staticClasses, useClasses } = createClasses("HvHeader-MenuBar", {
     position: "absolute",
     zIndex: -2,
     height: theme.header.secondLevelHeight,
-    backgroundColor: theme.colors.atmo2,
+    backgroundColor: theme.colors.backgroundColor,
     "& li > div": {
       marginTop: 0,
     },

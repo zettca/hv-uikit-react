@@ -49,7 +49,7 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
     cursor: "not-allowed",
     pointerEvents: "none",
     border: `1px solid ${theme.colors.textDisabled}`,
-    background: theme.colors.atmo2,
+    background: theme.colors.backgroundColor,
     "&:hover": {
       border: `1px solid ${theme.colors.textDisabled}`,
     },
@@ -58,7 +58,7 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
     cursor: "not-allowed",
     pointerEvents: "none",
     border: `1px solid ${theme.colors.textDisabled}`,
-    background: theme.colors.atmo2,
+    background: theme.colors.backgroundColor,
     userSelect: "text",
     "&:focus-visible": {
       outline: "none",

@@ -19,7 +19,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
   },
   disabled: {
     "& $inputRoot": {
-      backgroundColor: theme.colors.atmo2,
+      backgroundColor: theme.colors.backgroundColor,
       borderColor: theme.colors.textDisabled,
     },
 
@@ -38,14 +38,14 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
 
     "& $inputRootMultiline": {
       "& $input": {
-        backgroundColor: theme.colors.atmo2,
+        backgroundColor: theme.colors.backgroundColor,
         border: `1px solid ${theme.colors.textDisabled}`,
       },
     },
 
     "&:hover $inputRootMultiline": {
       "& $input": {
-        backgroundColor: theme.colors.atmo2,
+        backgroundColor: theme.colors.backgroundColor,
         border: `1px solid ${theme.colors.textDisabled}`,
       },
     },
@@ -96,21 +96,21 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
     "& $inputRootMultiline": {
       "& $input": {
         border: `1px solid ${theme.colors.textDisabled}`,
-        backgroundColor: theme.colors.atmo2,
+        backgroundColor: theme.colors.backgroundColor,
       },
     },
 
     "&:hover $inputRootMultiline": {
       "& $input": {
         border: `1px solid ${theme.colors.textDisabled}`,
-        backgroundColor: theme.colors.atmo2,
+        backgroundColor: theme.colors.backgroundColor,
       },
     },
 
     "&:focus-within $inputRootMultiline": {
       "& $input": {
         border: `1px solid ${theme.colors.textDisabled}`,
-        backgroundColor: theme.colors.atmo2,
+        backgroundColor: theme.colors.backgroundColor,
       },
     },
   },
@@ -125,7 +125,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
   inputRootInvalid: { borderColor: theme.colors.negative },
   inputRootReadOnly: {
     borderColor: theme.colors.textDisabled,
-    backgroundColor: theme.colors.atmo2,
+    backgroundColor: theme.colors.backgroundColor,
   },
   inputRoot: {
     margin: 0,
@@ -163,7 +163,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
     },
 
     "&$inputRootReadOnly": {
-      backgroundColor: theme.colors.atmo2,
+      backgroundColor: theme.colors.backgroundColor,
     },
   },
   inputRootDisabled: {
