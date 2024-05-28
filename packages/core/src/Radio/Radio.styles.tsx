@@ -30,7 +30,7 @@ export const { staticClasses, useClasses } = createClasses("HvRadio", {
   disabled: {
     cursor: "not-allowed",
 
-    "& $label": { color: theme.colors.secondary_60, cursor: "not-allowed" },
+    "& $label": { color: theme.colors.textDisabled, cursor: "not-allowed" },
   },
   radio: {
     height: "32px",

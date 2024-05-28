@@ -36,7 +36,7 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
       fontWeight: theme.typography.body.fontWeight,
       fontSize: theme.typography.body.fontSize,
       "&:disabled": {
-        color: theme.colors.secondary_60,
+        color: theme.colors.textDisabled,
         borderTop: `solid 1px ${theme.colors.atmo4}`,
         borderBottom: `solid 1px ${theme.colors.atmo4}`,
         "&:hover": {
@@ -72,12 +72,12 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
         background: theme.colors.atmo1,
         ...theme.typography.label,
         borderRadius: theme.radii.base,
-        border: `solid 1px ${theme.colors.secondary}`,
+        border: `solid 1px ${theme.colors.border}`,
         zIndex: 2,
         "&:hover": {
           background: theme.colors.atmo3,
           "&:not(:disabled)": {
-            border: `solid 1px ${theme.colors.secondary}`,
+            border: `solid 1px ${theme.colors.border}`,
           },
           "&:disabled": {
             border: `solid 1px ${theme.colors.atmo4}`,
@@ -90,7 +90,7 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
         },
         "&:disabled": {
           zIndex: 1,
-          color: theme.colors.secondary_60,
+          color: theme.colors.textDisabled,
           background: theme.colors.atmo1,
           border: `solid 1px ${theme.colors.atmo4}`,
         },
@@ -152,7 +152,7 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
       borderTop: "solid 1px transparent",
       borderBottom: "solid 1px transparent",
       "&:disabled": {
-        color: theme.colors.secondary_60,
+        color: theme.colors.textDisabled,
         borderLeft: `solid 1px ${theme.colors.atmo4}`,
         borderRight: `solid 1px ${theme.colors.atmo4}`,
         borderTop: "solid 1px transparent",
@@ -187,14 +187,14 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
         background: theme.colors.atmo1,
         ...theme.typography.label,
         borderRadius: theme.radii.base,
-        border: `solid 1px ${theme.colors.secondary}`,
+        border: `solid 1px ${theme.colors.border}`,
         zIndex: 2,
         "&:hover, &:focus": {
           background: theme.colors.atmo3,
         },
         "&:disabled": {
           zIndex: 1,
-          color: theme.colors.secondary_60,
+          color: theme.colors.textDisabled,
           background: theme.colors.atmo1,
           border: `solid 1px ${theme.colors.atmo4}`,
         },
@@ -216,7 +216,7 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
     height: "calc(32px - 2px)",
   },
   splitDisabled: {
-    color: theme.colors.secondary_60,
+    color: theme.colors.textDisabled,
   },
   firstButton: {},
   lastButton: {},

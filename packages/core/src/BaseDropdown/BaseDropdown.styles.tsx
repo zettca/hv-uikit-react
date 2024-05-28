@@ -19,7 +19,7 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
     position: "relative",
     background: theme.colors.atmo1,
     boxSizing: "border-box",
-    border: `1px solid ${theme.colors.secondary}`,
+    border: `1px solid ${theme.colors.border}`,
     borderRadius: theme.radii.base,
     "&:hover": {
       border: `1px solid ${theme.colors.primary}`,
@@ -33,10 +33,10 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
     },
   },
   headerOpen: {
-    border: `1px solid ${theme.colors.secondary}`,
+    border: `1px solid ${theme.colors.border}`,
 
     "&:hover": {
-      border: `1px solid ${theme.colors.secondary}`,
+      border: `1px solid ${theme.colors.border}`,
     },
   },
   headerOpenUp: {
@@ -48,21 +48,21 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
   headerDisabled: {
     cursor: "not-allowed",
     pointerEvents: "none",
-    border: `1px solid ${theme.colors.secondary_60}`,
+    border: `1px solid ${theme.colors.textDisabled}`,
     background: theme.colors.atmo2,
     "&:hover": {
-      border: `1px solid ${theme.colors.secondary_60}`,
+      border: `1px solid ${theme.colors.textDisabled}`,
     },
   },
   headerReadOnly: {
     cursor: "not-allowed",
     pointerEvents: "none",
-    border: `1px solid ${theme.colors.secondary_60}`,
+    border: `1px solid ${theme.colors.textDisabled}`,
     background: theme.colors.atmo2,
     userSelect: "text",
     "&:focus-visible": {
       outline: "none",
-      border: `1px solid ${theme.colors.secondary_60}`,
+      border: `1px solid ${theme.colors.textDisabled}`,
     },
   },
   arrowContainer: {
@@ -86,14 +86,16 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
     textOverflow: "ellipsis",
     whiteSpace: "nowrap",
     ...theme.typography.body,
-    color: theme.colors.secondary_80,
+    color: theme.colors.textSubtle,
   },
-  selectionDisabled: { color: theme.colors.secondary_60 },
+  selectionDisabled: {
+    color: theme.colors.textDisabled,
+  },
   panel: {
     position: "relative",
 
     backgroundColor: theme.colors.atmo1,
-    border: `1px solid ${theme.colors.secondary}`,
+    border: `1px solid ${theme.colors.border}`,
   },
   panelOpenedUp: {
     top: 1,
@@ -108,8 +110,8 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
     backgroundColor: theme.colors.atmo1,
     borderTop: "none",
     borderBottom: "none",
-    borderRight: `1px solid ${theme.colors.secondary}`,
-    borderLeft: `1px solid ${theme.colors.secondary}`,
+    borderRight: `1px solid ${theme.colors.border}`,
+    borderLeft: `1px solid ${theme.colors.border}`,
   },
   inputExtensionLeftPosition: { marginLeft: "auto" },
   inputExtensionOpenShadow: {

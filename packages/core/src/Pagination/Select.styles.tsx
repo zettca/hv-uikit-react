@@ -6,9 +6,9 @@ export const { useClasses } = createClasses("HvPaginationSelect", {
   root: {},
   header: {
     backgroundColor: "transparent",
-    borderColor: theme.colors.secondary_80,
+    borderColor: theme.colors.textSubtle,
     "&:hover": {
-      borderColor: theme.colors.secondary_80,
+      borderColor: theme.colors.textSubtle,
     },
   },
   selection: {

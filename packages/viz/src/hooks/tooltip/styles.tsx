@@ -13,13 +13,13 @@ export const { useClasses, staticClasses } = createClasses("HvChartTooltip", {
     fontFamily: theme.fontFamily.body,
     fontWeight: theme.fontWeights.semibold,
     fontSize: theme.fontSizes.sm,
-    color: theme.colors.secondary,
+    color: theme.colors.text,
   },
   singleTooltipValue: {
     fontFamily: theme.fontFamily.body,
     fontWeight: theme.fontWeights.normal,
     fontSize: theme.fontSizes.sm,
-    color: theme.colors.secondary,
+    color: theme.colors.text,
     marginLeft: theme.space.xs,
   },
   /** Multiple tooltip styles */
@@ -36,7 +36,7 @@ export const { useClasses, staticClasses } = createClasses("HvChartTooltip", {
     fontFamily: theme.fontFamily.body,
     fontWeight: theme.fontWeights.semibold,
     fontSize: theme.fontSizes.sm,
-    color: theme.colors.secondary,
+    color: theme.colors.text,
   },
   multipleTooltipValuesContainer: {
     display: "flex",
@@ -66,12 +66,12 @@ export const { useClasses, staticClasses } = createClasses("HvChartTooltip", {
     fontFamily: theme.fontFamily.body,
     fontWeight: theme.fontWeights.semibold,
     fontSize: theme.fontSizes.sm,
-    color: theme.colors.secondary,
+    color: theme.colors.text,
   },
   multipleTooltipSeriesValue: {
     fontFamily: theme.fontFamily.body,
     fontWeight: theme.fontWeights.normal,
     fontSize: theme.fontSizes.sm,
-    color: theme.colors.secondary,
+    color: theme.colors.text,
   },
 });

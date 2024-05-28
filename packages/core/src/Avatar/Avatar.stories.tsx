@@ -28,7 +28,7 @@ export default meta;
 export const Main: StoryObj<HvAvatarProps> = {
   args: {
     size: "md",
-    backgroundColor: "secondary",
+    backgroundColor: "text",
     color: "atmo1",
     variant: "circular",
     badge: "",

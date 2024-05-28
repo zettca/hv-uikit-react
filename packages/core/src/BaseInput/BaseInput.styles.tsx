@@ -20,7 +20,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
   disabled: {
     "& $inputRoot": {
       backgroundColor: theme.colors.atmo2,
-      borderColor: theme.colors.secondary_60,
+      borderColor: theme.colors.textDisabled,
     },
 
     "& $inputBorderContainer": {
@@ -32,21 +32,21 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
     },
 
     "&& $input": {
-      color: theme.colors.secondary_60,
-      WebkitTextFillColor: theme.colors.secondary_60,
+      color: theme.colors.textDisabled,
+      WebkitTextFillColor: theme.colors.textDisabled,
     },
 
     "& $inputRootMultiline": {
       "& $input": {
         backgroundColor: theme.colors.atmo2,
-        border: `1px solid ${theme.colors.secondary_60}`,
+        border: `1px solid ${theme.colors.textDisabled}`,
       },
     },
 
     "&:hover $inputRootMultiline": {
       "& $input": {
         backgroundColor: theme.colors.atmo2,
-        border: `1px solid ${theme.colors.secondary_60}`,
+        border: `1px solid ${theme.colors.textDisabled}`,
       },
     },
   },
@@ -95,21 +95,21 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
 
     "& $inputRootMultiline": {
       "& $input": {
-        border: `1px solid ${theme.colors.secondary_60}`,
+        border: `1px solid ${theme.colors.textDisabled}`,
         backgroundColor: theme.colors.atmo2,
       },
     },
 
     "&:hover $inputRootMultiline": {
       "& $input": {
-        border: `1px solid ${theme.colors.secondary_60}`,
+        border: `1px solid ${theme.colors.textDisabled}`,
         backgroundColor: theme.colors.atmo2,
       },
     },
 
     "&:focus-within $inputRootMultiline": {
       "& $input": {
-        border: `1px solid ${theme.colors.secondary_60}`,
+        border: `1px solid ${theme.colors.textDisabled}`,
         backgroundColor: theme.colors.atmo2,
       },
     },
@@ -124,7 +124,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
   },
   inputRootInvalid: { borderColor: theme.colors.negative },
   inputRootReadOnly: {
-    borderColor: theme.colors.secondary_60,
+    borderColor: theme.colors.textDisabled,
     backgroundColor: theme.colors.atmo2,
   },
   inputRoot: {
@@ -132,7 +132,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
     width: "100%",
     borderRadius: theme.radii.base,
     height: "32px",
-    border: `1px solid ${theme.colors.secondary}`,
+    border: `1px solid ${theme.colors.border}`,
     boxSizing: "border-box",
     backgroundColor: theme.colors.atmo1,
     fontFamily: theme.fontFamily.body,
@@ -181,7 +181,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
     height: "auto",
 
     "& $input": {
-      border: `1px solid ${theme.colors.secondary}`,
+      border: `1px solid ${theme.colors.border}`,
       borderRadius: theme.radii.base,
       backgroundColor: theme.colors.atmo1,
       height: "auto",
@@ -210,7 +210,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
 
     "&::placeholder": {
       opacity: 1,
-      color: theme.colors.secondary_80,
+      color: theme.colors.textSubtle,
     },
 
     "&::-ms-clear": {
@@ -219,7 +219,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
   },
   inputDisabled: {},
   inputReadOnly: {
-    color: theme.colors.secondary_80,
+    color: theme.colors.textSubtle,
   },
   inputResizable: { resize: "both", width: "100%" },
 });

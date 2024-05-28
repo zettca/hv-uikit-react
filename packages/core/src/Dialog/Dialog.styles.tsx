@@ -6,7 +6,7 @@ export const { staticClasses, useClasses } = createClasses("HvDialog", {
   root: {},
   background: { background: theme.alpha("atmo4", 0.8) },
   paper: {
-    color: theme.colors.secondary,
+    color: theme.colors.text,
     backgroundColor: theme.colors.atmo1,
     boxShadow: ["none", theme.colors.shadow],
     borderRadius: theme.radii.round,

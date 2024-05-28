@@ -16,7 +16,7 @@ import { ModelDetails, useModelData } from "./data";
 import { MetadataItem } from "./MetadataItem";
 
 const ProgressBar = ({
-  color = "secondary",
+  color = "text",
   value,
 }: {
   color?: HvColor;

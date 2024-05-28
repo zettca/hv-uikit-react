@@ -17,12 +17,12 @@ export const { staticClasses, useClasses } = createClasses("HvCard", {
     },
   },
   selected: {
-    outline: `1px solid ${theme.colors.secondary}`,
+    outline: `1px solid ${theme.colors.border}`,
     "&:hover": {
-      outline: `1px solid ${theme.colors.secondary}`,
+      outline: `1px solid ${theme.colors.border}`,
     },
     "&:focus": {
-      outline: `1px solid ${theme.colors.secondary}`,
+      outline: `1px solid ${theme.colors.border}`,
     },
   },
   selectable: {

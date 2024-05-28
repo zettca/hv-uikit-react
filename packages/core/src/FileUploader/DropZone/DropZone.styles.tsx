@@ -8,19 +8,19 @@ export const { staticClasses, useClasses } = createClasses("HvDropZone", {
     position: "relative",
     width: "100%",
     display: "flex",
-    border: `1px dashed ${theme.colors.secondary_60}`,
+    border: `1px dashed ${theme.colors.textDisabled}`, // TODO: 🎨
     cursor: "pointer",
     background: theme.colors.atmo1,
     borderRadius: theme.radii.round,
 
     "&:hover": {
       background: `${theme.colors.atmo1}`,
-      border: `1px dashed ${theme.colors.secondary}`,
+      border: `1px dashed ${theme.colors.border}`,
     },
 
     "&:focus-within": {
       background: `${theme.colors.atmo1}`,
-      border: `1px dashed ${theme.colors.secondary}`,
+      border: `1px dashed ${theme.colors.border}`,
       ...outlineStyles,
     },
   },
@@ -40,18 +40,18 @@ export const { staticClasses, useClasses } = createClasses("HvDropZone", {
   },
   dropZoneContainerDisabled: {
     background: `${theme.colors.atmo3}`,
-    border: `1px dashed ${theme.colors.secondary_60}`,
+    border: `1px dashed ${theme.colors.textDisabled}`,
     cursor: "not-allowed",
     "&:hover": {
       background: `${theme.colors.atmo3}`,
-      border: `1px dashed ${theme.colors.secondary_60}`,
+      border: `1px dashed ${theme.colors.textDisabled}`,
     },
 
     "& $dragText": {
-      color: theme.colors.secondary_60,
+      color: theme.colors.textDisabled,
     },
     "& $selectFilesText": {
-      color: theme.colors.secondary_60,
+      color: theme.colors.textDisabled,
     },
   },
   inputArea: {

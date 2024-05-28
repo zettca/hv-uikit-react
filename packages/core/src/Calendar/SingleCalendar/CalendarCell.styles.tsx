@@ -38,27 +38,27 @@ export const { staticClasses, useClasses } = createClasses("HvCalendarCell", {
   },
   calendarDateSelected: {
     backgroundColor: theme.colors.atmo3,
-    color: theme.colors.secondary,
+    color: theme.colors.text,
     "&:hover": {
       ...hover,
     },
   },
   calendarDateNotInMonth: {
-    color: theme.colors.secondary_60,
+    color: theme.colors.textDisabled,
     cursor: "not-allowed",
   },
   calendarDateInSelectionRange: {
     backgroundColor: theme.colors.atmo3,
   },
   calendarDateDisabled: {
-    color: theme.colors.secondary_60,
+    color: theme.colors.textDisabled,
     cursor: "no-drop",
   },
   startBookend: {
-    borderLeft: `1px solid ${theme.colors.secondary}`,
+    borderLeft: `1px solid ${theme.colors.border}`,
   },
   endBookend: {
-    borderRight: `1px solid ${theme.colors.secondary}`,
+    borderRight: `1px solid ${theme.colors.border}`,
   },
   dateWrapper: {
     width: "40px",

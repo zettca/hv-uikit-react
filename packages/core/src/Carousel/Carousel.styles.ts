@@ -140,7 +140,7 @@ export const { staticClasses, useClasses } = createClasses("HvCarousel", {
   dotSelected: {
     width: 10,
     height: 10,
-    backgroundColor: theme.colors.secondary_80,
+    backgroundColor: theme.colors.textSubtle,
   },
 
   panel: {

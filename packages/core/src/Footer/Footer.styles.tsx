@@ -25,7 +25,7 @@ export const { staticClasses, useClasses } = createClasses("HvFooter", {
   separator: {
     width: 1,
     height: 16,
-    backgroundColor: theme.colors.secondary,
+    backgroundColor: theme.colors.secondary, // TODO: 🎨
     margin: `${theme.space.xs} ${theme.space.sm}`,
   },
   small: {

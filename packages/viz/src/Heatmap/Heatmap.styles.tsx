@@ -17,6 +17,6 @@ export const { useClasses, staticClasses } = createClasses("HvHeatmap", {
     fontFamily: theme.fontFamily.body,
     fontWeight: theme.fontWeights.normal,
     fontSize: theme.fontSizes.sm,
-    color: theme.colors.secondary,
+    color: theme.colors.text,
   },
 });

@@ -139,7 +139,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableHeader", {
     },
   },
   resizable: { borderRight: `solid 1px ${theme.colors.atmo4}` },
-  resizing: { borderRight: `solid 2px ${theme.colors.secondary}` },
+  resizing: { borderRight: `solid 2px ${theme.colors.border}` },
   resizer: {
     display: "inline-block",
     width: 10,

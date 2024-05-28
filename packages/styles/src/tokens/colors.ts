@@ -222,8 +222,9 @@ const utilsLight = {
   errorSubtle: semanticLight.negative_20,
 
   text: accentLight.secondary,
-  textSubtle: accentLight.secondary_80,
+  textSubtle: accentLight.secondary_80, // textMuted
   textDisabled: accentLight.secondary_60,
+  border: accentLight.secondary,
   divider: atmosphereLight.atmo4, // borders, hrs, etc.
   dividerSubtle: atmosphereLight.atmo3,
 
@@ -330,6 +331,7 @@ const utilsDark = {
   text: accentDark.secondary,
   textSubtle: accentDark.secondary_80,
   textDisabled: accentDark.secondary_60,
+  border: accentDark.secondary,
   divider: atmosphereDark.atmo4, // borders, hrs, etc.
   dividerSubtle: atmosphereDark.atmo3,
 

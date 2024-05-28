@@ -16,7 +16,7 @@ export const { staticClasses, useClasses } = createClasses("HvBlade", {
 
     zIndex: 0,
 
-    color: theme.colors.secondary,
+    color: theme.colors.text,
     backgroundColor: theme.colors.atmo1,
     borderRadius: theme.radii.round,
     border: `1px solid ${theme.colors.atmo4}`,
@@ -76,7 +76,7 @@ export const { staticClasses, useClasses } = createClasses("HvBlade", {
 
   disabled: {
     cursor: "not-allowed",
-    color: theme.colors.secondary_60,
+    color: theme.colors.textDisabled,
 
     "&:focus": {
       background: "none",

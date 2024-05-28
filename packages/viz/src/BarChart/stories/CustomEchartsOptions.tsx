@@ -22,7 +22,7 @@ const styles = {
     fontFamily: theme.fontFamily.body,
     fontWeight: theme.fontWeights.normal,
     fontSize: theme.fontSizes.sm,
-    color: theme.colors.secondary,
+    color: theme.colors.text,
     animation: `${appear} .2s ease-in-out`,
   }),
 };

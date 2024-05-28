@@ -65,7 +65,7 @@ export const sliderStyles = {
   disabledMark: {
     ...theme.typography.caption1,
     fontFamily: theme.fontFamily.body,
-    color: `${theme.colors.secondary_60}`,
+    color: theme.colors.textDisabled,
     cursor: "not-allowed",
     top: "-2px",
   },
@@ -92,7 +92,7 @@ export const sliderStyles = {
   knobInner: {
     borderColor: "transparent",
     boxShadow: "none",
-    backgroundColor: theme.colors.secondary,
+    backgroundColor: theme.colors.secondary, // TODO: 🎨
     width: "16px",
     height: "16px",
   },
@@ -109,7 +109,7 @@ export const sliderStyles = {
     zIndex: "-1",
   },
   track: {
-    backgroundColor: theme.colors.secondary,
+    backgroundColor: theme.colors.secondary, // TODO: 🎨
     height: "3px",
     zIndex: "-1",
     marginTop: "-1px",

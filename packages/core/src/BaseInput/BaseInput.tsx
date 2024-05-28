@@ -25,7 +25,7 @@ export type HvBaseInputClasses = ExtractNames<typeof useClasses>;
 const baseInputStyles = emotionCss({
   "input:-webkit-autofill": {
     WebkitBoxShadow: `0 0 0px 1000px ${theme.colors.atmo1} inset`,
-    WebkitTextFillColor: theme.colors.secondary,
+    WebkitTextFillColor: theme.colors.text,
   },
 
   // Clears number input up/down arrows in Chrome and Firefox

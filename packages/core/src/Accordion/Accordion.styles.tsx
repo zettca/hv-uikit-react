@@ -39,7 +39,7 @@ export const { staticClasses, useClasses } = createClasses("HvAccordion", {
   },
   disabled: {
     cursor: "not-allowed",
-    color: theme.colors.secondary_60,
+    color: theme.colors.textDisabled,
 
     "&:focus": {
       background: "none",

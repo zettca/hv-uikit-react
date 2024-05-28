@@ -869,7 +869,7 @@ export const CustomEchartsOptions: StoryObj<HvLineChartProps> = {
           };
           option.series[0].smooth = true;
           option.series[0].lineStyle = {
-            color: colors?.secondary_60,
+            color: colors?.secondary_60, // TODO: 🎨
           };
           option.series[0].itemStyle = {
             color(params) {

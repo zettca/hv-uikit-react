@@ -25,7 +25,7 @@ export const { staticClasses, useClasses } = createClasses("HvInlineEditor", {
   },
   largeText: {},
   textEmpty: {
-    color: theme.colors.secondary_60,
+    color: theme.colors.textDisabled, // TODO: 🎨
   },
   button: {
     padding: theme.spacing("6px", "8px", "5px", "8px"),
@@ -52,7 +52,7 @@ export const { staticClasses, useClasses } = createClasses("HvInlineEditor", {
     },
 
     "&:active": {
-      border: `1px solid ${theme.colors.secondary}`,
+      border: `1px solid ${theme.colors.border}`,
       backgroundColor: "transparent",
 
       "& $icon": {

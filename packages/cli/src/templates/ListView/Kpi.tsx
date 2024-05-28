@@ -36,7 +36,7 @@ const classes = {
     alignItems: "center",
   }),
   selected: css({
-    outline: `1px solid ${theme.colors.secondary_60}`,
+    outline: `1px solid ${theme.colors.secondary_60}`, // TODO: 🎨
   }),
   loading: css({
     margin: `${theme.space.xs} 0`,

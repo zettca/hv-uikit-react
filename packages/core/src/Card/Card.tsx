@@ -72,7 +72,7 @@ export const HvCard = (props: HvCardProps) => {
               backgroundColor:
                 statusColor === "sema0"
                   ? selected
-                    ? theme.colors.secondary
+                    ? theme.colors.secondary // TODO: 🎨
                     : theme.colors.atmo4
                   : theme.colors[statusColor],
             }),

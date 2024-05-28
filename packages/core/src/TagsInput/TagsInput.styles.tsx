@@ -44,10 +44,10 @@ export const { staticClasses, useClasses } = createClasses("HvTagsInput", {
   readOnly: {
     "& $tagsList": {
       backgroundColor: theme.colors.atmo2,
-      border: `1px solid ${theme.colors.secondary_60}`,
+      border: `1px solid ${theme.colors.textDisabled}`,
 
       "&:hover": {
-        border: `1px solid ${theme.colors.secondary_60}`,
+        border: `1px solid ${theme.colors.textDisabled}`,
       },
     },
   },
@@ -78,7 +78,7 @@ export const { staticClasses, useClasses } = createClasses("HvTagsInput", {
     flexWrap: "wrap",
 
     backgroundColor: theme.colors.atmo1,
-    border: `1px solid ${theme.colors.secondary_80}`,
+    border: `1px solid ${theme.colors.textSubtle}`,
     borderRadius: theme.radii.base,
 
     "&:hover": {

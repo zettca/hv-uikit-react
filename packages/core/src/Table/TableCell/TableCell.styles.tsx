@@ -169,6 +169,6 @@ export const { staticClasses, useClasses } = createClasses("HvTableCell", {
   },
   /** Styles applied to the cell when it's part of a resizing column. */
   resizing: {
-    borderRight: `solid 2px ${theme.colors.secondary}`,
+    borderRight: `solid 2px ${theme.colors.border}`,
   },
 });

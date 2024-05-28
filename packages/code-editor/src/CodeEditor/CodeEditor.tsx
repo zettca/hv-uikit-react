@@ -75,7 +75,7 @@ export const HvCodeEditor = ({
             colors: {
               "editor.background": theme?.colors.modes[mode].atmo1 || "",
               "editorLineNumber.foreground":
-                theme?.colors.modes[mode].secondary_60 || "",
+                theme?.colors.modes[mode].textSubtle || "", // TODO: 🎨
             },
           });
         });

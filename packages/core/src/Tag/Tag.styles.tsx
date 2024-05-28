@@ -29,7 +29,7 @@ export const { staticClasses, useClasses } = createClasses("HvTag", {
       "&$categorical": {
         borderRadius: 8,
         "& $label": {
-          color: theme.colors.secondary,
+          color: theme.colors.text,
         },
       },
     },
@@ -38,7 +38,7 @@ export const { staticClasses, useClasses } = createClasses("HvTag", {
       opacity: 1,
       backgroundColor: theme.colors.atmo3,
       "& $label": {
-        color: theme.colors.secondary_60,
+        color: theme.colors.textDisabled,
       },
     },
 

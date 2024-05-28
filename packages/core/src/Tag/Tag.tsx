@@ -121,7 +121,7 @@ export const HvTag = forwardRef<HTMLDivElement, HvTagProps>((props, ref) => {
     },
   });
 
-  const colorOverride = (disabled && ["atmo3", "secondary_60"]) || undefined;
+  const colorOverride = (disabled && ["atmo3", "textDisabled"]) || undefined;
 
   const avatarIcon = isSelected ? (
     <CheckboxCheck color={colorOverride} iconSize="XS" />

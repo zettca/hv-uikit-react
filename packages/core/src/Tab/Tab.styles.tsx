@@ -27,7 +27,7 @@ export const { staticClasses, useClasses } = createClasses("HvTab", {
       letterSpacing: theme.typography.label.letterSpacing,
     },
     "&$disabled": {
-      color: theme.colors.secondary_60,
+      color: theme.colors.textDisabled,
       cursor: "not-allowed",
       pointerEvents: "all",
       opacity: 1,

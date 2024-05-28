@@ -142,7 +142,7 @@ export const IOPS: StoryObj<HvKpiProps> = {
       }),
       root: css({ width: 280, cursor: "pointer" }),
       title: css({ padding: "0px 24px 16px 0px" }),
-      time: css({ color: theme.colors.secondary_80 }),
+      time: css({ color: theme.colors.textSubtle }),
       trendTextContainer: css({
         display: "flex",
         flexDirection: "column",
@@ -571,7 +571,7 @@ export const Small: StoryObj<HvKpiProps> = {
         marginLeft: theme.space.xs,
       }),
       valueContainer: css({ display: "flex", alignItems: "flex-end" }),
-      caption: css({ color: theme.colors.secondary_80 }),
+      caption: css({ color: theme.colors.textSubtle }),
       unit: css({
         padding: "0px 2px 5px 2px",
       }),
@@ -686,7 +686,7 @@ export const Column: StoryObj<HvKpiProps> = {
         alignItems: "flex-end",
       }),
       unit: css({
-        color: theme.colors.secondary_80,
+        color: theme.colors.textSubtle,
         padding: "0px 2px 5px 2px",
       }),
     };

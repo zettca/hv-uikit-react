@@ -27,7 +27,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseSwitch", {
         transform: "translateX(16px)",
         "& + $track": {
           opacity: 1,
-          backgroundColor: theme.colors.secondary,
+          backgroundColor: theme.colors.secondary, // TODO: 🎨
         },
         "&:hover": {
           backgroundColor: "transparent",
@@ -41,7 +41,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseSwitch", {
         "& + $track": {
           opacity: 1,
           backgroundColor: theme.colors.atmo3,
-          border: `solid 1px ${theme.colors.secondary_60}`,
+          border: `solid 1px ${theme.colors.textDisabled}`,
         },
       },
     },
@@ -65,7 +65,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseSwitch", {
     borderRadius: "15px",
     height: "16px",
     width: "32px",
-    border: `solid 1px ${theme.colors.secondary}`,
+    border: `solid 1px ${theme.colors.border}`,
     backgroundColor: theme.colors.atmo1,
   },
   thumb: {
@@ -73,7 +73,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseSwitch", {
     left: "-9px",
     width: "12px",
     height: "12px",
-    border: `solid 1px ${theme.colors.secondary}`,
+    border: `solid 1px ${theme.colors.border}`,
     backgroundColor: theme.colors.atmo1,
     marginLeft: "2px",
     marginTop: 0,
@@ -89,7 +89,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseSwitch", {
 
     "& $thumb": {
       backgroundColor: theme.colors.atmo3,
-      border: `solid 1px ${theme.colors.secondary_60}`,
+      border: `solid 1px ${theme.colors.textDisabled}`,
     },
   },
   readOnly: {},

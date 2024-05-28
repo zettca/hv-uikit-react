@@ -50,14 +50,14 @@ const styles = {
     fontFamily: theme.fontFamily.body,
     fontWeight: theme.fontWeights.semibold,
     fontSize: theme.fontSizes.sm,
-    color: theme.colors.secondary,
+    color: theme.colors.text,
   }),
   color: css({
     display: "flex",
     width: 12,
     height: 12,
     padding: 4,
-    border: `1px solid ${theme.colors.secondary}`,
+    border: `1px solid ${theme.colors.border}`,
   }),
 };
 

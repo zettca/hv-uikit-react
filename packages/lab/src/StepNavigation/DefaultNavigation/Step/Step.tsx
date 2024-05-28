@@ -84,7 +84,7 @@ export const HvStep = ({
 
   const color = state === "Pending" ? "atmo2" : undefined;
   const semantic = state !== "Pending" ? getSemantic(state) : undefined;
-  const status = state === "Current" ? "secondary_60" : undefined;
+  const status = state === "Current" ? "secondary_60" : undefined; // TODO: 🎨
 
   const IconComponent = {
     Pending: HourGlass,

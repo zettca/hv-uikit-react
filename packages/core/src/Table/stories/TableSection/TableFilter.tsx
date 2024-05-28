@@ -78,9 +78,9 @@ const classes = {
       borderColor: "transparent",
     },
     [`&.${baseDropdownClasses.headerOpen}`]: {
-      borderColor: theme.colors.secondary,
+      borderColor: theme.colors.border,
       "&:hover": {
-        borderColor: theme.colors.secondary,
+        borderColor: theme.colors.border,
       },
     },
   }),

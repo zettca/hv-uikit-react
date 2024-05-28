@@ -61,7 +61,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableRow", {
     ...getBorderStyles(theme.colors.atmo4, theme.radii.round),
     backgroundColor: theme.colors.atmo1,
     "&$selected": {
-      ...getBorderStyles(theme.colors.secondary, theme.radii.round),
+      ...getBorderStyles(theme.colors.border, theme.radii.round),
 
       "&:hover": {
         ...getBorderStyles(theme.colors.atmo4, theme.radii.round),

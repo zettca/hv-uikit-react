@@ -16,7 +16,7 @@ export default {
 
 export const IconLibrary: StoryObj<IconBaseProps> = {
   args: {
-    color: ["secondary", "negative", "positive"],
+    color: ["text", "negative", "positive"],
   },
   render: (args) => (
     <div style={{ display: "flex", flexWrap: "wrap" }}>
@@ -40,7 +40,7 @@ export const IconLibrary: StoryObj<IconBaseProps> = {
 export const IconSpriteLibrary: StoryObj<HvIconSpriteProps> = {
   args: {
     spriteUrl: "./assets/icons.svg",
-    color: ["secondary", "negative", "positive"],
+    color: ["text", "negative", "positive"],
   },
   render: (args) => (
     <div style={{ display: "flex", flexWrap: "wrap" }}>

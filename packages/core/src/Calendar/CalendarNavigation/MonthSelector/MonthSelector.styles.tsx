@@ -48,10 +48,10 @@ export const { staticClasses, useClasses } = createClasses("HvMonthSelector", {
   },
   calendarMonthlyCellSelected: {
     backgroundColor: theme.colors.atmo3,
-    color: theme.colors.secondary,
+    color: theme.colors.text,
     "&:hover": {
       backgroundColor: theme.colors.atmo3,
-      color: theme.colors.secondary,
+      color: theme.colors.text,
     },
   },
 });

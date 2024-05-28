@@ -85,7 +85,7 @@ export const { staticClasses, useClasses } = createClasses("HvFlowBaseNode", {
     backgroundColor: theme.colors.atmo1,
     height: 10,
     width: 10,
-    border: `1px solid ${theme.colors.secondary_60}`,
+    border: `1px solid ${theme.colors.secondary_60}`, // TODO: 🎨
     "&.react-flow__handle-left": {
       left: -23,
     },
@@ -100,14 +100,14 @@ export const { staticClasses, useClasses } = createClasses("HvFlowBaseNode", {
     },
     "::before": {
       fontSize: 14,
-      color: theme.colors.secondary_60,
+      color: theme.colors.secondary_60, // TODO: 🎨
       content: '"+"',
       marginTop: -7,
       position: "absolute",
     },
   },
   handleConnected: {
-    backgroundColor: theme.colors.secondary_60,
+    backgroundColor: theme.colors.secondary_60, // TODO: 🎨
     width: 8,
     height: 8,
 

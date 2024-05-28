@@ -16,7 +16,7 @@ export const registerTheme = (
   const customAxis = {
     nameTextStyle: {
       ...baseText,
-      color: themeStructure?.colors.modes[mode].secondary_80,
+      color: themeStructure?.colors.modes[mode].textSubtle,
     },
     axisLine: {
       show: true,
@@ -31,7 +31,7 @@ export const registerTheme = (
       },
     },
     axisLabel: {
-      color: themeStructure?.colors.modes[mode].secondary_80,
+      color: themeStructure?.colors.modes[mode].textSubtle,
       fontWeight: themeStructure?.fontWeights.normal,
       fontSize: themeStructure?.fontSizes.sm,
       fontFamily: themeStructure?.fontFamily.body,

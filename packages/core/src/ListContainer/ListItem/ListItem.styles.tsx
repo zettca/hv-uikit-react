@@ -55,7 +55,7 @@ export const { staticClasses, useClasses } = createClasses("HvListItem", {
   },
   selected: { backgroundColor: theme.colors.containerBackgroundHover },
   disabled: {
-    color: theme.colors.secondary_60,
+    color: theme.colors.textDisabled,
     backgroundColor: theme.colors.atmo3,
   },
   withStartAdornment: {
@@ -68,7 +68,7 @@ export const { staticClasses, useClasses } = createClasses("HvListItem", {
       outline: "none !important",
     },
     "$disabled > svg *.color0": {
-      fill: theme.colors.secondary_60,
+      fill: theme.colors.textDisabled,
     },
   },
   withEndAdornment: {
@@ -79,7 +79,7 @@ export const { staticClasses, useClasses } = createClasses("HvListItem", {
       outline: "none !important",
     },
     "$disabled > svg *.color0": {
-      fill: theme.colors.secondary_60,
+      fill: theme.colors.textDisabled,
     },
   },
 });

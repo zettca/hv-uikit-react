@@ -19,7 +19,7 @@ export const IconWrapper = ({
         <HvAvatar
           variant="square"
           size="xs"
-          backgroundColor="secondary_80"
+          backgroundColor="textSubtle"
           style={{ fontSize: "15px" }}
         >
           {label.substring(0, 1)}
