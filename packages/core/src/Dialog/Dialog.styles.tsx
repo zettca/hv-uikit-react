@@ -4,7 +4,9 @@ import { createClasses } from "../utils/classes";
 
 export const { staticClasses, useClasses } = createClasses("HvDialog", {
   root: {},
-  background: { background: theme.alpha("atmo4", 0.8) },
+  background: {
+    background: theme.colors.overlay,
+  },
   paper: {
     color: theme.colors.text,
     backgroundColor: theme.colors.atmo1,

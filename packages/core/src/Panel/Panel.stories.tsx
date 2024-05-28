@@ -36,7 +36,9 @@ export const WithScroll: StoryObj<HvPanelProps> = {
   render: () => {
     return (
       <HvPanel style={{ width: 400, height: 400 }}>
-        <div style={{ height: 600, backgroundColor: theme.colors.atmo4 }} />
+        <div
+          style={{ height: 600, backgroundColor: theme.colors.bgDisabled }}
+        />
       </HvPanel>
     );
   },

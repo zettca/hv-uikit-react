@@ -80,14 +80,14 @@ const classes = {
   }),
   emptyGroup: css({
     backgroundColor: theme.colors.backgroundColor,
-    border: `1px dashed ${theme.colors.atmo4}`,
+    border: `1px dashed ${theme.colors.divider}`,
     padding: theme.space.xs,
     display: "grid",
     placeItems: "center",
   }),
   item: css({
     backgroundColor: theme.colors.atmo1,
-    border: `1px solid ${theme.colors.atmo4}`,
+    border: `1px solid ${theme.colors.divider}`,
     padding: theme.spacing(0, 0, 0, "xs"),
     display: "flex",
     justifyContent: "space-between",

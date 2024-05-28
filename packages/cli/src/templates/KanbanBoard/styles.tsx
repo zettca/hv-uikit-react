@@ -43,7 +43,7 @@ const styles = {
     borderRadius: theme.radii.circle,
     width: 20,
     height: 20,
-    backgroundColor: theme.colors.atmo4,
+    backgroundColor: theme.colors.divider,
     display: "grid",
     placeItems: "center",
   }),

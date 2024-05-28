@@ -34,10 +34,10 @@ export const { staticClasses, useClasses } = createClasses("HvTagsInput", {
   disabled: {
     "& $tagsList": {
       backgroundColor: theme.colors.backgroundColor,
-      border: `1px solid ${theme.colors.atmo4}`,
+      border: `1px solid ${theme.colors.divider}`,
 
       "&:focus-within, &:hover": {
-        border: `1px solid ${theme.colors.atmo4}`,
+        border: `1px solid ${theme.colors.divider}`,
       },
     },
   },

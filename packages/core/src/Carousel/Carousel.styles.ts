@@ -62,7 +62,7 @@ export const { staticClasses, useClasses } = createClasses("HvCarousel", {
     height: 32,
     justifyContent: "center",
     backgroundColor: theme.colors.backgroundColor,
-    border: `1px solid ${theme.colors.atmo4}`,
+    border: `1px solid ${theme.colors.divider}`,
     gap: theme.space.xs,
     "&:has($dots)": {
       justifyContent: "center",
@@ -135,7 +135,7 @@ export const { staticClasses, useClasses } = createClasses("HvCarousel", {
     height: 5,
     margin: theme.space.xs,
     borderRadius: "50%",
-    backgroundColor: theme.colors.atmo4,
+    backgroundColor: theme.colors.divider,
   },
   dotSelected: {
     width: 10,

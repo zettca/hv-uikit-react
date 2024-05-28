@@ -12,7 +12,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableCell", {
     padding: `calc(${theme.space.xs} - 2px ) ${theme.space.xs} calc(${
       theme.space.xs
     } - 3px ) ${theme.spacing(4)}`,
-    borderBottom: `1px solid ${theme.colors.atmo4}`,
+    borderBottom: `1px solid ${theme.colors.divider}`,
   },
   /** Styles applied to the cell when it's in the table head. */
   head: {
@@ -21,7 +21,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableCell", {
 
     backgroundColor: theme.colors.atmo1,
     borderTop: "1px solid transparent",
-    borderBottom: `1px solid ${theme.colors.atmo4}`,
+    borderBottom: `1px solid ${theme.colors.divider}`,
     ...(theme.typography.label as React.CSSProperties),
   },
   /** Styles applied to the cell when it's in the table body. */
@@ -70,7 +70,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableCell", {
     padding: 0,
     width: 32,
     maxWidth: 32,
-    borderRight: `solid 1px ${theme.colors.atmo4}`,
+    borderRight: `solid 1px ${theme.colors.divider}`,
   },
   /** Styles applied to the component root when its variant is actions */
   variantActions: {
@@ -78,7 +78,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableCell", {
     padding: 0,
     width: 32,
     maxWidth: 32,
-    borderLeft: `solid 1px ${theme.colors.atmo4}`,
+    borderLeft: `solid 1px ${theme.colors.divider}`,
   },
   /** Styles applied to the component root when its variant is expand */
   variantExpand: {
@@ -131,16 +131,16 @@ export const { staticClasses, useClasses } = createClasses("HvTableCell", {
   },
   /** Styles applied to the cell when it's part of the last sticky to the left column. */
   stickyColumnMostLeft: {
-    borderRight: `solid 1px ${theme.colors.atmo4}`,
+    borderRight: `solid 1px ${theme.colors.divider}`,
   },
   /** Styles applied to the cell when it's part of the first right sticky column. */
   stickyColumnLeastRight: {
-    borderLeft: `solid 1px ${theme.colors.atmo4}`,
+    borderLeft: `solid 1px ${theme.colors.divider}`,
   },
 
   /** Styles applied to the cell when it's part of the first column in the group. */
   groupColumnMostLeft: {
-    borderLeft: `solid 1px ${theme.colors.atmo4}`,
+    borderLeft: `solid 1px ${theme.colors.divider}`,
 
     "&:first-of-type": {
       borderLeft: 0,
@@ -148,7 +148,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableCell", {
   },
   /** Styles applied to the cell when it's part of the last column in the group. */
   groupColumnMostRight: {
-    borderRight: `solid 1px ${theme.colors.atmo4}`,
+    borderRight: `solid 1px ${theme.colors.divider}`,
 
     // due to the ":has()" selector not being supported in browsers,
     // this need to be managed with inline styles
@@ -165,7 +165,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableCell", {
 
   /** Styles applied to the cell when it's part of a resizable column. */
   resizable: {
-    borderRight: `solid 1px ${theme.colors.atmo4}`,
+    borderRight: `solid 1px ${theme.colors.divider}`,
   },
   /** Styles applied to the cell when it's part of a resizing column. */
   resizing: {

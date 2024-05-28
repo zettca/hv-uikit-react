@@ -52,7 +52,7 @@ const styles = {
     left: 0,
     right: 0,
     margin: "auto",
-    backgroundColor: theme.colors.atmo4,
+    backgroundColor: theme.colors.divider,
     transformOrigin: "bottom center",
   }),
   gaugeIndicatorContainer: css({

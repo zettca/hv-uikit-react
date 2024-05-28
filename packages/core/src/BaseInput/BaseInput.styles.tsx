@@ -24,11 +24,11 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
     },
 
     "& $inputBorderContainer": {
-      backgroundColor: theme.colors.atmo4,
+      backgroundColor: theme.colors.divider,
     },
 
     "&:hover $inputBorderContainer": {
-      backgroundColor: theme.colors.atmo4,
+      backgroundColor: theme.colors.divider,
     },
 
     "&& $input": {
@@ -120,7 +120,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
     height: "0px",
     top: "31px",
     left: "2px",
-    backgroundColor: theme.colors.atmo4,
+    backgroundColor: theme.colors.divider,
   },
   inputRootInvalid: { borderColor: theme.colors.negative },
   inputRootReadOnly: {

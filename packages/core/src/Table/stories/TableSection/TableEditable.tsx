@@ -94,15 +94,15 @@ const classes = {
     padding: `calc(${theme.space.xs} - 2px) 0 calc(${
       theme.space.xs
     } - 3px) ${theme.spacing(4)}`,
-    borderBottom: `1px solid ${theme.colors.atmo4}`,
+    borderBottom: `1px solid ${theme.colors.divider}`,
   }),
   editableActions: css({
     display: "flex",
     justifyContent: "flex-end",
-    borderBottom: `1px solid ${theme.colors.atmo4}`,
+    borderBottom: `1px solid ${theme.colors.divider}`,
   }),
   editableTableBorder: css({
-    borderBottom: `1px solid ${theme.colors.atmo4}`,
+    borderBottom: `1px solid ${theme.colors.divider}`,
   }),
   slide: css({
     overflow: "hidden",
@@ -626,7 +626,7 @@ const Table = <T extends Data>({
             <HvTableCell
               {...cell.getCellProps()}
               key={cell.getCellProps().key}
-              style={{ borderBottom: `1px solid ${theme.colors.atmo4}` }}
+              style={{ borderBottom: `1px solid ${theme.colors.divider}` }}
             >
               {cell.render("Cell")}
             </HvTableCell>

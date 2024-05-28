@@ -7,7 +7,7 @@ export const { staticClasses, useClasses } = createClasses("HvCard", {
   root: {
     overflow: "visible",
     position: "relative",
-    outline: `1px solid ${theme.colors.atmo4}`,
+    outline: `1px solid ${theme.colors.divider}`,
     borderRadius: `0px 0px ${theme.radii.round} ${theme.radii.round}`,
     "&:focus-visible": {
       ...outlineStyles,

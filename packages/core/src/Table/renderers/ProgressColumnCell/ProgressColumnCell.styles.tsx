@@ -10,9 +10,11 @@ export const { staticClasses, useClasses } = createClasses(
     linearProgress: {
       height: 8,
     },
-    linearProgressRoot: { backgroundColor: theme.colors.atmo4 },
+    linearProgressRoot: {
+      backgroundColor: theme.colors.divider,
+    },
     linearProgressColorPrimary: {
-      backgroundColor: theme.colors.atmo4,
+      backgroundColor: theme.colors.divider,
     },
     linearProgressBarColorPrimary: {
       backgroundColor: theme.colors.positive,

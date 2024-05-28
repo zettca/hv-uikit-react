@@ -19,7 +19,7 @@ export const { staticClasses, useClasses } = createClasses("HvBlade", {
     color: theme.colors.text,
     backgroundColor: theme.colors.atmo1,
     borderRadius: theme.radii.round,
-    border: `1px solid ${theme.colors.atmo4}`,
+    border: `1px solid ${theme.colors.divider}`,
   },
   expanded: {},
 

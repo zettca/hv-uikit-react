@@ -71,9 +71,7 @@ export const HvCard = (props: HvCardProps) => {
               height: selected ? 4 : 2,
               backgroundColor:
                 statusColor === "sema0"
-                  ? selected
-                    ? theme.colors.secondary // TODO: 🎨
-                    : theme.colors.atmo4
+                  ? theme.colors[selected ? "text" : "divider"]
                   : theme.colors[statusColor],
             }),
             classes.semanticBar,

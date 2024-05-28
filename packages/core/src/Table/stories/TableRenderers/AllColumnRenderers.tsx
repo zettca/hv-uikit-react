@@ -163,7 +163,7 @@ export const AllColumnRenderers = () => {
                 textAlign: "center",
                 height: 100,
                 backgroundColor: theme.colors.backgroundColor,
-                borderTop: `solid 1px ${theme.colors.atmo4}`,
+                borderTop: `solid 1px ${theme.colors.divider}`,
               }}
               colSpan={100}
             >

@@ -226,14 +226,16 @@ const utilsLight = {
   textDisabled: accentLight.secondary_60,
   border: accentLight.secondary,
   divider: atmosphereLight.atmo4, // borders, hrs, etc.
-  dividerSubtle: atmosphereLight.atmo3,
+  dividerSubtle: atmosphereLight.atmo3, // ❓ disabled ❓
 
   // bgColor: atmosphereLight.atmo2,
   backgroundColor: atmosphereLight.atmo2,
   bgPaper: atmosphereLight.atmo1, // surfaces (Header, Tooltip, Dialog, Drawer, etc.)
-  bgDisabled: atmosphereLight.atmo3,
+  bgHover: atmosphereLight.atmo3,
+  bgDisabled: atmosphereLight.atmo3, // ❓ atmo4 ❓
   // bgHover: accentLight.primary_20,
   containerBackgroundHover: accentLight.primary_20,
+  overlay: `color-mix(in srgb, ${atmosphereLight.atmo4} 80%, transparent)`,
 
   link: accentLight.primary,
   linkActive: accentLight.primary,
@@ -338,9 +340,11 @@ const utilsDark = {
   // bgColor: atmosphereDark.atmo2,
   backgroundColor: atmosphereDark.atmo2,
   bgPaper: atmosphereDark.atmo1, // surfaces (Header, Tooltip, Dialog, Drawer, etc.)
+  bgHover: atmosphereDark.atmo3,
   bgDisabled: atmosphereDark.atmo3,
   // bgHover: accentDark.primary_20,
   containerBackgroundHover: accentDark.primary_20,
+  overlay: `color-mix(in srgb, ${atmosphereDark.atmo4} 80%, transparent)`,
 
   link: accentDark.primary,
   linkActive: accentDark.primary,

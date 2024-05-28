@@ -17,7 +17,7 @@ export const { staticClasses, useClasses } = createClasses("HvTab", {
       borderRadius: theme.radii.base,
       "&::after": {
         height: "1px",
-        backgroundColor: theme.colors.atmo4,
+        backgroundColor: theme.colors.divider,
       },
     },
     "&$selected": {
@@ -42,7 +42,7 @@ export const { staticClasses, useClasses } = createClasses("HvTab", {
       top: "calc(100% - 1px)",
       height: "1px",
       width: "100%",
-      backgroundColor: theme.colors.atmo4,
+      backgroundColor: theme.colors.divider,
       content: "''",
     },
     // Override Mui styling: https://mui.com/material-ui/api/tab/#css

@@ -53,7 +53,7 @@ export const { staticClasses, useClasses } = createClasses("HvGlobalActions", {
     justifyContent: "flex-start",
     alignItems: "center",
     gap: theme.space.xs,
-    borderColor: theme.colors.atmo4,
+    borderColor: theme.colors.divider,
     paddingLeft: theme.space.sm,
   },
 

@@ -25,7 +25,7 @@ export const StyledColorContainer = styled("div")({
 export const StyledColorSquare = styled("div")({
   width: 130,
   height: 130,
-  border: `1px solid ${theme.colors.atmo4}`,
+  border: `1px solid ${theme.colors.divider}`,
   marginBottom: theme.space.xs,
 });
 
