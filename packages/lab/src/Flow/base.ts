@@ -238,7 +238,7 @@ export const flowStyles = css`
     color: ${theme.colors.secondary};
     text-align: center;
     border: 1px solid ${theme.colors.negative};
-    background-color: ${theme.colors.negative_20};
+    background-color: ${theme.colors.errorSubtle};
   }
   .react-flow__node-default::before {
     content: "Unknown node type";

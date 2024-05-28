@@ -20,6 +20,6 @@ export const { staticClasses, useClasses } = createClasses(
         ...outlineStyles,
       },
     },
-    dragging: { borderColor: theme.colors.primary_80 },
+    dragging: { borderColor: theme.colors.primaryAction },
   },
 );

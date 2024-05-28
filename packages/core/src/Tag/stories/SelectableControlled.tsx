@@ -10,7 +10,7 @@ const tags = [
   },
   {
     label: "Asset 2",
-    color: theme.colors.negative_20,
+    color: theme.colors.errorSubtle,
     bgColor: "negative",
   },
   {

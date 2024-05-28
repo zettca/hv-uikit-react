@@ -205,7 +205,7 @@ export const ExternalErrorMessage: StoryObj<HvCheckBoxProps> = {
         <HvGrid item xs={12} md={6}>
           <div
             className={css({
-              backgroundColor: theme.colors.negative_20,
+              backgroundColor: theme.colors.errorSubtle,
               color: theme.colors.base_dark,
               padding: theme.space.md,
             })}
@@ -266,8 +266,8 @@ export const Custom: StoryObj<HvCheckBoxProps> = {
       }),
       indeterminate: css({
         "& svg": {
-          border: `1px solid ${theme.colors.warning_140}`,
-          backgroundColor: theme.colors.warning_140,
+          border: `1px solid ${theme.colors.warningStrong}`,
+          backgroundColor: theme.colors.warningStrong,
           color: theme.colors.atmo1,
         },
       }),

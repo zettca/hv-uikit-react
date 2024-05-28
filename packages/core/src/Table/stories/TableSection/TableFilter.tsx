@@ -48,7 +48,7 @@ const classes = {
   filtersContainer: css({
     display: "flex",
     width: "100%",
-    backgroundColor: theme.colors.warning_20,
+    backgroundColor: theme.colors.warningSubtle,
     border: `1px solid ${theme.colors.atmo3}`,
     overflow: "hidden",
     animation: `${slide} 1.5s ease-in-out`,
@@ -72,7 +72,7 @@ const classes = {
     borderColor: "transparent",
     "&:hover": {
       borderColor: "transparent",
-      backgroundColor: theme.colors.primary_20,
+      backgroundColor: theme.colors.primarySubtle,
     },
     "&:focus-visible": {
       borderColor: "transparent",

@@ -27,8 +27,8 @@ const dragSquare: React.CSSProperties = {
   top: "-12px",
   content: "''",
   background: "transparent",
-  borderTop: `12px solid ${theme.colors.primary_20}`,
-  borderBottom: `12px solid ${theme.colors.primary_20}`,
+  borderTop: `12px solid ${theme.colors.primarySubtle}`,
+  borderBottom: `12px solid ${theme.colors.primarySubtle}`,
   zIndex: "-2",
 };
 
@@ -36,7 +36,7 @@ const ring: React.CSSProperties = {
   width: "32px",
   height: "32px",
   borderRadius: "50%",
-  border: `9px solid ${theme.colors.primary_20}`,
+  border: `9px solid ${theme.colors.primarySubtle}`,
   opacity: "100%",
   content: "''",
   position: "absolute",

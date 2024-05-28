@@ -20,7 +20,7 @@ const styles = {
     flex: 1,
     padding: theme.spacing("sm", "xs"),
     borderRadius: 20,
-    backgroundColor: theme.colors.primary_20,
+    backgroundColor: theme.colors.primarySubtle,
   }),
   columnHeader: css({
     display: "flex",

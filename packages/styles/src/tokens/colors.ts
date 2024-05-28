@@ -199,8 +199,47 @@ const shadowLight = {
 };
 
 const utilsLight = {
+  // primary: accentLight.primary,
+  primaryAction: accentLight.primary_80,
+  primarySubtle: accentLight.primary_20,
+  // secondary: accentLight.secondary,
+  // secondary1: accentLight.secondary_80,
+  // secondary2: accentLight.secondary_60,
+
+  // neutral: semanticLight.neutral,
+  // catastrophic: semanticLight.catastrophic,
+  // positive: semanticLight.positive,
+  positiveAction: semanticLight.positive_80,
+  positiveStrong: semanticLight.positive_120,
+  positiveSubtle: semanticLight.positive_20,
+  // warning: semanticLight.warning,
+  warningAction: semanticLight.warning_120,
+  warningStrong: semanticLight.warning_140,
+  warningSubtle: semanticLight.warning_20,
+  // error: semanticLight.negative,
+  errorAction: semanticLight.negative_80,
+  errorStrong: semanticLight.negative_120,
+  errorSubtle: semanticLight.negative_20,
+
+  text: accentLight.secondary,
+  textSubtle: accentLight.secondary_80,
+  textDisabled: accentLight.secondary_60,
+  divider: atmosphereLight.atmo4, // borders, hrs, etc.
+  dividerSubtle: atmosphereLight.atmo3,
+
+  // bgColor: atmosphereLight.atmo2,
   backgroundColor: atmosphereLight.atmo2,
+  bgPaper: atmosphereLight.atmo1, // surfaces (Header, Tooltip, Dialog, Drawer, etc.)
+  bgDisabled: atmosphereLight.atmo3,
+  // bgHover: accentLight.primary_20,
   containerBackgroundHover: accentLight.primary_20,
+
+  link: accentLight.primary,
+  linkActive: accentLight.primary,
+  linkVisited: accentLight.primary,
+
+  focusOutline: "none",
+  focusShadow: `0 0 0 1px #52A8EC, 0 0 0 4px rgba(29,155,209,.3)`,
 };
 // #endregion
 
@@ -266,8 +305,47 @@ const shadowDark = {
 // #endregion
 
 const utilsDark = {
+  // primary: accentDark.primary,
+  primaryAction: accentDark.primary_80,
+  primarySubtle: accentDark.primary_20,
+  // secondary: accentDark.secondary,
+  // secondary1: accentDark.secondary_80,
+  // secondary2: accentDark.secondary_60,
+
+  // neutral: semanticDark.neutral,
+  // catastrophic: semanticDark.catastrophic,
+  // positive: semanticDark.positive,
+  positiveAction: semanticDark.positive_80,
+  positiveStrong: semanticDark.positive_120,
+  positiveSubtle: semanticDark.positive_20,
+  // warning: semanticDark.warning,
+  warningAction: semanticDark.warning_120,
+  warningStrong: semanticDark.warning_140,
+  warningSubtle: semanticDark.warning_20,
+  // error: semanticDark.negative,
+  errorAction: semanticDark.negative_80,
+  errorStrong: semanticDark.negative_120,
+  errorSubtle: semanticDark.negative_20,
+
+  text: accentDark.secondary,
+  textSubtle: accentDark.secondary_80,
+  textDisabled: accentDark.secondary_60,
+  divider: atmosphereDark.atmo4, // borders, hrs, etc.
+  dividerSubtle: atmosphereDark.atmo3,
+
+  // bgColor: atmosphereDark.atmo2,
   backgroundColor: atmosphereDark.atmo2,
+  bgPaper: atmosphereDark.atmo1, // surfaces (Header, Tooltip, Dialog, Drawer, etc.)
+  bgDisabled: atmosphereDark.atmo3,
+  // bgHover: accentDark.primary_20,
   containerBackgroundHover: accentDark.primary_20,
+
+  link: accentDark.primary,
+  linkActive: accentDark.primary,
+  linkVisited: accentDark.primary,
+
+  focusOutline: "none",
+  focusShadow: `0 0 0 1px #52A8EC, 0 0 0 4px rgba(29,155,209,.3)`,
 };
 // #endregion
 

@@ -93,10 +93,10 @@ export const { staticClasses, useClasses } = createClasses("HvFlowBaseNode", {
       right: -21,
     },
     "&.react-flow__handle-connecting": {
-      backgroundColor: theme.colors.negative_20,
+      backgroundColor: theme.colors.errorSubtle,
     },
     "&.react-flow__handle-valid": {
-      backgroundColor: theme.colors.positive_20,
+      backgroundColor: theme.colors.positiveSubtle,
     },
     "::before": {
       fontSize: 14,
@@ -121,7 +121,7 @@ export const { staticClasses, useClasses } = createClasses("HvFlowBaseNode", {
     height: 10,
     margin: theme.spacing(0, theme.space.xs),
     borderRadius: theme.radii.circle,
-    backgroundColor: theme.colors.negative_20,
+    backgroundColor: theme.colors.errorSubtle,
   },
   footerContainer: {
     padding: theme.space.sm,

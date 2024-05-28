@@ -546,10 +546,10 @@ export const Small: StoryObj<HvKpiProps> = {
         backgroundColor: theme.colors.atmo1,
 
         ":hover": {
-          backgroundColor: theme.colors.primary_20,
+          backgroundColor: theme.colors.primarySubtle,
 
           [`& .${cardClasses.semanticBar}`]: {
-            backgroundColor: theme.colors.primary_20,
+            backgroundColor: theme.colors.primarySubtle,
           },
         },
       }),
@@ -558,7 +558,7 @@ export const Small: StoryObj<HvKpiProps> = {
       }),
       selectable: css({
         "&:hover": {
-          outline: `1px solid ${theme.colors.primary_20}`,
+          outline: `1px solid ${theme.colors.primarySubtle}`,
         },
       }),
       contentContainer: css({
@@ -698,7 +698,7 @@ export const Column: StoryObj<HvKpiProps> = {
           icon = <Severity1 color="sema2h" />;
           break;
         case "2":
-          icon = <Severity2 color="negative_80" />;
+          icon = <Severity2 color="errorAction" />;
           break;
         case "3":
           icon = <Severity3 color="negative" />;
