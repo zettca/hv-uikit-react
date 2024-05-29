@@ -18,24 +18,24 @@ export const { staticClasses, useClasses } = createClasses("HvSingleCalendar", {
     flexFlow: "wrap",
     width: "280px",
     "& $cellsInRange": {
-      backgroundColor: theme.colors.atmo3,
+      backgroundColor: theme.colors.bgAction,
       "& $startBookend": {
         borderLeft: `1px solid ${theme.colors.border}`,
-        backgroundColor: theme.colors.atmo3,
+        backgroundColor: theme.colors.bgAction,
         "&:hover": {
           borderRight: `1px solid ${theme.colors.border}`,
         },
       },
     },
     "&:hover $cellsInRange": {
-      backgroundColor: theme.colors.atmo3,
+      backgroundColor: theme.colors.bgAction,
       "& $startBookend": {
         borderLeft: `1px solid ${theme.colors.border}`,
         borderRight: "inherit",
       },
     },
     "& $cellsInRange:hover": {
-      backgroundColor: theme.colors.atmo3,
+      backgroundColor: theme.colors.bgAction,
       "& $calendarDate": {
         borderRight: `1px solid ${theme.colors.border}`,
       },
@@ -66,7 +66,7 @@ export const { staticClasses, useClasses } = createClasses("HvSingleCalendar", {
   startBookend: {},
   endBookend: {},
   cellsInRange: {
-    backgroundColor: theme.colors.atmo3,
+    backgroundColor: theme.colors.bgAction,
   },
   cellsOutsideRange: {},
   cellContainer: {},

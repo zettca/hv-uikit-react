@@ -4,10 +4,10 @@ import { createClasses } from "../../utils/classes";
 import { outlineStyles } from "../../utils/focusUtils";
 
 const selected = () => ({
-  background: theme.colors.atmo3,
+  background: theme.colors.bgAction,
   borderLeft: `4px solid ${theme.colors.border}`,
   "& *": {
-    background: theme.colors.atmo3,
+    background: theme.colors.bgAction,
   },
 });
 

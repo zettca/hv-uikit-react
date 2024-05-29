@@ -37,7 +37,7 @@ export const { staticClasses, useClasses } = createClasses("HvCalendarCell", {
     width: "40px",
   },
   calendarDateSelected: {
-    backgroundColor: theme.colors.atmo3,
+    backgroundColor: theme.colors.bgAction,
     color: theme.colors.text,
     "&:hover": {
       ...hover,
@@ -48,7 +48,7 @@ export const { staticClasses, useClasses } = createClasses("HvCalendarCell", {
     cursor: "not-allowed",
   },
   calendarDateInSelectionRange: {
-    backgroundColor: theme.colors.atmo3,
+    backgroundColor: theme.colors.bgAction,
   },
   calendarDateDisabled: {
     color: theme.colors.textDisabled,

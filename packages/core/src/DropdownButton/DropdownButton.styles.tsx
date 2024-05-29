@@ -4,17 +4,17 @@ import { buttonClasses } from "../Button";
 import { createClasses } from "../utils/classes";
 
 const disabledStyle = {
-  backgroundColor: theme.colors.atmo3,
-  borderColor: theme.colors.atmo3,
+  backgroundColor: theme.colors.bgDisabled,
+  borderColor: "transparent",
   [`&.${buttonClasses.subtle}`]: {
-    backgroundColor: theme.colors.atmo3,
-    borderColor: theme.colors.atmo3,
-    "&:hover": { backgroundColor: theme.colors.atmo3 },
+    backgroundColor: theme.colors.bgDisabled,
+    borderColor: "transparent",
+    "&:hover": { backgroundColor: theme.colors.bgDisabled },
   },
   [`&.${buttonClasses.ghost}`]: {
-    backgroundColor: theme.colors.atmo3,
-    borderColor: theme.colors.atmo3,
-    "&:hover": { backgroundColor: theme.colors.atmo3 },
+    backgroundColor: theme.colors.bgDisabled,
+    borderColor: "transparent",
+    "&:hover": { backgroundColor: theme.colors.bgDisabled },
   },
 };
 

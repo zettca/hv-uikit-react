@@ -29,7 +29,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseRadio", {
     pointerEvents: "initial",
     "& svg": {
       border: `1px solid ${theme.colors.textDisabled}`,
-      backgroundColor: theme.colors.atmo3,
+      backgroundColor: theme.colors.bgAction,
     },
   },
   focusVisible: {
@@ -56,7 +56,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseRadio", {
       "& svg": {
         border: `1px solid ${theme.colors.textDisabled}`,
         backgroundColor: theme.colors.textDisabled,
-        color: theme.colors.atmo3,
+        color: theme.colors.bgAction, // TODO: 🎨
       },
     },
   },

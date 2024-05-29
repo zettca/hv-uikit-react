@@ -33,7 +33,7 @@ export const { staticClasses, useClasses } = createClasses("HvTreeItem", {
   },
   expanded: {},
   selected: {
-    backgroundColor: theme.colors.atmo3,
+    backgroundColor: theme.colors.bgAction,
   },
   focused: {
     backgroundColor: theme.colors.containerBackgroundHover,

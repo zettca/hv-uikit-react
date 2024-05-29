@@ -105,7 +105,7 @@ export const AverageService: StoryObj<HvKpiProps> = {
       <HvCard
         className={classes.root}
         statusColor="positive"
-        bgcolor="atmo2"
+        bgcolor="backgroundColor"
         icon={<Level0Good title="Good" color="positive" />}
       >
         <div className={classes.contentContainer}>

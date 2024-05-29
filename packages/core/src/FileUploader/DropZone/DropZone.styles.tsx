@@ -39,11 +39,11 @@ export const { staticClasses, useClasses } = createClasses("HvDropZone", {
     border: `1px dashed ${theme.colors.primary}`,
   },
   dropZoneContainerDisabled: {
-    background: `${theme.colors.atmo3}`,
+    background: `${theme.colors.bgDisabled}`,
     border: `1px dashed ${theme.colors.textDisabled}`,
     cursor: "not-allowed",
     "&:hover": {
-      background: `${theme.colors.atmo3}`,
+      background: `${theme.colors.bgDisabled}`,
       border: `1px dashed ${theme.colors.textDisabled}`,
     },
 

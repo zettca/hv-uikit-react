@@ -27,7 +27,7 @@ export const { staticClasses, useClasses } = createClasses("HvCheckBox", {
     ...outlineStyles,
 
     "& div": {
-      backgroundColor: theme.colors.atmo3,
+      backgroundColor: theme.colors.bgAction,
     },
 
     [`& $checkbox div > svg`]: {

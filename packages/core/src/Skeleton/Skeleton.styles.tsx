@@ -37,7 +37,7 @@ const fadeIn = keyframes`
 
 export const { staticClasses, useClasses } = createClasses("HvSkeleton", {
   root: {
-    backgroundColor: theme.colors.atmo3,
+    backgroundColor: theme.colors.bgAction, // TODO: 🎨
     width: "fit-content",
     "& > *": {
       visibility: "hidden",

@@ -49,7 +49,7 @@ const classes = {
     display: "flex",
     width: "100%",
     backgroundColor: theme.colors.warningSubtle,
-    border: `1px solid ${theme.colors.atmo3}`,
+    border: `1px solid ${theme.colors.dividerSubtle}`,
     overflow: "hidden",
     animation: `${slide} 1.5s ease-in-out`,
   }),

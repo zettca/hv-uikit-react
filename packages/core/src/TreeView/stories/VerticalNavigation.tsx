@@ -27,7 +27,7 @@ const classes = {
   }),
   selected: css({
     borderColor: theme.colors.border,
-    backgroundColor: theme.colors.atmo3,
+    backgroundColor: theme.colors.bgAction,
   }),
   label: css({
     display: "flex",

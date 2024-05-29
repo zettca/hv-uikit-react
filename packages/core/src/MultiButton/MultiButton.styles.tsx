@@ -75,7 +75,7 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
         border: `solid 1px ${theme.colors.border}`,
         zIndex: 2,
         "&:hover": {
-          background: theme.colors.atmo3,
+          background: theme.colors.bgAction,
           "&:not(:disabled)": {
             border: `solid 1px ${theme.colors.border}`,
           },
@@ -138,7 +138,7 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
       zIndex: 2,
     },
   },
-  splitGroupDisabled: { background: theme.colors.atmo3 },
+  splitGroupDisabled: { background: theme.colors.bgDisabled },
   button: {},
   selected: {},
   vertical: {
@@ -190,7 +190,7 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
         border: `solid 1px ${theme.colors.border}`,
         zIndex: 2,
         "&:hover, &:focus": {
-          background: theme.colors.atmo3,
+          background: theme.colors.bgAction,
         },
         "&:disabled": {
           zIndex: 1,
@@ -237,7 +237,7 @@ export const getSplitContainerColor = (
 ) => ({
   color: getColoringStyle(color, type).color,
   backgroundColor: disabled
-    ? theme.colors.atmo3
+    ? theme.colors.bgDisabled
     : type === "subtle"
       ? theme.colors.bgPaper
       : "transparent",

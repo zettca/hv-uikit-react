@@ -229,13 +229,14 @@ const utilsLight = {
   dividerSubtle: atmosphereLight.atmo3, // ❓ disabled ❓
 
   // bgColor: atmosphereLight.atmo2,
-  backgroundColor: atmosphereLight.atmo2,
+  backgroundColor: atmosphereLight.atmo2, // rename bgColor
   bgPaper: atmosphereLight.atmo1, // surfaces (Header, Tooltip, Dialog, Drawer, etc.)
   // 👆 missing an atmo1 for text `color`
-  bgHover: atmosphereLight.atmo3,
+  bgAction: atmosphereLight.atmo3,
+  // hvActive: atmosphereLight.atmo3,
   bgDisabled: atmosphereLight.atmo3, // ❓ atmo4 ❓
   // bgHover: accentLight.primary_20,
-  containerBackgroundHover: accentLight.primary_20,
+  containerBackgroundHover: accentLight.primary_20, // rename bgHover
   overlay: `color-mix(in srgb, ${atmosphereLight.atmo4} 80%, transparent)`,
 
   link: accentLight.primary,
@@ -339,12 +340,14 @@ const utilsDark = {
   dividerSubtle: atmosphereDark.atmo3,
 
   // bgColor: atmosphereDark.atmo2,
-  backgroundColor: atmosphereDark.atmo2,
+  backgroundColor: atmosphereDark.atmo2, // rename bgColor
   bgPaper: atmosphereDark.atmo1, // surfaces (Header, Tooltip, Dialog, Drawer, etc.)
-  bgHover: atmosphereDark.atmo3,
-  bgDisabled: atmosphereDark.atmo3,
+  // 👆 missing an atmo1 for text `color`
+  bgAction: atmosphereDark.atmo3,
+  // hvActive: atmosphereDark.atmo3,
+  bgDisabled: atmosphereDark.atmo3, // ❓ atmo4 ❓
   // bgHover: accentDark.primary_20,
-  containerBackgroundHover: accentDark.primary_20,
+  containerBackgroundHover: accentDark.primary_20, // rename bgHover
   overlay: `color-mix(in srgb, ${atmosphereDark.atmo4} 80%, transparent)`,
 
   link: accentDark.primary,

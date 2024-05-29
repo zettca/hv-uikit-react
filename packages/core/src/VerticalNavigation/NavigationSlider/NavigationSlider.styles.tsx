@@ -16,16 +16,16 @@ export const { staticClasses, useClasses } = createClasses(
       },
     },
     listItemSelected: {
-      background: theme.colors.atmo3,
+      background: theme.colors.bgAction,
       borderLeft: `4px solid ${theme.colors.border}`,
       "& *": {
-        background: theme.colors.atmo3,
+        background: theme.colors.bgAction,
       },
     },
     listItemFocus: {
-      background: theme.colors.atmo3,
+      background: theme.colors.bgAction,
       "& *": {
-        background: theme.colors.atmo3,
+        background: theme.colors.bgAction,
       },
     },
   },

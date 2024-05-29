@@ -24,11 +24,11 @@ export const { staticClasses, useClasses } = createClasses("HvAccordion", {
 
     "&:focus": {
       outline: "none",
-      background: theme.colors.atmo3,
+      background: theme.colors.bgAction,
     },
 
     "&:hover": {
-      background: theme.colors.atmo3,
+      background: theme.colors.bgAction,
     },
 
     "&:focus-visible": {

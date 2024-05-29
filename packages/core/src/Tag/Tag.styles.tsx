@@ -36,7 +36,7 @@ export const { staticClasses, useClasses } = createClasses("HvTag", {
 
     "&$disabled": {
       opacity: 1,
-      backgroundColor: theme.colors.atmo3,
+      backgroundColor: theme.colors.bgDisabled,
       "& $label": {
         color: theme.colors.textDisabled,
       },

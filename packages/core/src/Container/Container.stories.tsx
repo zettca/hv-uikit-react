@@ -33,7 +33,7 @@ export const Main: StoryObj<HvContainerProps> = {
       content: css({
         border: "1px solid",
         borderColor: theme.colors.divider,
-        backgroundColor: theme.colors.atmo3,
+        backgroundColor: theme.colors.bgAction,
         height: 100,
         display: "flex",
         justifyContent: "center",

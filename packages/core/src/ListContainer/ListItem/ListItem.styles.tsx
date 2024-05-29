@@ -26,11 +26,11 @@ export const { staticClasses, useClasses } = createClasses("HvListItem", {
 
     "&.HvIsFocused": {
       ...outlineStyles,
-      backgroundColor: theme.colors.atmo3,
+      backgroundColor: theme.colors.bgAction,
       zIndex: 2,
     },
   },
-  focus: { backgroundColor: theme.colors.atmo3, zIndex: 2 },
+  focus: { backgroundColor: theme.colors.bgAction, zIndex: 2 },
   startAdornment: {},
   endAdornment: {},
   gutters: {
@@ -56,7 +56,7 @@ export const { staticClasses, useClasses } = createClasses("HvListItem", {
   selected: { backgroundColor: theme.colors.containerBackgroundHover },
   disabled: {
     color: theme.colors.textDisabled,
-    backgroundColor: theme.colors.atmo3,
+    backgroundColor: theme.colors.bgDisabled,
   },
   withStartAdornment: {
     "& > div": {

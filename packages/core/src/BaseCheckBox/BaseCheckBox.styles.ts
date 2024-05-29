@@ -28,9 +28,9 @@ export const { staticClasses, useClasses } = createClasses("HvBaseCheckBox", {
       cursor: "not-allowed",
       pointerEvents: "initial",
       "& svg": {
-        color: theme.colors.atmo3,
+        color: theme.colors.bgAction, // TODO: 🎨
         borderColor: theme.colors.secondary_60, // TODO: 🎨
-        backgroundColor: theme.colors.atmo3,
+        backgroundColor: theme.colors.bgAction,
       },
     },
   },

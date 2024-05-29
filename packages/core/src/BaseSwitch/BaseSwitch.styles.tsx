@@ -40,7 +40,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseSwitch", {
       "& $switchBase": {
         "& + $track": {
           opacity: 1,
-          backgroundColor: theme.colors.atmo3,
+          backgroundColor: theme.colors.bgAction,
           border: `solid 1px ${theme.colors.textDisabled}`,
         },
       },
@@ -88,7 +88,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseSwitch", {
     },
 
     "& $thumb": {
-      backgroundColor: theme.colors.atmo3,
+      backgroundColor: theme.colors.bgAction,
       border: `solid 1px ${theme.colors.textDisabled}`,
     },
   },
