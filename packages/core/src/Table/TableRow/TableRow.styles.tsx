@@ -7,7 +7,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableRow", {
   /** Styles applied to the component root class. */
   root: {
     color: "inherit",
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     verticalAlign: "middle",
     outline: 0,
   },
@@ -23,7 +23,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableRow", {
   },
   /** Styles applied to the component root when expanded. */
   expanded: {
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     "& > *[role=cell]": {
       borderBottom: "none",
     },
@@ -31,7 +31,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableRow", {
   /** Styles applied to the component root when striped. */
   striped: {
     "&:nth-of-type(even)": {
-      backgroundColor: theme.alpha("atmo1", 0.6),
+      backgroundColor: theme.alpha("bgPaper", 0.6),
 
       "&:hover": {
         backgroundColor: theme.colors.containerBackgroundHover,
@@ -59,7 +59,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableRow", {
     borderRadius: theme.radii.round,
 
     ...getBorderStyles(theme.colors.divider, theme.radii.round),
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     "&$selected": {
       ...getBorderStyles(theme.colors.border, theme.radii.round),
 

@@ -48,7 +48,7 @@ const border: React.CSSProperties = {
   width: "20px",
   height: "20px",
   borderRadius: "50%",
-  border: `2px solid ${theme.colors.atmo1}`,
+  border: `2px solid ${theme.colors.bgPaper}`, // TODO: 🎨
   content: "''",
   position: "absolute",
   top: "-4px",
@@ -213,7 +213,7 @@ export const { staticClasses, useClasses } = createClasses("HvSlider", {
   root: {},
   sliderTooltip: {
     "&& .rc-slider-tooltip-inner": {
-      background: theme.colors.atmo1,
+      background: theme.colors.bgPaper,
       borderRadius: 0,
       maxWidth: "532px",
       height: "100%",

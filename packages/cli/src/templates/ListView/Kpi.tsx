@@ -83,7 +83,7 @@ export const Kpi = ({
       id={`kpi${status}`}
       selectable
       selected={status === kpiSelection}
-      bgcolor="atmo1"
+      bgcolor="bgPaper"
       statusColor={color}
       onClick={handleKpiClick}
       className={cx(classes.card, {

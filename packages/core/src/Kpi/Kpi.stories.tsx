@@ -543,7 +543,7 @@ export const Small: StoryObj<HvKpiProps> = {
       root: css({
         width: 280,
         cursor: "pointer",
-        backgroundColor: theme.colors.atmo1,
+        backgroundColor: theme.colors.bgPaper,
 
         ":hover": {
           backgroundColor: theme.colors.primarySubtle,
@@ -729,7 +729,7 @@ export const Column: StoryObj<HvKpiProps> = {
     return (
       <HvCard
         className={classes.root}
-        bgcolor="atmo1"
+        bgcolor="bgPaper"
         classes={{
           semanticBar: classes.semanticBar,
         }}

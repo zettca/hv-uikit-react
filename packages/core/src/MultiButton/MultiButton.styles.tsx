@@ -69,7 +69,7 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
         marginLeft: "-1px",
       },
       "&$selected": {
-        background: theme.colors.atmo1,
+        background: theme.colors.bgPaper,
         ...theme.typography.label,
         borderRadius: theme.radii.base,
         border: `solid 1px ${theme.colors.border}`,
@@ -91,7 +91,7 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
         "&:disabled": {
           zIndex: 1,
           color: theme.colors.textDisabled,
-          background: theme.colors.atmo1,
+          background: theme.colors.bgPaper,
           border: `solid 1px ${theme.colors.divider}`,
         },
       },
@@ -99,7 +99,7 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
   },
   splitGroup: {
     width: "fit-content",
-    background: theme.colors.atmo1,
+    background: theme.colors.bgPaper,
 
     // Button
     "& button$button": {
@@ -184,7 +184,7 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
       "&$selected": {
         height: 32,
         width: `calc(100% + 2px) !important`,
-        background: theme.colors.atmo1,
+        background: theme.colors.bgPaper,
         ...theme.typography.label,
         borderRadius: theme.radii.base,
         border: `solid 1px ${theme.colors.border}`,
@@ -195,7 +195,7 @@ export const { staticClasses, useClasses } = createClasses("HvMultiButton", {
         "&:disabled": {
           zIndex: 1,
           color: theme.colors.textDisabled,
-          background: theme.colors.atmo1,
+          background: theme.colors.bgPaper,
           border: `solid 1px ${theme.colors.divider}`,
         },
       },
@@ -239,7 +239,7 @@ export const getSplitContainerColor = (
   backgroundColor: disabled
     ? theme.colors.atmo3
     : type === "subtle"
-      ? theme.colors.atmo1
+      ? theme.colors.bgPaper
       : "transparent",
 });
 

@@ -77,7 +77,7 @@ export const { staticClasses, useClasses } = createClasses("HvTagsInput", {
     flexDirection: "row",
     flexWrap: "wrap",
 
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     border: `1px solid ${theme.colors.textSubtle}`,
     borderRadius: theme.radii.base,
 

@@ -10,16 +10,16 @@ export const { staticClasses, useClasses } = createClasses("HvDropZone", {
     display: "flex",
     border: `1px dashed ${theme.colors.textDisabled}`, // TODO: 🎨
     cursor: "pointer",
-    background: theme.colors.atmo1,
+    background: theme.colors.bgPaper,
     borderRadius: theme.radii.round,
 
     "&:hover": {
-      background: `${theme.colors.atmo1}`,
+      background: `${theme.colors.bgPaper}`,
       border: `1px dashed ${theme.colors.border}`,
     },
 
     "&:focus-within": {
-      background: `${theme.colors.atmo1}`,
+      background: `${theme.colors.bgPaper}`,
       border: `1px dashed ${theme.colors.border}`,
       ...outlineStyles,
     },
@@ -35,7 +35,7 @@ export const { staticClasses, useClasses } = createClasses("HvDropZone", {
     },
   },
   dragAction: {
-    background: `${theme.colors.atmo1}`,
+    background: `${theme.colors.bgPaper}`,
     border: `1px dashed ${theme.colors.primary}`,
   },
   dropZoneContainerDisabled: {

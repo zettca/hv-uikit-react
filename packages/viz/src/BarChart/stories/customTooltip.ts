@@ -8,7 +8,7 @@ const classes = {
   root: css({
     display: "flex",
     flexDirection: "column",
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     width: "fit-content",
     minWidth: 220,
     boxShadow: theme.colors.shadow,

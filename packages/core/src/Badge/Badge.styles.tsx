@@ -5,7 +5,7 @@ import { createClasses } from "../utils/classes";
 const labelBaseStyle: React.CSSProperties = {
   ...theme.typography.label,
   padding: "0 5px",
-  color: theme.colors.atmo1,
+  color: theme.colors.bgPaper,
   lineHeight: "16px",
 };
 

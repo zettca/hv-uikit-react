@@ -11,7 +11,7 @@ export const { staticClasses, useClasses } = createClasses("HvFooter", {
     height: 40,
     bottom: 0,
     zIndex: theme.zIndices.base,
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     boxShadow: `0 -1px 0 ${theme.colors.divider}`,
   },
   name: {},

@@ -46,7 +46,7 @@ export const Selectable = () => {
 
   return (
     <HvCard
-      bgcolor="atmo1"
+      bgcolor="bgPaper"
       style={{ width: 360 }}
       selectable
       selected={checked}

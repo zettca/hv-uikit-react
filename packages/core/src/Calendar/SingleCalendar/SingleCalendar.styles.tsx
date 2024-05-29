@@ -10,7 +10,7 @@ export const { staticClasses, useClasses } = createClasses("HvSingleCalendar", {
   },
   calendarWrapper: {
     overflow: "hidden",
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     padding: theme.spacing("sm"),
   },
   calendarGrid: {
@@ -41,10 +41,10 @@ export const { staticClasses, useClasses } = createClasses("HvSingleCalendar", {
       },
     },
     "& $cellsInRange:hover ~ $cellsInRange": {
-      backgroundColor: theme.colors.atmo1, // controls the right side of the hovered range
+      backgroundColor: theme.colors.bgPaper, // controls the right side of the hovered range
     },
     "& $cellsOutsideRange:hover ~ $cellsInRange": {
-      backgroundColor: theme.colors.atmo1, // control the right side when hovering outside of the range
+      backgroundColor: theme.colors.bgPaper, // control the right side when hovering outside of the range
     },
   },
   calendarDay: {

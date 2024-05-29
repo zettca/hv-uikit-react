@@ -38,7 +38,7 @@ const Header = (props: {
       height: 50,
       border: `1px solid ${theme.colors.divider}`,
       borderBottom: "none",
-      background: theme.colors.atmo1,
+      background: theme.colors.bgPaper,
       padding: theme.spacing("xs", "xs", "xs", "sm"),
       display: "flex",
       justifyContent: "space-between",

@@ -17,7 +17,7 @@ export const { staticClasses, useClasses } = createClasses("HvTooltip", {
       display: "flex",
       width: "fit-content",
       maxWidth: 532,
-      backgroundColor: theme.colors.atmo1,
+      backgroundColor: theme.colors.bgPaper,
       boxShadow: theme.colors.shadow,
       padding: 0,
 

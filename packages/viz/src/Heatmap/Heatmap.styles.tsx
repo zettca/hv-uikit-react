@@ -2,7 +2,7 @@ import { createClasses, theme } from "@hitachivantara/uikit-react-core";
 
 export const { useClasses, staticClasses } = createClasses("HvHeatmap", {
   tooltipRoot: {
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     width: "fit-content",
     minWidth: 150,
     boxShadow: theme.colors.shadow,

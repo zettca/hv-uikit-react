@@ -126,7 +126,7 @@ export const Controls = () => {
           {rows?.map((row) => {
             return (
               <HvCard
-                bgcolor="atmo1"
+                bgcolor="bgPaper"
                 key={`${row?.values?.name}-row`}
                 style={{ width: "100%" }}
               >

@@ -37,7 +37,7 @@ export const { staticClasses, useClasses } = createClasses("HvHeader-MenuBar", {
   },
   menubar: {
     position: "relative",
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
   },
   hidden: { ...hide },
   active: { ...show },

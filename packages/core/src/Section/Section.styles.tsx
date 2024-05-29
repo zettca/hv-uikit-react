@@ -7,7 +7,7 @@ export const { staticClasses, useClasses } = createClasses("HvSection", {
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     borderRadius: theme.radii.round,
     border: `1px solid ${theme.colors.divider}`,
   },

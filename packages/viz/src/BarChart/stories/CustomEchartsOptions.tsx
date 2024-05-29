@@ -16,7 +16,7 @@ const styles = {
     position: "absolute",
     width: "fit-content",
     boxShadow: theme.colors.shadow,
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     padding: theme.space.sm,
     display: "flex",
     fontFamily: theme.fontFamily.body,

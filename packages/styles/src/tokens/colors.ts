@@ -231,6 +231,7 @@ const utilsLight = {
   // bgColor: atmosphereLight.atmo2,
   backgroundColor: atmosphereLight.atmo2,
   bgPaper: atmosphereLight.atmo1, // surfaces (Header, Tooltip, Dialog, Drawer, etc.)
+  // 👆 missing an atmo1 for text `color`
   bgHover: atmosphereLight.atmo3,
   bgDisabled: atmosphereLight.atmo3, // ❓ atmo4 ❓
   // bgHover: accentLight.primary_20,

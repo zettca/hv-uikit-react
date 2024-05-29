@@ -116,9 +116,9 @@ export const registerTheme = (
     treemap: {
       breadcrumb: {
         itemStyle: {
-          color: themeStructure?.colors.modes[mode].secondary,
+          color: themeStructure?.colors.modes[mode].text,
           textStyle: {
-            color: themeStructure?.colors.modes[mode].atmo1,
+            color: themeStructure?.colors.modes[mode].bgPaper,
           },
         },
       },

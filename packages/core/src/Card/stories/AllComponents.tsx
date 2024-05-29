@@ -68,7 +68,7 @@ export const AllComponents = () => {
   return (
     <HvCard
       style={{ width: 360 }}
-      bgcolor="atmo1"
+      bgcolor="bgPaper"
       icon={<Level3Bad color="negative" />}
       statusColor="negative"
       selected={checked}

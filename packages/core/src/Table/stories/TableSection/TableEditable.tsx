@@ -113,7 +113,7 @@ const classes = {
     maxWidth: "160px",
   }),
   tableRoot: css({ tableLayout: "fixed" }),
-  selectBackground: css({ backgroundColor: theme.colors.atmo1 }),
+  selectBackground: css({ backgroundColor: theme.colors.bgPaper }),
   switchContainer: css({ display: "flex", alignItems: "center" }),
   switchRightLabel: css({ marginLeft: 10 }),
 };

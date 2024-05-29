@@ -73,7 +73,7 @@ export const HvCodeEditor = ({
             inherit: true,
             rules: [],
             colors: {
-              "editor.background": theme?.colors.modes[mode].atmo1 || "",
+              "editor.background": theme?.colors.modes[mode].bgPaper || "",
               "editorLineNumber.foreground":
                 theme?.colors.modes[mode].textSubtle || "", // TODO: 🎨
             },

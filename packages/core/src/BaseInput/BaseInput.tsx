@@ -24,7 +24,7 @@ export type HvBaseInputClasses = ExtractNames<typeof useClasses>;
 // Global styles for the base input.
 const baseInputStyles = emotionCss({
   "input:-webkit-autofill": {
-    WebkitBoxShadow: `0 0 0px 1000px ${theme.colors.atmo1} inset`,
+    WebkitBoxShadow: `0 0 0px 1000px ${theme.colors.bgPaper} inset`,
     WebkitTextFillColor: theme.colors.text,
   },
 

@@ -4,10 +4,10 @@ import { colors } from "@hitachivantara/uikit-styles";
 const getThemeVars = (base: "light" | "dark"): ThemeVarsPartial => ({
   base,
 
-  appBg: colors[base].atmo1,
+  appBg: colors[base].bgPaper,
   appBorderRadius: 0,
-  appContentBg: colors[base].atmo1,
-  barBg: colors[base].atmo1,
+  appContentBg: colors[base].bgPaper,
+  barBg: colors[base].bgPaper,
   barSelectedColor: colors[base].primary,
   barTextColor: colors[base].text,
   brandImage: `ui-kit-logo-${base}.png`,
@@ -22,11 +22,11 @@ const getThemeVars = (base: "light" | "dark"): ThemeVarsPartial => ({
   textMutedColor: colors[base].textSubtle,
 
   // controls styles
-  booleanBg: colors[base].atmo2,
-  booleanSelectedBg: colors[base].atmo1,
-  buttonBg: colors[base].atmo1,
+  booleanBg: colors[base].backgroundColor,
+  booleanSelectedBg: colors[base].bgPaper,
+  buttonBg: colors[base].bgPaper,
   buttonBorder: colors[base].text,
-  inputBg: colors[base].atmo1,
+  inputBg: colors[base].bgPaper,
   inputBorder: colors[base].textDisabled,
   inputBorderRadius: 2,
   inputTextColor: colors[base].text,

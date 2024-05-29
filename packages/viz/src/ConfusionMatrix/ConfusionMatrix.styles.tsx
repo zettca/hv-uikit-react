@@ -4,7 +4,7 @@ export const { useClasses, staticClasses } = createClasses(
   "HvConfusionMatrix",
   {
     tooltipRoot: {
-      backgroundColor: theme.colors.atmo1,
+      backgroundColor: theme.colors.bgPaper,
       width: "fit-content",
       minWidth: 150,
       boxShadow: theme.colors.shadow,

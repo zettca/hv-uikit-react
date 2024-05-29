@@ -73,7 +73,7 @@ export const TaskCard = ({ task, deleteTask }: TaskProps) => {
       {...listeners}
     >
       <HvCard
-        bgcolor="atmo1"
+        bgcolor="bgPaper"
         classes={{ root: classes.card, semanticBar: classes.cardSemanticBar }}
       >
         <HvCardHeader

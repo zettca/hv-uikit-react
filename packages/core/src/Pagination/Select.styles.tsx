@@ -15,6 +15,6 @@ export const { useClasses } = createClasses("HvPaginationSelect", {
     padding: theme.spacing(0, "md", 0, "xs"),
   },
   headerOpen: {
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
   },
 });

@@ -17,7 +17,7 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
     cursor: "pointer",
     userSelect: "none",
     position: "relative",
-    background: theme.colors.atmo1,
+    background: theme.colors.bgPaper,
     boxSizing: "border-box",
     border: `1px solid ${theme.colors.border}`,
     borderRadius: theme.radii.base,
@@ -94,7 +94,7 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
   panel: {
     position: "relative",
 
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     border: `1px solid ${theme.colors.border}`,
   },
   panelOpenedUp: {
@@ -107,7 +107,7 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
   },
   inputExtensionOpen: {
     height: "0px",
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     borderTop: "none",
     borderBottom: "none",
     borderRight: `1px solid ${theme.colors.border}`,
@@ -115,7 +115,7 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
   },
   inputExtensionLeftPosition: { marginLeft: "auto" },
   inputExtensionOpenShadow: {
-    boxShadow: `0px 8px 0px ${theme.colors.atmo1}, 0px 0px 9px 0px rgba(65,65,65,.12)`,
+    boxShadow: `0px 8px 0px ${theme.colors.bgPaper}, 0px 0px 9px 0px rgba(65,65,65,.12)`,
   },
   inputExtensionFloatRight: { float: "right" },
   inputExtensionFloatLeft: { float: "left" },

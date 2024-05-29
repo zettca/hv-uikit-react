@@ -109,7 +109,7 @@ export const getColoringStyle = (color: string, type?: string) => {
   const hoverBg =
     theme.colors[color !== "warning" ? `${color}_80` : `${color}_140`];
   return {
-    color: theme.colors.atmo1,
+    color: theme.colors.bgPaper, // TODO: 🎨
     backgroundColor: bg,
     borderColor: bg,
     "&:hover, &:focus-visible": {

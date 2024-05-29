@@ -19,7 +19,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableCell", {
     height: 52,
     verticalAlign: "top",
 
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     borderTop: "1px solid transparent",
     borderBottom: `1px solid ${theme.colors.divider}`,
     ...(theme.typography.label as React.CSSProperties),

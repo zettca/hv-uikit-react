@@ -324,7 +324,7 @@ export const generateDefaultKnobProperties = (
     hoverColor: theme.colors.text,
     trackColor: theme.colors.text,
     dragColor: theme.colors.text,
-    knobRingColor: theme.colors.atmo1,
+    knobRingColor: theme.colors.bgPaper, // TODO: 🎨
   };
 
   const disabledKnobStyles = {

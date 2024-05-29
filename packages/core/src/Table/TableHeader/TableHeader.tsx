@@ -143,7 +143,7 @@ export const HvTableHeader = forwardRef<HTMLElement, HvTableHeaderProps>(
             css({
               [`&.${staticClasses.sorted}`]: {
                 backgroundColor: alpha(
-                  hexToRgb(colors?.atmo1 || theme.colors.atmo1),
+                  hexToRgb(colors?.bgPaper || theme.colors.bgPaper),
                   0.4,
                 ),
               },

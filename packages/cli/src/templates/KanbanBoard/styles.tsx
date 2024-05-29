@@ -54,7 +54,7 @@ const styles = {
     "&:hover": {
       cursor: "grab",
     },
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     zIndex: 200,
     borderRadius: `${theme.radii.round} ${theme.radii.round} 0 0`,
   }),

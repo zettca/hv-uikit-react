@@ -3,7 +3,7 @@ import { createClasses, theme } from "@hitachivantara/uikit-react-core";
 export const { staticClasses, useClasses } = createClasses("HvFlowBaseNode", {
   root: {
     borderRadius: theme.radii.round,
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     boxShadow: theme.colors.shadow,
     minWidth: "250px",
   },
@@ -82,7 +82,7 @@ export const { staticClasses, useClasses } = createClasses("HvFlowBaseNode", {
   handle: {
     zIndex: theme.zIndices.overlay,
     marginLeft: 2,
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     height: 10,
     width: 10,
     border: `1px solid ${theme.colors.secondary_60}`, // TODO: 🎨

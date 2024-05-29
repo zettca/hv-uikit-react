@@ -66,7 +66,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseSwitch", {
     height: "16px",
     width: "32px",
     border: `solid 1px ${theme.colors.border}`,
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
   },
   thumb: {
     position: "relative",
@@ -74,7 +74,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseSwitch", {
     width: "12px",
     height: "12px",
     border: `solid 1px ${theme.colors.border}`,
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     marginLeft: "2px",
     marginTop: 0,
     boxShadow: "none",

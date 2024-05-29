@@ -24,7 +24,7 @@ export const { staticClasses, useClasses } = createClasses("HvCodeEditor", {
       background: theme.colors.secondary, // TODO: 🎨
     },
     "& .monaco-scrollable-element > .visible": {
-      background: theme.colors.atmo1,
+      background: theme.colors.bgPaper,
     },
     "& .monaco-scrollable-element > .visible.horizontal": {
       borderTop: `solid 1px ${theme.colors.divider}`,

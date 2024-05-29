@@ -134,7 +134,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
     height: "32px",
     border: `1px solid ${theme.colors.border}`,
     boxSizing: "border-box",
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     fontFamily: theme.fontFamily.body,
 
     "&:hover:not($inputRootDisabled):not($inputRootInvalid):not($inputRootReadOnly)":
@@ -155,11 +155,11 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
     },
   },
   inputRootFocused: {
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     ...outlineStyles,
 
     "&:hover": {
-      backgroundColor: theme.colors.atmo1,
+      backgroundColor: theme.colors.bgPaper,
     },
 
     "&$inputRootReadOnly": {
@@ -183,7 +183,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
     "& $input": {
       border: `1px solid ${theme.colors.border}`,
       borderRadius: theme.radii.base,
-      backgroundColor: theme.colors.atmo1,
+      backgroundColor: theme.colors.bgPaper,
       height: "auto",
       minHeight: "21px",
       padding: "5px 10px",

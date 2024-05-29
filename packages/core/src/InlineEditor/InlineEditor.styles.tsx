@@ -39,12 +39,12 @@ export const { staticClasses, useClasses } = createClasses("HvInlineEditor", {
     justifyContent: "flex-start",
     alignItems: "center",
 
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     border: `1px solid transparent`,
 
     "&:hover, &:focus": {
       border: `1px solid ${theme.colors.primary}`,
-      backgroundColor: theme.colors.atmo1,
+      backgroundColor: theme.colors.bgPaper,
 
       "& $icon": {
         visibility: "visible",

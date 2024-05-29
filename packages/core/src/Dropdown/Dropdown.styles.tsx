@@ -44,7 +44,7 @@ export const { staticClasses, useClasses } = createClasses("HvDropdown", {
   readOnly: {
     "& $dropdownHeader": {
       border: `1px solid ${theme.colors.textSubtle}`,
-      backgroundColor: theme.colors.atmo1,
+      backgroundColor: theme.colors.bgPaper,
     },
   },
 });

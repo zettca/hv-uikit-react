@@ -5,7 +5,7 @@ export const { useClasses, staticClasses } = createClasses("HvChartTooltip", {
   singleTooltipRoot: {
     width: "fit-content",
     boxShadow: theme.colors.shadow,
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     padding: theme.space.sm,
     display: "flex",
   },
@@ -26,7 +26,7 @@ export const { useClasses, staticClasses } = createClasses("HvChartTooltip", {
   multipleTooltipRoot: {
     width: "fit-content",
     boxShadow: theme.colors.shadow,
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
   },
   multipleTooltipTitleContainer: {
     padding: `15px ${theme.space.sm}`,

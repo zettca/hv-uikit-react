@@ -291,7 +291,7 @@ export const Custom: StoryObj<HvRadioProps> = {
       checked: css({
         "& svg": {
           border: `1px solid ${theme.colors.warning}`,
-          backgroundColor: theme.colors.atmo1,
+          backgroundColor: theme.colors.bgPaper,
           color: theme.colors.warning,
         },
       }),

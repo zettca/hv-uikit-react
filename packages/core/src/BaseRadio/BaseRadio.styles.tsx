@@ -20,7 +20,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseRadio", {
       height: 16,
       borderRadius: theme.radii.circle,
       border: `1px solid ${theme.colors.border}`,
-      backgroundColor: theme.colors.atmo1,
+      backgroundColor: theme.colors.bgPaper,
     },
     borderRadius: 0,
   },

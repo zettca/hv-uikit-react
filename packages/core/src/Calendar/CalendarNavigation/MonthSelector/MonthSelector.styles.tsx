@@ -19,7 +19,7 @@ export const { staticClasses, useClasses } = createClasses("HvMonthSelector", {
     flexFlow: "wrap",
     alignContent: "center",
     justifyContent: "space-evenly",
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
   },
   rangeModeWidth: {},
   normalWidth: {},

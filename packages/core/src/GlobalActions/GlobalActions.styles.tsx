@@ -34,7 +34,7 @@ export const { staticClasses, useClasses } = createClasses("HvGlobalActions", {
     "& $wrapper": {
       top: 0,
       left: 0,
-      backgroundColor: theme.colors.atmo1,
+      backgroundColor: theme.colors.bgPaper,
       width: "100%",
       borderWidth: 1,
       borderRadius: theme.radii.round,

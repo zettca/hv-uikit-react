@@ -66,8 +66,8 @@ export const { staticClasses, useClasses } = createClasses(
       paddingBottom: "4px",
       paddingTop: "4px",
       height: "100%",
-      borderTop: `0px solid ${theme.colors.atmo1}`,
-      borderBottom: `${"4px"} solid ${theme.colors.atmo1}`,
+      borderTop: `0px solid ${theme.colors.bgPaper}`, // TODO: 🎨
+      borderBottom: `${"4px"} solid ${theme.colors.bgPaper}`, // TODO: 🎨
     },
     selected: {
       "&$menu": {

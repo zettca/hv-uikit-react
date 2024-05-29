@@ -38,7 +38,7 @@ export const { staticClasses, useClasses } = createClasses("HvDropdownButton", {
     ...disabledStyle,
   },
   open: {
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
   },
   openUp: {
     borderRadius: `0px 0px ${theme.radii.base} ${theme.radii.base}`,

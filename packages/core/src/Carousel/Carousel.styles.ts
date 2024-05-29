@@ -8,7 +8,7 @@ export const { staticClasses, useClasses } = createClasses("HvCarousel", {
     display: "flex",
     alignItems: "stretch",
     flexDirection: "column",
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     margin: 0,
     paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(2),

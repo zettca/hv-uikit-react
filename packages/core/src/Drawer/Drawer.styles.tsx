@@ -5,7 +5,7 @@ import { createClasses } from "../utils/classes";
 export const { staticClasses, useClasses } = createClasses("HvDrawer", {
   root: {},
   paper: {
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     padding: 0,
     overflow: "auto",
     boxShadow: theme.colors.shadow,

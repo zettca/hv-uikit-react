@@ -17,7 +17,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableHeader", {
     verticalAlign: "top",
     ...theme.typography.label,
     transition: "background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
-    backgroundColor: theme.colors.atmo1,
+    backgroundColor: theme.colors.bgPaper,
     borderBottom: `1px solid ${theme.colors.divider}`,
 
     "*:first-of-type > &": {
