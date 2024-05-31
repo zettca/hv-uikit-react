@@ -4,14 +4,14 @@ import { theme } from "@hitachivantara/uikit-styles";
 export const { staticClasses, useClasses } = createClasses("HvCodeEditor", {
   root: {
     minHeight: 200,
-    border: `solid 1px ${theme.colors.divider}`,
+    border: `solid 1px ${theme.colors.borderDivider}`,
     "& .monaco-editor": {},
     "& .monaco-editor .minimap > canvas": {
-      borderLeft: `solid 1px ${theme.colors.divider}`,
+      borderLeft: `solid 1px ${theme.colors.borderDivider}`,
     },
     "& .monaco-editor .margin": {
       background: theme.colors.backgroundColor,
-      borderRight: `solid 1px ${theme.colors.divider}`,
+      borderRight: `solid 1px ${theme.colors.borderDivider}`,
     },
     "& .monaco-scrollable-element > .scrollbar > .slider": {
       borderRadius: "5px",
@@ -27,10 +27,10 @@ export const { staticClasses, useClasses } = createClasses("HvCodeEditor", {
       background: theme.colors.bgPaper,
     },
     "& .monaco-scrollable-element > .visible.horizontal": {
-      borderTop: `solid 1px ${theme.colors.divider}`,
+      borderTop: `solid 1px ${theme.colors.borderDivider}`,
     },
     "& .monaco-scrollable-element > .visible.vertical": {
-      borderLeft: `solid 1px ${theme.colors.divider}`,
+      borderLeft: `solid 1px ${theme.colors.borderDivider}`,
     },
     "& .monaco-editor .scroll-decoration": {
       display: "none",

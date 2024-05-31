@@ -28,7 +28,7 @@ export const { staticClasses, useClasses } = createClasses("HvSelect", {
     zIndex: theme.zIndices.popover,
   },
   panel: {
-    border: `1px solid ${theme.colors.border}`,
+    border: `1px solid ${theme.colors.borderText}`,
     marginTop: -1,
     marginBottom: -1,
   },

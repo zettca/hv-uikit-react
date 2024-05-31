@@ -59,7 +59,7 @@ const styles = {
     width: 12,
     height: 12,
     padding: 4,
-    border: `1px solid ${theme.colors.border}`,
+    border: `1px solid ${theme.colors.borderText}`,
   }),
 };
 

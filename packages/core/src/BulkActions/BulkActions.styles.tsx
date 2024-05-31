@@ -7,7 +7,7 @@ export const { staticClasses, useClasses } = createClasses("HvBulkActions", {
   root: {
     display: "flex",
     alignItems: "center",
-    border: `1px solid ${theme.colors.divider}`,
+    border: `1px solid ${theme.colors.borderDivider}`,
     backgroundColor: theme.colors.backgroundColor,
     padding: theme.spacing("xs", "md"),
     marginBottom: theme.space.xs,
@@ -37,7 +37,7 @@ export const { staticClasses, useClasses } = createClasses("HvBulkActions", {
   selectAllPages: {},
   divider: {
     display: "flex",
-    backgroundColor: theme.colors.divider,
+    backgroundColor: theme.colors.borderDivider,
     width: "1px",
     height: "32px",
     marginLeft: theme.space.sm,

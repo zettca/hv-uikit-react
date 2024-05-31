@@ -24,11 +24,11 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
     },
 
     "& $inputBorderContainer": {
-      backgroundColor: theme.colors.divider,
+      backgroundColor: theme.colors.borderDivider,
     },
 
     "&:hover $inputBorderContainer": {
-      backgroundColor: theme.colors.divider,
+      backgroundColor: theme.colors.borderDivider,
     },
 
     "&& $input": {
@@ -120,7 +120,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
     height: "0px",
     top: "31px",
     left: "2px",
-    backgroundColor: theme.colors.divider,
+    backgroundColor: theme.colors.borderDivider,
   },
   inputRootInvalid: { borderColor: theme.colors.negative },
   inputRootReadOnly: {
@@ -132,7 +132,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
     width: "100%",
     borderRadius: theme.radii.base,
     height: "32px",
-    border: `1px solid ${theme.colors.border}`,
+    border: `1px solid ${theme.colors.borderText}`,
     boxSizing: "border-box",
     backgroundColor: theme.colors.bgPaper,
     fontFamily: theme.fontFamily.body,
@@ -181,7 +181,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseInput", {
     height: "auto",
 
     "& $input": {
-      border: `1px solid ${theme.colors.border}`,
+      border: `1px solid ${theme.colors.borderText}`,
       borderRadius: theme.radii.base,
       backgroundColor: theme.colors.bgPaper,
       height: "auto",

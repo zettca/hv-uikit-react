@@ -9,7 +9,7 @@ export const { useClasses, staticClasses } = createClasses("HvQueryBuilder", {
     padding: theme.space.sm,
     marginTop: 12,
     marginBottom: 32,
-    border: `1px solid ${theme.colors.divider}`,
+    border: `1px solid ${theme.colors.borderDivider}`,
   },
   /** Styles applied to the top group container. */
   topGroup: {
@@ -32,8 +32,8 @@ export const { useClasses, staticClasses } = createClasses("HvQueryBuilder", {
       width: 21,
       height: 36,
 
-      borderBottom: `1px solid ${theme.colors.divider}`,
-      borderLeft: `1px solid ${theme.colors.divider}`,
+      borderBottom: `1px solid ${theme.colors.borderDivider}`,
+      borderLeft: `1px solid ${theme.colors.borderDivider}`,
 
       top: -38,
       left: -38,
@@ -46,7 +46,7 @@ export const { useClasses, staticClasses } = createClasses("HvQueryBuilder", {
       width: 32,
       height: "100%",
 
-      borderLeft: `1px solid ${theme.colors.divider}`,
+      borderLeft: `1px solid ${theme.colors.borderDivider}`,
 
       top: 0,
       left: `calc(${theme.space.sm} + 2)`,
@@ -74,7 +74,7 @@ export const { useClasses, staticClasses } = createClasses("HvQueryBuilder", {
   rulesContainer: {},
   /** Styles applied to the sub rules container. */
   subRulesContainer: {
-    borderLeft: `1px solid ${theme.colors.divider}`,
+    borderLeft: `1px solid ${theme.colors.borderDivider}`,
     marginLeft: theme.space.sm,
     marginBottom: theme.space.md,
     paddingLeft: theme.space.sm,

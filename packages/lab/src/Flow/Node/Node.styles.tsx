@@ -30,7 +30,7 @@ export const { staticClasses, useClasses } = createClasses("HvFlowNode", {
     gap: 0,
   },
   paramsContainer: {
-    borderTop: `1px solid ${theme.colors.divider}`,
+    borderTop: `1px solid ${theme.colors.borderDivider}`,
     display: "flex",
     flexDirection: "column",
     gap: theme.space.xs,

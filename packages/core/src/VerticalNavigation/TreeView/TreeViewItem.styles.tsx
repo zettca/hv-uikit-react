@@ -5,7 +5,7 @@ import { outlineStyles } from "../../utils/focusUtils";
 
 const selected = () => ({
   background: theme.colors.bgAction,
-  borderLeft: `4px solid ${theme.colors.border}`,
+  borderLeft: `4px solid ${theme.colors.borderText}`,
   "& *": {
     background: theme.colors.bgAction,
   },

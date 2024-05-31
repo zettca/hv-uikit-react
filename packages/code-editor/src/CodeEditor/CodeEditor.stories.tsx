@@ -36,7 +36,7 @@ const Header = (props: {
     }),
     codeEditorHeader: css({
       height: 50,
-      border: `1px solid ${theme.colors.divider}`,
+      border: `1px solid ${theme.colors.borderDivider}`,
       borderBottom: "none",
       background: theme.colors.bgPaper,
       padding: theme.spacing("xs", "xs", "xs", "sm"),

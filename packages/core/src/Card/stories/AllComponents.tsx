@@ -29,7 +29,7 @@ const classes = {
   }),
   gridBottom: css({ padding: 0 }),
   span: css({
-    borderRight: `1px solid ${theme.colors.border}`,
+    borderRight: `1px solid ${theme.colors.borderText}`,
     paddingRight: theme.space.xs,
     marginRight: theme.space.xs,
   }),

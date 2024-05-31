@@ -21,13 +21,13 @@ export const registerTheme = (
     axisLine: {
       show: true,
       lineStyle: {
-        color: themeStructure?.colors.modes[mode].dividerSubtle,
+        color: themeStructure?.colors.modes[mode].borderSubtle,
       },
     },
     axisTick: {
       show: true,
       lineStyle: {
-        color: themeStructure?.colors.modes[mode].dividerSubtle,
+        color: themeStructure?.colors.modes[mode].borderSubtle,
       },
     },
     axisLabel: {
@@ -39,7 +39,7 @@ export const registerTheme = (
     splitLine: {
       show: true,
       lineStyle: {
-        color: themeStructure?.colors.modes[mode].dividerSubtle,
+        color: themeStructure?.colors.modes[mode].borderSubtle,
       },
     },
   };
@@ -109,7 +109,7 @@ export const registerTheme = (
         fontFamily: baseText.fontFamily,
       },
       itemStyle: {
-        borderColor: themeStructure?.colors.modes[mode].dividerSubtle,
+        borderColor: themeStructure?.colors.modes[mode].borderSubtle,
         borderWidth: 1,
       },
     },

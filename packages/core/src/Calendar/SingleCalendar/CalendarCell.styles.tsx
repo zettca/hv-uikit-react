@@ -55,10 +55,10 @@ export const { staticClasses, useClasses } = createClasses("HvCalendarCell", {
     cursor: "no-drop",
   },
   startBookend: {
-    borderLeft: `1px solid ${theme.colors.border}`,
+    borderLeft: `1px solid ${theme.colors.borderText}`,
   },
   endBookend: {
-    borderRight: `1px solid ${theme.colors.border}`,
+    borderRight: `1px solid ${theme.colors.borderText}`,
   },
   dateWrapper: {
     width: "40px",

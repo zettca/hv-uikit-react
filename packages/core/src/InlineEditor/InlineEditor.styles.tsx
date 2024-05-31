@@ -52,7 +52,7 @@ export const { staticClasses, useClasses } = createClasses("HvInlineEditor", {
     },
 
     "&:active": {
-      border: `1px solid ${theme.colors.border}`,
+      border: `1px solid ${theme.colors.borderText}`,
       backgroundColor: "transparent",
 
       "& $icon": {

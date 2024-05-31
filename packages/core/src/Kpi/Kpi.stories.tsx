@@ -326,7 +326,7 @@ export const Gauge: StoryObj<HvKpiProps> = {
         left: 0,
         right: 0,
         margin: "auto",
-        backgroundColor: theme.colors.divider,
+        backgroundColor: theme.colors.borderDivider,
         transformOrigin: "bottom center",
       }),
       gaugeIndicatorContainer: css({

@@ -128,7 +128,7 @@ export const CustomDivider = {
       height: 5,
       border: `1px solid ${theme.colors.secondary_60}`, // TODO: 🎨
       borderRadius: 5,
-      backgroundColor: theme.colors.divider,
+      backgroundColor: theme.colors.borderDivider,
       alignSelf: "center",
     });
 

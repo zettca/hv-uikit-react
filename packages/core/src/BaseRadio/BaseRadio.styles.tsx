@@ -19,7 +19,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseRadio", {
       width: 16,
       height: 16,
       borderRadius: theme.radii.circle,
-      border: `1px solid ${theme.colors.border}`,
+      border: `1px solid ${theme.colors.borderText}`,
       backgroundColor: theme.colors.bgPaper,
     },
     borderRadius: 0,
@@ -41,7 +41,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseRadio", {
   icon: {},
   checked: {
     "& svg": {
-      border: `1px solid ${theme.colors.border}`,
+      border: `1px solid ${theme.colors.borderText}`,
       backgroundColor: theme.colors.secondary, // TODO: 🎨
       color: theme.colors.atmo2, // TODO: 🎨
     },

@@ -20,7 +20,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseCheckBox", {
       height: 16,
       color: theme.colors.bgPaper,
       borderRadius: theme.radii.none,
-      border: `1px solid ${theme.colors.border}`,
+      border: `1px solid ${theme.colors.borderText}`,
     },
   },
   disabled: {
@@ -42,7 +42,7 @@ export const { staticClasses, useClasses } = createClasses("HvBaseCheckBox", {
   icon: {},
   checked: {
     "& svg": {
-      border: `1px solid ${theme.colors.border}`,
+      border: `1px solid ${theme.colors.borderText}`,
       backgroundColor: theme.colors.secondary, // TODO: 🎨
       color: theme.colors.bgPaper,
     },

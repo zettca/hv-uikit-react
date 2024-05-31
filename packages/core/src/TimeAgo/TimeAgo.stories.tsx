@@ -28,10 +28,10 @@ const styles = {
     },
   }),
   table: css({
-    border: `1px solid ${theme.colors.border}`,
+    border: `1px solid ${theme.colors.borderText}`,
     borderCollapse: "collapse",
     "& th, td": {
-      border: `1px solid ${theme.colors.border}`,
+      border: `1px solid ${theme.colors.borderText}`,
       padding: theme.spacing("5px", "sm"),
     },
   }),

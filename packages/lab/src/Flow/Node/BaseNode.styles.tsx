@@ -29,16 +29,16 @@ export const { staticClasses, useClasses } = createClasses("HvFlowBaseNode", {
     justifyContent: "center",
     padding: theme.space.xs,
     backgroundColor: theme.colors.backgroundColor,
-    borderTop: `1px solid ${theme.colors.dividerSubtle}`,
-    borderBottom: `1px solid ${theme.colors.dividerSubtle}`,
+    borderTop: `1px solid ${theme.colors.borderDividerSubtle}`,
+    borderBottom: `1px solid ${theme.colors.borderDividerSubtle}`,
   },
   outputsTitleContainer: {
     display: "flex",
     justifyContent: "center",
     padding: theme.space.xs,
     backgroundColor: theme.colors.backgroundColor,
-    borderTop: `1px solid ${theme.colors.dividerSubtle}`,
-    borderBottom: `1px solid ${theme.colors.dividerSubtle}`,
+    borderTop: `1px solid ${theme.colors.borderDividerSubtle}`,
+    borderBottom: `1px solid ${theme.colors.borderDividerSubtle}`,
   },
   contentContainer: {},
   inputsContainer: {
@@ -125,6 +125,6 @@ export const { staticClasses, useClasses } = createClasses("HvFlowBaseNode", {
   },
   footerContainer: {
     padding: theme.space.sm,
-    borderTop: `1px solid ${theme.colors.dividerSubtle}`,
+    borderTop: `1px solid ${theme.colors.borderDividerSubtle}`,
   },
 });

@@ -8,19 +8,19 @@ export const { staticClasses, useClasses } = createClasses("HvDropZone", {
     position: "relative",
     width: "100%",
     display: "flex",
-    border: `1px dashed ${theme.colors.textDisabled}`, // TODO: 🎨
+    border: `1px dashed ${theme.colors.textDisabled}`,
     cursor: "pointer",
     background: theme.colors.bgPaper,
     borderRadius: theme.radii.round,
 
     "&:hover": {
       background: `${theme.colors.bgPaper}`,
-      border: `1px dashed ${theme.colors.border}`,
+      border: `1px dashed ${theme.colors.borderText}`,
     },
 
     "&:focus-within": {
       background: `${theme.colors.bgPaper}`,
-      border: `1px dashed ${theme.colors.border}`,
+      border: `1px dashed ${theme.colors.borderText}`,
       ...outlineStyles,
     },
   },

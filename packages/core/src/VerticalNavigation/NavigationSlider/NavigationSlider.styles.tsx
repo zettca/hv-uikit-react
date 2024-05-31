@@ -17,7 +17,7 @@ export const { staticClasses, useClasses } = createClasses(
     },
     listItemSelected: {
       background: theme.colors.bgAction,
-      borderLeft: `4px solid ${theme.colors.border}`,
+      borderLeft: `4px solid ${theme.colors.borderText}`,
       "& *": {
         background: theme.colors.bgAction,
       },

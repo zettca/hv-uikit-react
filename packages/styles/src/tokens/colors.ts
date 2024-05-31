@@ -225,9 +225,10 @@ const utilsLight = {
   text: accentLight.secondary,
   textSubtle: accentLight.secondary_80, // textMuted
   textDisabled: accentLight.secondary_60,
-  border: accentLight.secondary,
-  divider: atmosphereLight.atmo4, // borders, hrs, etc.
-  dividerSubtle: atmosphereLight.atmo3, // ❓ disabled ❓
+  borderText: accentLight.secondary,
+  borderDivider: atmosphereLight.atmo4, // borders, hrs, etc.
+  borderSubtle: atmosphereLight.atmo3, // ❓ disabled ❓
+  borderTable: atmosphereLight.atmo4,
 
   // bgColor: atmosphereLight.atmo2,
   backgroundColor: atmosphereLight.atmo2, // rename bgColor
@@ -336,9 +337,10 @@ const utilsDark = {
   text: accentDark.secondary,
   textSubtle: accentDark.secondary_80,
   textDisabled: accentDark.secondary_60,
-  border: accentDark.secondary,
-  divider: atmosphereDark.atmo4, // borders, hrs, etc.
-  dividerSubtle: atmosphereDark.atmo3,
+  borderText: accentDark.secondary,
+  borderDivider: atmosphereDark.atmo4, // borders, hrs, etc.
+  borderSubtle: atmosphereDark.atmo3,
+  borderTable: atmosphereDark.atmo4,
 
   // bgColor: atmosphereDark.atmo2,
   backgroundColor: atmosphereDark.atmo2, // rename bgColor

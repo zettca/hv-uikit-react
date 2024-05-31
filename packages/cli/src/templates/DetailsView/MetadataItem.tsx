@@ -22,7 +22,7 @@ export const MetadataItem = ({
       role="group"
       className={css({
         paddingTop: theme.space.xs,
-        borderTop: `1px solid ${theme.colors.divider}`,
+        borderTop: `1px solid ${theme.colors.borderDivider}`,
         display: "flex",
         flexFlow: "column wrap",
         gap: theme.space.xs,

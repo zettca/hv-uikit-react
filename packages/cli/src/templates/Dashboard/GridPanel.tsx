@@ -24,7 +24,7 @@ export const GridPanel = ({
         className={css({
           overflow: "visible",
           position: "relative",
-          border: `1px solid ${theme.colors.divider}`,
+          border: `1px solid ${theme.colors.borderDivider}`,
           borderRadius: `0 0 ${theme.radii.round} ${theme.radii.round}`,
         })}
       >

@@ -12,7 +12,7 @@ const dot: React.CSSProperties = {
   height: "4px",
   border: "none",
   borderRadius: "0%",
-  backgroundColor: theme.colors.divider,
+  backgroundColor: theme.colors.borderDivider,
   cursor: "pointer",
   verticalAlign: "middle",
   zIndex: "-3",
@@ -101,7 +101,7 @@ export const sliderStyles = {
     borderColor: "transparent",
     borderRadius: "50%",
     boxShadow: "none",
-    backgroundColor: theme.colors.divider,
+    backgroundColor: theme.colors.borderDivider,
     width: "32px",
     height: "32px",
     top: "-80%",
@@ -114,7 +114,11 @@ export const sliderStyles = {
     zIndex: "-1",
     marginTop: "-1px",
   },
-  rail: { backgroundColor: theme.colors.divider, height: "1px", zIndex: "-3" },
+  rail: {
+    backgroundColor: theme.colors.borderDivider,
+    height: "1px",
+    zIndex: "-3",
+  },
 } satisfies Record<string, React.CSSProperties>;
 
 export const { staticClasses, useClasses } = createClasses("HvSlider", {

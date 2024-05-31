@@ -74,7 +74,7 @@ export const { staticClasses, useClasses } = createClasses(
         marginTop: 0,
         paddingBottom: 0,
         borderTop: "none",
-        borderBottom: `4px solid ${theme.colors.border}`,
+        borderBottom: `4px solid ${theme.colors.borderText}`,
         paddingTop: "4px",
         height: "100%",
         "& > * > span": {
@@ -85,7 +85,7 @@ export const { staticClasses, useClasses } = createClasses(
         marginTop: 0,
         paddingBottom: 0,
         borderTop: "none",
-        borderBottom: `4px solid ${theme.colors.border}`,
+        borderBottom: `4px solid ${theme.colors.borderText}`,
         paddingTop: "4px",
         height: "100%",
       },

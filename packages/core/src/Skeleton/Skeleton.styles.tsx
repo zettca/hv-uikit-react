@@ -69,7 +69,7 @@ export const { staticClasses, useClasses } = createClasses("HvSkeleton", {
       background: `linear-gradient(
             90deg,
             transparent,
-            ${theme.colors.divider},
+            ${theme.colors.borderDivider},
             transparent
           )`,
       content: "''",

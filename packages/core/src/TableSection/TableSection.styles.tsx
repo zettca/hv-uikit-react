@@ -12,7 +12,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableSection", {
   root: {},
   header: {
     // Only apply the border to divide the header and content when both are displayed
-    "+ div": { borderTop: `1px solid ${theme.colors.dividerSubtle}` },
+    "+ div": { borderTop: `1px solid ${theme.colors.borderDividerSubtle}` },
   },
   actions: {
     right: theme.space.sm,
@@ -40,7 +40,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableSection", {
 
     [`& .${tableHeaderClasses.head}`]: {
       backgroundColor: theme.colors.backgroundColor,
-      borderBottomColor: theme.colors.dividerSubtle,
+      borderBottomColor: theme.colors.borderDividerSubtle,
       [`&.${tableHeaderClasses.variantCheckbox}`]: {
         borderRight: "none",
       },
@@ -57,7 +57,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableSection", {
     },
 
     [`& .${tableCellClasses.root}`]: {
-      borderBottomColor: theme.colors.dividerSubtle,
+      borderBottomColor: theme.colors.borderDividerSubtle,
     },
 
     [`& .${tableCellClasses.variantCheckbox}`]: {
@@ -71,7 +71,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableSection", {
     [`& .${bulkActionsClasses.root}`]: {
       marginBottom: 0,
       border: "none",
-      borderBottom: `1px solid ${theme.colors.dividerSubtle}`,
+      borderBottom: `1px solid ${theme.colors.borderDividerSubtle}`,
       padding: theme.spacing("xs", "sm"),
     },
 
@@ -79,7 +79,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableSection", {
       margin: 0,
       backgroundColor: theme.colors.backgroundColor,
       padding: theme.space.xs,
-      borderTop: `1px solid ${theme.colors.dividerSubtle}`,
+      borderTop: `1px solid ${theme.colors.borderDividerSubtle}`,
     },
 
     [`& .${paginationClasses.pageSizeOptions}`]: {

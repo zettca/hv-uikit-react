@@ -33,7 +33,7 @@ export const { useClasses, staticClasses } = createClasses("HvProgressBar", {
     display: "flex",
     width: "100%",
     height: 4,
-    backgroundColor: theme.colors.divider,
+    backgroundColor: theme.colors.borderDivider,
   },
   progressError: {
     backgroundColor: theme.colors.negative,

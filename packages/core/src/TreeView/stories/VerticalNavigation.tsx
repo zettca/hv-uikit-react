@@ -26,7 +26,7 @@ const classes = {
     paddingLeft: `calc(${theme.space.sm} * var(--level))`,
   }),
   selected: css({
-    borderColor: theme.colors.border,
+    borderColor: theme.colors.borderText,
     backgroundColor: theme.colors.bgAction,
   }),
   label: css({

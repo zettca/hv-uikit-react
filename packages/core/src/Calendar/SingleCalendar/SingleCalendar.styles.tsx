@@ -20,24 +20,24 @@ export const { staticClasses, useClasses } = createClasses("HvSingleCalendar", {
     "& $cellsInRange": {
       backgroundColor: theme.colors.bgAction,
       "& $startBookend": {
-        borderLeft: `1px solid ${theme.colors.border}`,
+        borderLeft: `1px solid ${theme.colors.borderText}`,
         backgroundColor: theme.colors.bgAction,
         "&:hover": {
-          borderRight: `1px solid ${theme.colors.border}`,
+          borderRight: `1px solid ${theme.colors.borderText}`,
         },
       },
     },
     "&:hover $cellsInRange": {
       backgroundColor: theme.colors.bgAction,
       "& $startBookend": {
-        borderLeft: `1px solid ${theme.colors.border}`,
+        borderLeft: `1px solid ${theme.colors.borderText}`,
         borderRight: "inherit",
       },
     },
     "& $cellsInRange:hover": {
       backgroundColor: theme.colors.bgAction,
       "& $calendarDate": {
-        borderRight: `1px solid ${theme.colors.border}`,
+        borderRight: `1px solid ${theme.colors.borderText}`,
       },
     },
     "& $cellsInRange:hover ~ $cellsInRange": {

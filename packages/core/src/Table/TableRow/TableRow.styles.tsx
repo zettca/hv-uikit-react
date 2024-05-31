@@ -58,18 +58,18 @@ export const { staticClasses, useClasses } = createClasses("HvTableRow", {
     marginBottom: theme.space.xs,
     borderRadius: theme.radii.round,
 
-    ...getBorderStyles(theme.colors.divider, theme.radii.round),
+    ...getBorderStyles(theme.colors.borderTable, theme.radii.round),
     backgroundColor: theme.colors.bgPaper,
     "&$selected": {
-      ...getBorderStyles(theme.colors.border, theme.radii.round),
+      ...getBorderStyles(theme.colors.borderText, theme.radii.round),
 
       "&:hover": {
-        ...getBorderStyles(theme.colors.divider, theme.radii.round),
+        ...getBorderStyles(theme.colors.borderTable, theme.radii.round),
       },
     },
 
     "&:hover": {
-      ...getBorderStyles(theme.colors.divider, theme.radii.round),
+      ...getBorderStyles(theme.colors.borderTable, theme.radii.round),
     },
     "&.HvIsFocused": {
       borderRadius: theme.radii.round,

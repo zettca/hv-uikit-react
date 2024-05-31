@@ -12,7 +12,7 @@ export const { staticClasses, useClasses } = createClasses("HvFooter", {
     bottom: 0,
     zIndex: theme.zIndices.base,
     backgroundColor: theme.colors.bgPaper,
-    boxShadow: `0 -1px 0 ${theme.colors.divider}`,
+    boxShadow: `0 -1px 0 ${theme.colors.borderDivider}`,
   },
   name: {},
   rightContainer: {

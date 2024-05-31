@@ -19,7 +19,7 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
     position: "relative",
     background: theme.colors.bgPaper,
     boxSizing: "border-box",
-    border: `1px solid ${theme.colors.border}`,
+    border: `1px solid ${theme.colors.borderText}`,
     borderRadius: theme.radii.base,
     "&:hover": {
       border: `1px solid ${theme.colors.primary}`,
@@ -33,10 +33,10 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
     },
   },
   headerOpen: {
-    border: `1px solid ${theme.colors.border}`,
+    border: `1px solid ${theme.colors.borderText}`,
 
     "&:hover": {
-      border: `1px solid ${theme.colors.border}`,
+      border: `1px solid ${theme.colors.borderText}`,
     },
   },
   headerOpenUp: {
@@ -95,7 +95,7 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
     position: "relative",
 
     backgroundColor: theme.colors.bgPaper,
-    border: `1px solid ${theme.colors.border}`,
+    border: `1px solid ${theme.colors.borderText}`,
   },
   panelOpenedUp: {
     top: 1,
@@ -110,8 +110,8 @@ export const { useClasses, staticClasses } = createClasses("HvBaseDropdown", {
     backgroundColor: theme.colors.bgPaper,
     borderTop: "none",
     borderBottom: "none",
-    borderRight: `1px solid ${theme.colors.border}`,
-    borderLeft: `1px solid ${theme.colors.border}`,
+    borderRight: `1px solid ${theme.colors.borderText}`,
+    borderLeft: `1px solid ${theme.colors.borderText}`,
   },
   inputExtensionLeftPosition: { marginLeft: "auto" },
   inputExtensionOpenShadow: {

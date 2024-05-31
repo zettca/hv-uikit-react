@@ -49,7 +49,7 @@ const classes = {
     display: "flex",
     width: "100%",
     backgroundColor: theme.colors.warningSubtle,
-    border: `1px solid ${theme.colors.dividerSubtle}`,
+    border: `1px solid ${theme.colors.borderDividerSubtle}`,
     overflow: "hidden",
     animation: `${slide} 1.5s ease-in-out`,
   }),
@@ -78,9 +78,9 @@ const classes = {
       borderColor: "transparent",
     },
     [`&.${baseDropdownClasses.headerOpen}`]: {
-      borderColor: theme.colors.border,
+      borderColor: theme.colors.borderText,
       "&:hover": {
-        borderColor: theme.colors.border,
+        borderColor: theme.colors.borderText,
       },
     },
   }),
