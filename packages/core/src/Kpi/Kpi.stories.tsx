@@ -546,10 +546,10 @@ export const Small: StoryObj<HvKpiProps> = {
         backgroundColor: theme.colors.bgPaper,
 
         ":hover": {
-          backgroundColor: theme.colors.primarySubtle,
+          backgroundColor: theme.colors.containerBackgroundHover,
 
           [`& .${cardClasses.semanticBar}`]: {
-            backgroundColor: theme.colors.primarySubtle,
+            backgroundColor: theme.colors.containerBackgroundHover,
           },
         },
       }),
@@ -558,7 +558,7 @@ export const Small: StoryObj<HvKpiProps> = {
       }),
       selectable: css({
         "&:hover": {
-          outline: `1px solid ${theme.colors.primarySubtle}`,
+          outline: `1px solid ${theme.colors.containerBackgroundHover}`,
         },
       }),
       contentContainer: css({

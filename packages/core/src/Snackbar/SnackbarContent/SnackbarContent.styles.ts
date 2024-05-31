@@ -20,7 +20,7 @@ export const { useClasses, staticClasses } = createClasses(
       backgroundColor: theme.colors.errorSubtle,
     },
     default: {
-      backgroundColor: theme.colors.neutral_20,
+      backgroundColor: theme.colors.neutralSubtle,
     },
     warning: {
       backgroundColor: theme.colors.warningSubtle,

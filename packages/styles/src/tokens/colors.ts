@@ -207,6 +207,7 @@ const utilsLight = {
   // secondary2: accentLight.secondary_60,
 
   // neutral: semanticLight.neutral,
+  neutralSubtle: semanticLight.neutral_20,
   // catastrophic: semanticLight.catastrophic,
   // positive: semanticLight.positive,
   positiveAction: semanticLight.positive_80,
@@ -233,7 +234,7 @@ const utilsLight = {
   bgPaper: atmosphereLight.atmo1, // surfaces (Header, Tooltip, Dialog, Drawer, etc.)
   // 👆 missing an atmo1 for text `color`
   bgAction: atmosphereLight.atmo3,
-  // hvActive: atmosphereLight.atmo3,
+  // hvActive: atmosphereLight.atmo3, // pressed
   bgDisabled: atmosphereLight.atmo3, // ❓ atmo4 ❓
   // bgHover: accentLight.primary_20,
   containerBackgroundHover: accentLight.primary_20, // rename bgHover

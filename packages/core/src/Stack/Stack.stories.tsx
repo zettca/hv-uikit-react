@@ -23,7 +23,7 @@ const Box = styled("div")({
   display: "flex",
   color: theme.colors.base_dark,
   border: `1px solid ${theme.colors.sema15}`,
-  backgroundColor: theme.colors.neutral_20,
+  backgroundColor: theme.colors.neutralSubtle,
   width: 150,
   height: 50,
   alignItems: "center",
@@ -240,7 +240,7 @@ export const WithNavigation: StoryObj<HvStackProps> = {
         </HvCard>
         <HvCard
           bgcolor="bgPaper"
-          statusColor="neutral_20"
+          statusColor="neutralSubtle"
           style={{ width: 275 }}
         >
           <HvCardHeader title="Card 4" icon={<Tool />} />

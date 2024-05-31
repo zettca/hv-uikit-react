@@ -102,7 +102,7 @@ export const { staticClasses, useClasses } = createClasses("HvTableHeader", {
       boxShadow: "none",
       backgroundColor: "transparent",
       "&:hover": {
-        backgroundColor: theme.colors.primarySubtle,
+        backgroundColor: theme.colors.containerBackgroundHover,
       },
     },
   },

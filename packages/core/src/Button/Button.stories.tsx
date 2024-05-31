@@ -234,7 +234,7 @@ export const Semantic: StoryObj<HvButtonProps> = {
         sx={{
           display: "flex",
           gap: 20,
-          backgroundColor: theme.colors.neutral_20,
+          backgroundColor: theme.colors.neutralSubtle,
           padding: 20,
         }}
       >

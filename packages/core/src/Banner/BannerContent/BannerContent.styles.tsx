@@ -36,7 +36,7 @@ export const { useClasses, staticClasses } = createClasses("HvBannerContent", {
     backgroundColor: theme.colors.errorSubtle,
   },
   default: {
-    backgroundColor: theme.colors.neutral_20,
+    backgroundColor: theme.colors.neutralSubtle,
   },
   outContainer: {
     width: "100%",

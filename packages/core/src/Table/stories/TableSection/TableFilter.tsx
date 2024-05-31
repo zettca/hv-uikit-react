@@ -72,7 +72,7 @@ const classes = {
     borderColor: "transparent",
     "&:hover": {
       borderColor: "transparent",
-      backgroundColor: theme.colors.primarySubtle,
+      backgroundColor: theme.colors.containerBackgroundHover,
     },
     "&:focus-visible": {
       borderColor: "transparent",

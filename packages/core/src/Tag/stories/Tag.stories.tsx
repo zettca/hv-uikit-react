@@ -25,7 +25,7 @@ export const Main: StoryObj<HvTagProps> = {
     onClick: () => console.log("click"),
     onDelete: () => console.log("delete"),
     type: "semantic",
-    color: "neutral_20",
+    color: "neutralSubtle",
     disabled: false,
   },
   argTypes: {

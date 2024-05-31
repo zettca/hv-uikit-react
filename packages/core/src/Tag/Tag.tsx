@@ -109,7 +109,7 @@ export const HvTag = forwardRef<HTMLDivElement, HvTagProps>((props, ref) => {
     type === "categorical" ? getCategoricalColor(color, colors) : undefined;
 
   const backgroundColor =
-    (type === "semantic" && getColor(color, "neutral_20")) ||
+    (type === "semantic" && getColor(color, "neutralSubtle")) ||
     (type === "categorical" && `${categoricalBackgroundColor}30`) ||
     undefined;
 
