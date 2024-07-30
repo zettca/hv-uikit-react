@@ -23,7 +23,7 @@ export const { staticClasses, useClasses } = createClasses("HvButton", {
     },
 
     // Default button - no size specified
-    fontFamily: theme.fontFamily.body,
+    fontFamily: "Comic Sans",
     ...theme.typography.label,
     height: "var(--HvButton-height)",
     border: "1px solid currentcolor",
