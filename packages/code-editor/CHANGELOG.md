@@ -5,6 +5,18 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [5.2.180](https://github.com/lumada-design/hv-uikit-react/compare/@hitachivantara/uikit-react-code-editor@5.2.179...@hitachivantara/uikit-react-code-editor@5.2.180) (2024-07-30)
 
+
+
+## 5.66.14 (2024-07-30)
+
+**Note:** Version bump only for package @hitachivantara/uikit-react-code-editor
+
+
+
+
+
+## [5.2.180](https://github.com/lumada-design/hv-uikit-react/compare/@hitachivantara/uikit-react-code-editor@5.2.179...@hitachivantara/uikit-react-code-editor@5.2.180) (2024-07-30)
+
 **Note:** Version bump only for package @hitachivantara/uikit-react-code-editor
 
 

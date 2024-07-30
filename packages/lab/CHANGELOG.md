@@ -5,6 +5,21 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [5.37.4](https://github.com/lumada-design/hv-uikit-react/compare/@hitachivantara/uikit-react-lab@5.37.3...@hitachivantara/uikit-react-lab@5.37.4) (2024-07-30)
 
+
+### Bug Fixes
+
+* **Blades:** fix styles ([10c19a2](https://github.com/lumada-design/hv-uikit-react/commit/10c19a21ff83c0aeb7049d14b0bd6c133290a867))
+
+
+
+## 5.66.14 (2024-07-30)
+
+
+
+
+
+## [5.37.4](https://github.com/lumada-design/hv-uikit-react/compare/@hitachivantara/uikit-react-lab@5.37.3...@hitachivantara/uikit-react-lab@5.37.4) (2024-07-30)
+
 **Note:** Version bump only for package @hitachivantara/uikit-react-lab
 
 

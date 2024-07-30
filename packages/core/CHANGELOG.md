@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.67.0](https://github.com/lumada-design/hv-uikit-react/compare/@hitachivantara/uikit-react-core@5.66.13...@hitachivantara/uikit-react-core@5.67.0) (2024-07-30)
+
+
+### Features
+
+* **Button:** add new epic font ([726e5c8](https://github.com/lumada-design/hv-uikit-react/commit/726e5c8e138f29e50c275a93636996f9368233da))
+
+
+
+## 5.66.14 (2024-07-30)
+
+
+### Bug Fixes
+
+* **Button:** remove margin ([7b4b4b9](https://github.com/lumada-design/hv-uikit-react/commit/7b4b4b935bfb86ed9d1e29db1367984aa9a5f271))
+
+
+
+
+
 ## [5.66.14](https://github.com/lumada-design/hv-uikit-react/compare/@hitachivantara/uikit-react-core@5.66.13...@hitachivantara/uikit-react-core@5.66.14) (2024-07-30)
 
 

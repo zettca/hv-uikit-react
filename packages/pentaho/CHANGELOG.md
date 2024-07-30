@@ -5,6 +5,18 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.1.5](https://github.com/lumada-design/hv-uikit-react/compare/@hitachivantara/uikit-react-pentaho@0.1.4...@hitachivantara/uikit-react-pentaho@0.1.5) (2024-07-30)
 
+
+
+## 5.66.14 (2024-07-30)
+
+**Note:** Version bump only for package @hitachivantara/uikit-react-pentaho
+
+
+
+
+
+## [0.1.5](https://github.com/lumada-design/hv-uikit-react/compare/@hitachivantara/uikit-react-pentaho@0.1.4...@hitachivantara/uikit-react-pentaho@0.1.5) (2024-07-30)
+
 **Note:** Version bump only for package @hitachivantara/uikit-react-pentaho
 
 

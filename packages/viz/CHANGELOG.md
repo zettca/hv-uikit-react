@@ -5,6 +5,18 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [5.13.12](https://github.com/lumada-design/hv-uikit-react/compare/@hitachivantara/uikit-react-viz@5.13.11...@hitachivantara/uikit-react-viz@5.13.12) (2024-07-30)
 
+
+
+## 5.66.14 (2024-07-30)
+
+**Note:** Version bump only for package @hitachivantara/uikit-react-viz
+
+
+
+
+
+## [5.13.12](https://github.com/lumada-design/hv-uikit-react/compare/@hitachivantara/uikit-react-viz@5.13.11...@hitachivantara/uikit-react-viz@5.13.12) (2024-07-30)
+
 **Note:** Version bump only for package @hitachivantara/uikit-react-viz
 
 
