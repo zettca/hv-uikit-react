@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.66.14](https://github.com/lumada-design/hv-uikit-react/compare/@hitachivantara/uikit-react-core@5.66.13...@hitachivantara/uikit-react-core@5.66.14) (2024-07-30)
+
+
+### Bug Fixes
+
+* **Button:** remove margin ([8973d46](https://github.com/lumada-design/hv-uikit-react/commit/8973d467a24fcdc8f60c80cf04309f970a6818ee))
+
+
+
+
+
 ## [5.66.13](https://github.com/lumada-design/hv-uikit-react/compare/@hitachivantara/uikit-react-core@5.66.12...@hitachivantara/uikit-react-core@5.66.13) (2024-07-25)
 
 ### Bug Fixes
