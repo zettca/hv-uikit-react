@@ -6,6 +6,7 @@ import { HvButtonRadius, HvButtonSize } from "./types";
 
 export const { staticClasses, useClasses } = createClasses("HvButton", {
   root: {
+    margin: 0,
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
