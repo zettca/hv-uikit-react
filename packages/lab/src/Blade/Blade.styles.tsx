@@ -3,6 +3,7 @@ import { theme } from "@hitachivantara/uikit-styles";
 
 export const { staticClasses, useClasses } = createClasses("HvBlade", {
   root: {
+    margin: 0,
     position: "relative",
 
     display: "flex",
