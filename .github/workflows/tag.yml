@@ -1,0 +1,28 @@
+name: Announce Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  announce:
+    name: Announce Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - run: npx changelogithub@0.13.x
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # TODO
+      - run: echo "Slack message"
