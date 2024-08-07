@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.182](https://github.com/lumada-design/hv-uikit-react/compare/@hitachivantara/uikit-react-code-editor@5.2.180...@hitachivantara/uikit-react-code-editor@5.2.182) (2024-08-07)
+
+
+### Performance Improvements
+
+* remove core dependency in viz & code-editor ([27ede92](https://github.com/lumada-design/hv-uikit-react/commit/27ede92f7e198924655247cb576867c027286c3d))
+
+
+
+
+
 ## [5.2.181](https://github.com/lumada-design/hv-uikit-react/compare/@hitachivantara/uikit-react-code-editor@5.2.180...@hitachivantara/uikit-react-code-editor@5.2.181) (2024-08-07)
 
 
