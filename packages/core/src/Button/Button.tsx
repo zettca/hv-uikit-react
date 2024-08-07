@@ -119,6 +119,8 @@ export const HvButton = fixedForwardRef(function HvButton<
     activeTheme?.name,
   );
 
+  console.log("logging feature");
+
   const handleClick: HvButtonProps["onClick"] = (e) => {
     if (disabled) return;
     onClickProp?.(e);
