@@ -1,12 +1,16 @@
 export default {
+  "-- Overview": {
+    title: "Overview",
+    type: "separator",
+  },
+  introduction: "Introduction",
+
   "-- Concepts": {
     title: "Concepts",
     type: "separator",
   },
-  introduction: "Introduction",
   "base-concepts": "Base Concepts",
   "config-file": "App Shell Configuration",
-  // #region configuration
   "other-apps": "Registering other Application Bundles",
   views: "Views and Routes",
   navigation: "Navigation",
@@ -14,7 +18,6 @@ export default {
   state: "Sharing State",
   localization: "Localization",
   theming: "Theming",
-  // #endregion
   notifications: "Notifications",
   styling: "Styling",
   "assets-and-apis": "Static Assets and API Calls",

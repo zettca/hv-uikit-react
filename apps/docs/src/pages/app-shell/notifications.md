@@ -24,31 +24,30 @@ const actions = {
   actions: [
     {
       label: "Action 1",
-      id: "action1"
+      id: "action1",
     },
     {
       label: "Action 2",
-      id: "action2"
-    }
+      id: "action2",
+    },
   ],
   actionsCallback: (evt, id, action) => {
     // do something
-  }
+  },
 };
-const customEvent = new CustomEvent<HvAppShellEventNotification>(HvAppShellEventNotificationTrigger, {
-  detail: {
-    type: "snackbar",
-    variant: "success",
-    message: "This is a snackbar",
-    ...actions
-  }
-});
+const customEvent =
+  new CustomEvent() <
+  HvAppShellEventNotification >
+  (HvAppShellEventNotificationTrigger,
+  {
+    detail: {
+      type: "snackbar",
+      variant: "success",
+      message: "This is a snackbar",
+      ...actions,
+    },
+  });
 globalThis.dispatchEvent(customEvent);
 ```
 
 For more examples, explore the [notification playground sample](../client/samples/default-app/src/pages/Notifications/Notifications.tsx).
-
-___
-➡️ **Next step**: [App Shell API Reference](./api-reference.md)
-
-[Documentation Index](./README.md)
