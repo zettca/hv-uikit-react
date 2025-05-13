@@ -6,7 +6,7 @@ The **App Shell** allows to add actions to the right-hand side of the header. Th
 
 Create `src/header/SayHelloButton.tsx` with the following code:
 
-```typescript
+```tsx
 export default function Hello({ planet = "Earth" }: { planet: string }) {
   return <button onClick={() => alert(`Hello ${planet}!`)}>Say Hello</button>;
 }
@@ -14,20 +14,17 @@ export default function Hello({ planet = "Earth" }: { planet: string }) {
 
 Add the _Header Action_ to your configuration:
 
-```jsonc
-// ...
-  header: {
-    actions: [
-      {
-        bundle: "@hv-apps/my-app/header/SayHelloButton.js",
-        config: {
-          planet: "Mars",
-        }
-      }
-      // ...
-    ]
-  }
-// ...
+```ts
+header: {
+  actions: [
+    {
+      bundle: "@hv-apps/my-app/header/SayHelloButton.js",
+      config: {
+        planet: "Mars",
+      },
+    },
+  ];
+}
 ```
 
 ## Built-in Header Actions
@@ -50,47 +47,44 @@ To use this action, the bundle must be defined as `@hv/app-switcher-client/toggl
 
 Example:
 
-```jsonc
-// ...
-  header: {
-    actions: [
-      {
-        bundle: "@hv/app-switcher-client/toggle.js",
-        config: {
-          title: "Apps",
-          apps: [
-            {
-              label: "App 1",
-              description: "Application 1",
-              url: "#",
-              target: "NEW",
-              icon: {
-                iconType: "uikit",
-                name: "Dummy"
-              }
+```ts
+header: {
+  actions: [
+    {
+      bundle: "@hv/app-switcher-client/toggle.js",
+      config: {
+        title: "Apps",
+        apps: [
+          {
+            label: "App 1",
+            description: "Application 1",
+            url: "#",
+            target: "NEW",
+            icon: {
+              iconType: "uikit",
+              name: "Dummy",
             },
-            {
-              label: "App 2",
-              description: "Application 2",
-              url: "#",
-              target: "SELF",
-              icon: {
-                iconType: "uikit",
-                name: "Warehouse"
-              }
+          },
+          {
+            label: "App 2",
+            description: "Application 2",
+            url: "#",
+            target: "SELF",
+            icon: {
+              iconType: "uikit",
+              name: "Warehouse",
             },
-            {
-              label: "App 3",
-              url: "#",
-              target: "NEW"
-            }
-          ]
-        }
-      }
-      // ...
-    ]
-  }
-// ...
+          },
+          {
+            label: "App 3",
+            url: "#",
+            target: "NEW",
+          },
+        ],
+      },
+    },
+  ];
+}
 ```
 
 ##### Help Button
@@ -102,21 +96,18 @@ To use this action, the bundle must be defined as `@hv/help-client/button.js` an
 
 Example:
 
-```jsonc
-// ...
-  header: {
-    actions: [
-      {
-        bundle: "@hv/help-client/button.js",
-        config: {
-          url: "https://www.hitachivantara.com/",
-          description: "Hitachi Vantara Help Link"
-        }
-      }
-      // ...
-    ]
-  }
-// ...
+```ts
+header: {
+  actions: [
+    {
+      bundle: "@hv/help-client/button.js",
+      config: {
+        url: "https://www.hitachivantara.com/",
+        description: "Hitachi Vantara Help Link",
+      },
+    },
+  ];
+}
 ```
 
 ##### Color Mode Switcher
@@ -125,15 +116,12 @@ To use this action, the bundle must be defined as `@hv/theming-client/colorModeS
 
 Example:
 
-```jsonc
-// ...
-  header: {
-    actions: [
-      {
-        bundle: "@hv/theming-client/colorModeSwitcher.js"
-      }
-      // ...
-    ]
-  }
-// ...
+```ts
+header: {
+  actions: [
+    {
+      bundle: "@hv/theming-client/colorModeSwitcher.js",
+    },
+  ];
+}
 ```

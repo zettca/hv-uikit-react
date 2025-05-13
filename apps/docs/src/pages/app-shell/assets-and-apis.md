@@ -26,10 +26,8 @@ Vite allows [importing assets as URLs](https://vitejs.dev/guide/assets.html#impo
 
 As such, the functionality provided by Vite should not be used. Instead, the `require.meta.resolve` method should be used to construct URLs relative to the _Application Bundles'_ origin, as shown above.
 
-Check [Importing CSS files](./styling.md#importing-css-files) for an alternative to importing CSS files.
+Check [Importing CSS files](./styling#importing-css-files) for an alternative to importing CSS files.
 
 ## Data-fetching library
 
-The usage of a data-fetching library is highly recommended to avoid the need to write boilerplate code for data fetching and error handling.
-
-For REST APIs, libraries like [SWR](https://swr.vercel.app/) or [React Query](https://react-query.tanstack.com/) are recommended. For GraphQL APIs, [Apollo Client](https://www.apollographql.com/docs/react/) is recommended.
+The usage of a data-fetching library, such as [SWR](https://swr.vercel.app/) or [React Query](https://react-query.tanstack.com/), is highly recommended to avoid the need to write boilerplate code for data fetching and error handling.

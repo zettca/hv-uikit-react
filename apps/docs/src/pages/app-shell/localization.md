@@ -4,21 +4,19 @@ The **App Shell** utilizes the [i18next](https://www.i18next.com/) library for l
 
 Example: localizing the application name.
 
-```jsonc
-// ...
-  name: "NAME_TRANSLATION_KEY",
-  translations: {
-    en: {
-      NAME_TRANSLATION_KEY: "My App"
-    },
-    es: {
-      NAME_TRANSLATION_KEY: "Mi App"
-    }
+```ts
+name: "NAME_TRANSLATION_KEY",
+translations: {
+  en: {
+    NAME_TRANSLATION_KEY: "My App"
+  },
+  es: {
+    NAME_TRANSLATION_KEY: "Mi App"
   }
-// ...
+}
 ```
 
-Check the [configuration file reference](./config-file.md#Localization) for more information on how to provide translations.
+Check the [configuration file reference](./config-file#localization) for more information on how to provide translations.
 
 ## Application Bundles localization
 

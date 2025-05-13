@@ -54,18 +54,15 @@ _Views_ can also have their own internal routing. This feature primarily aims to
 
 Such _Views'_ route should end with a placeholder, e.g. with a `*` wildcard or with a dynamic `:id`-style segment, like in `/contacts/:id?`.
 
-```jsonc
-// ...
-  mainPanel: {
-    views: [
-      {
-        bundle: "@hv-apps/my-app/pages/Persons.js",
-        route: "/contacts/*"
-      }
-      // ...
-    ]
-  }
-// ...
+```ts
+mainPanel: {
+  views: [
+    {
+      bundle: "@hv-apps/my-app/pages/Persons.js",
+      route: "/contacts/*",
+    },
+  ];
+}
 ```
 
 The **App Shell** router will then match any route that starts with `/contacts/` and render the `persons` _View_. Internally, the _View_ can define its own routing and, for instance, render a list of persons at `/contacts/` and a detail view at `/contacts/:id`.

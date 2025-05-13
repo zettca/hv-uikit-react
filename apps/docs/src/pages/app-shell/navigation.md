@@ -4,19 +4,16 @@ The **App Shell** implements the [NEXT Design System's Navigation System pattern
 
 Example: Add the following menu item to your configuration:
 
-```jsonc
-// ...
-  menu: [
-    {
-      label: "Hello",
-      target: "/hello"
-    }
-    // ...
-  ]
-// ...
+```tsx
+menu: [
+  {
+    label: "Hello",
+    target: "/hello",
+  },
+];
 ```
 
-Check the [configuration file reference](./config-file.md#Navigation) for more information on how to build the _Product's_ navigation menu.
+Check the [configuration file reference](./configuration#menu) for more information on how to build the _Product's_ navigation menu.
 
 You can also enable the `autoMenu` option that when set, will have the plugin trying to automatically add the configured views as menu entries. Any menu defined in the App Shell config file will be overwritten. For more details refer to the [plugin documentation](../client/packages/app-shell-vite-plugin/README.md).
 
@@ -51,7 +48,7 @@ export default function Hello() {
 
 The hook also returns `getViewRoute` function, that receives a _View_'s bundle id and optional parameters to compose a returning URL. Use it when you need to get a _View_'s URL without navigating to it.
 
-Check the [API Reference](./api-reference.md) for more information and other navigation related functions.
+Check the [API Reference](./api-reference) for more information and other navigation related functions.
 
 ### Generic development guidelines
 
@@ -63,7 +60,7 @@ Check the [API Reference](./api-reference.md) for more information and other nav
 
 ### More navigation
 
-Besides navigation between _Views_, one can use the [**App Shell** built-in actions](./header-actions.md#built-in-header-actions) to navigate to:
+Besides navigation between _Views_, one can use the [**App Shell** built-in actions](./header-actions#built-in-header-actions) to navigate to:
 
 - multiple conceptually separate _Products_;
 - a new tab with the configured url.

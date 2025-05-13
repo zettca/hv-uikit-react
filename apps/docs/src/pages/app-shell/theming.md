@@ -16,35 +16,29 @@ UI Kit base themes are identified as "ds5", "ds3", and "pentahoPlus", while cust
 
 Changing the default theme (DS5) color mode:
 
-```jsonc
-// ...
-  theming: {
-    colorMode: "wicked"
-  }
-// ...
+```ts
+theming: {
+  colorMode: "wicked";
+}
 ```
 
 Using the DS3 theme in wicked mode:
 
-```jsonc
-// ...
-  theming: {
-    themes: ["ds3"],
-    theme: "ds3", //redundant as it is the first (and only) theme in the themes array
-    colorMode: "wicked"
-  }
-// ...
+```ts
+theming: {
+  themes: ["pentahoPlus"],
+  theme: "pentahoPlus", // redundant - it's the first & only theme in `themes`
+  colorMode: "wicked"
+}
 ```
 
 Using a custom theme (while keeping DS5 available as well):
 
-```jsonc
-// ...
-  theming: {
-    themes: ["ds5", "@hv-apps/custom-themes/tatooine.js"],
-    theme: "tatooine"
-  }
-// ...
+```ts
+theming: {
+  themes: ["ds5", "@hv-apps/custom-themes/tatooine.js"],
+  theme: "tatooine"
+}
 ```
 
 > **_NOTE_**: When using both `themes` and `theme` properties, the value defined on the latter must exist on the array of custom themes otherwise it will use the first successfully loaded custom theme or, if none managed to be loaded, it will use the default theme (ds5).
@@ -59,16 +53,17 @@ When dispatching this event, the detail object should include:
 
 For event dispatching, utilize the `globalThis` variable and below is an example on how to trigger the change:
 
-```javascript
-const customEvent =
-  new CustomEvent() <
-  HvAppShellEventTheme >
-  (HvAppShellEventThemeTrigger,
-  {
-    detail: {
-      colorMode,
-    },
-  });
+```tsx
+import {
+  HvAppShellEventTheme,
+  HvAppShellEventThemeTrigger,
+} from "@hitachivantara/app-shell-events";
+
+const customEvent = new CustomEvent<HvAppShellEventTheme>()(
+  HvAppShellEventThemeTrigger,
+  { detail: { colorMode } },
+);
+
 globalThis.dispatchEvent(customEvent);
 ```
 
@@ -80,15 +75,12 @@ The **App Shell** provides a built-in Color Mode Switcher _Header Action_ that c
 
 It can be enabled by adding the `@hv/theming-client/colorModeSwitcher.js` module to the `header.actions` array of the configuration file.
 
-```jsonc
-// ...
-  header: {
-    actions: [
-      {
-        bundle: "@hv/theming-client/colorModeSwitcher.js"
-      }
-      // ...
-    ]
-  }
-// ...
+```ts
+header: {
+  actions: [
+    {
+      bundle: "@hv/theming-client/colorModeSwitcher.js",
+    },
+  ];
+}
 ```
