@@ -3,7 +3,7 @@ export default {
     title: "Overview",
     type: "separator",
   },
-  introduction: "Introduction",
+  index: "Introduction",
 
   "-- Concepts": {
     title: "Concepts",
