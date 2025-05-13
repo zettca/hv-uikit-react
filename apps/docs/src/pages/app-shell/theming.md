@@ -4,7 +4,7 @@ The **App Shell** allows the customization of the _Product_'s look and feel by s
 
 ## Custom Themes
 
-Custom themes are a _Shared Module_ that exports a UI Kit theme definition. For more information on theme structures, refer to the [UI Kit documentation](https://lumada-design.github.io/uikit/master/?path=/docs/guides-theming--main). You can also explore the [custom-themes sample](../client/samples/custom-themes) for additional guidance.
+Custom themes are a _Shared Module_ that exports a UI Kit theme definition. For more information on theme structures, refer to the [Theming documentation](/docs/theming).
 
 ## Configuration
 
@@ -66,8 +66,6 @@ const customEvent = new CustomEvent<HvAppShellEventTheme>()(
 
 globalThis.dispatchEvent(customEvent);
 ```
-
-For more examples, explore the [theming playground sample](../client/samples/default-app/src/pages/Theming/Theming.tsx).
 
 ## Color Mode Switcher
 

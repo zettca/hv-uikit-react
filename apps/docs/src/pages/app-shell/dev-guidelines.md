@@ -71,12 +71,10 @@ The _View_ should use the same React Router library instance as the **App Shell*
 
 Any navigation within the _View_ should be relative to the _View_'s route. For instance, a link to the detail view of a person with id `123` should be rendered as `<Link to="./123">`.
 
-A concrete usage of this can be found [here](../client/samples/README.md#internal-route-candy-app).
-
 ### Adopting App Shell for existing applications
 
 When adapting existing applications, the existing routing solution must be configured with the base path of the _View_'s route. For instance, if the _View_'s route is `/contacts/*`, the base path should be `/contacts/`.
 
-Remember that if the existing routing library is also React Router 6, that dependency should be marked as external, so it uses the same version as the **App Shell**. This is handled automatically by the [App Shell's Vite plugin](../client/packages/app-shell-vite-plugin).
+Remember that if the existing routing library is also React Router 6, that dependency should be marked as external, so it uses the same version as the **App Shell**. This is handled automatically by the App Shell Vite plugin.
 
 If the application is using a different React Router major version we currently don't have a solution for adopting the **App Shell**, other than migrating the application to React Router 6.

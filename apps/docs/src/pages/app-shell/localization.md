@@ -26,5 +26,3 @@ The **App Shell does not** provide translations to the embedded _Views_ meaning 
 A _View_ may accidentally access the **App Shell**'s i18next instance when using the `useTranslation` hook.
 Because of that, _Application Bundles_ must ensure they use its own i18next instance to avoid collision and incorrect information display.
 For more information check the documentation at [i18next.com/overview/api](https://www.i18next.com/overview/api#createinstance).
-
-An `I18nextProvider` can be used to share the i18next instance. Look at the [internal-route-candy-app sample](../client/samples/internal-route-candy-app/src/pages/Main/Main.tsx).

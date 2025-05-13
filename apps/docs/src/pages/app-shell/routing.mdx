@@ -1,6 +1,6 @@
 import { Callout } from "nextra/components";
 
-# Views and Routes
+# Routing
 
 A _View_ is a React Component exported as an ES module. It is the main building block of any _Product_ and are most commonly known as _pages_.
 
@@ -33,19 +33,13 @@ mainPanel: {
 }
 ```
 
-Now, when launching your application, you can navigate to this _View_ with `http://.../hello`.
+Now, when launching your application, you can navigate to this _View_ with `/hello`.
 
 Check the [configuration file reference](./configuration.md#mainpanel) for more information on how to declare _Views_.
 
-<Callout type="info">
-  You can also enable the `autoViewsAndRoutes` option in the `vite.config.ts`
-  file and when set it will search for _Views_ at the folder specified by the
-  `viewsFolder` parameter (`src/pages` by default) and add them automatically.
-  For details on file-based routing, refer to the [plugin
-  documentation](../client/packages/app-shell-vite-plugin/README.md). Note that
-  _Shared Modules_ other than _Views_ must still be listed in the `modules`
-  parameter at the `vite.config.ts` file.
-</Callout>
+You can also enable the `autoViewsAndRoutes` option in the `vite.config.ts` file and when set it will search for _Views_ at the folder specified by the `viewsFolder` parameter (`src/pages` by default) and add them automatically.
+For details on file-based routing, refer to the [plugin documentation](https://github.com/lumada-design/hv-uikit-react/tree/master/packages/app-shell-vite-plugin#readme).
+Note that _Shared Modules_ other than _Views_ must still be listed in the `modules` parameter at the `vite.config.ts` file.
 
 ## Route Parameters
 
@@ -101,6 +95,7 @@ export default function PersonBrowser({ children }) {
 
 The current architectural guidelines, and one of the goals of the App Shell Framework and its plugin, is to keep the exported _Shared Modules_ generally, and _Views_ in particular, uncoupled from the App Shell and its shared dependencies (react-router in this case).
 This would allow, for example, to use the same exported ES Module in another context - without the App Shell and react-router - by simply passing it `children`.
+
 When loaded by the App Shell, a `<Outlet />` instance is automatically passed to the _View_ as `children`, so it will work as expected and render the active nested _View_.
 
 **How can I use react-router's `<Outlet />` context and `useOutletContext()`?**
@@ -111,11 +106,9 @@ The Outlet's context is just an utility. You can create your own context provide
 
 If keeping the _Shared Modules_ uncoupled from the App Shell is not a concern, you can use `<Outlet />` directly in the _View_ and just ignore the `children` prop.
 
-### Index Route
+## Index Route
 
-For the **App Shell** the index route, meaning the _View_ that is rendered when the URL matches the parent _View_ route exactly, is just a regular nested _View_ with `/` as the route.
-
-Example:
+For the **App Shell** the index route, meaning the _View_ that is rendered when the URL matches the parent _View_ route exactly, is just a regular nested _View_ with `/` as the route:
 
 ```ts
 mainPanel: {
@@ -134,4 +127,8 @@ mainPanel: {
 }
 ```
 
-While when navigating to `/persons/1`, the `PersonBrowser` component receives the `PersonDetails` component as `children`, when navigating to `/persons` it receives the `PersonKPIs` component.
+| Route          | Component                        |
+| -------------- | -------------------------------- |
+| `/persons`     | `<PersonBrowser><PersonKPIs>`    |
+| `/persons/new` | `<PersonBrowser><NewPersonForm>` |
+| `/persons/123` | `<PersonBrowser><PersonDetails>` |

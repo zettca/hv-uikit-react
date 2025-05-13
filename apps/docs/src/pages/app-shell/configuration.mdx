@@ -7,7 +7,7 @@ The **App Shell** configuration file (`app-shell.config.ts`) holds the applicati
 Properties that reference modules' locations can be:
 
 1. A **bare-specifier**, such as `@hv-apps/my-app/pages/Hello.js`. The bare-specifier prefix must be mapped to a URL (`baseUrl`) in the [`apps` property](#application-bundles-registration).
-2. A fully qualified URL, like `http://localhost:3001/pages/Hello.js`, which directly points to the module’s location.
+2. A fully qualified URL, like `http://localhost:3001/pages/Hello.js`, which directly points to the module's location.
 
 During development, the following additional module location can also be used:
 
@@ -20,6 +20,8 @@ Properties that receive text values can be internationalized by using a key that
 If a value, used in any of the internationalizable properties, is not present on the translations bundle then it will be used as is.
 
 ## Configuration Properties
+
+The `app-shell.config.ts` configuration file has the following properties:
 
 ### `name`
 
@@ -91,7 +93,7 @@ mainPanel: {
 }
 ```
 
-See [Views and Routes](./routing) for more information.
+See [Routing](./routing) for more information.
 
 ### `menu`
 
@@ -194,11 +196,20 @@ See [Header Actions](./header-actions) for more information and see the availabl
 
 ### `providers`
 
-This prop defines the _Providers_ that will wrap all the _Views_ and _Shared Modules_. It is an array of objects where each object has the following options:
+This prop defines the _Providers_ that will wrap all the _Views_ and _Shared Modules_:
 
-- _**bundle**_: The module location of the _Provider_. **Required**.
+```ts
+providers: [
+  { bundle: "@hv-apps/some-app/providers/SomeProvider.js" },
+  { bundle: "@hv-apps/other-app/providers/OtherProvider.js" },
+];
+```
 
-See [Sharing State](./state) for more information.
+Notes:
+
+- Each _Application Bundle_ ideally should expose just a single _Provider_. If multiple _Providers_ are needed, they can be composed into a single _Provider_.
+- The **App Shell** will instantiate the _Providers_ in the order they are declared in the configuration file. However, dependencies between _Providers_ should be avoided, and never rely on the existence of another _Provider_.
+- This shouldn't be abused: Context only needed for the rendering of a _View_ shouldn't be put on a global _Provider_ just because another _View_ needs it. E.g. the i18next provider should continue to be instantiated on every view, using a HOC for example, instead of having a global provider for each _Application Bundle_, each with its own i18next provider always instanced in case it is needed.
 
 ### `translations`
 

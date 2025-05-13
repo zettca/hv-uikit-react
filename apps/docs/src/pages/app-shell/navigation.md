@@ -15,38 +15,37 @@ menu: [
 
 Check the [configuration file reference](./configuration#menu) for more information on how to build the _Product's_ navigation menu.
 
-You can also enable the `autoMenu` option that when set, will have the plugin trying to automatically add the configured views as menu entries. Any menu defined in the App Shell config file will be overwritten. For more details refer to the [plugin documentation](../client/packages/app-shell-vite-plugin/README.md).
+You can also enable the `autoMenu` option that when set, will have the plugin trying to automatically add the configured views as menu entries. Any menu defined in the App Shell config file will be overwritten.
+For more details refer to the [plugin documentation](https://github.com/lumada-design/hv-uikit-react/tree/master/packages/app-shell-vite-plugin#readme).
 
 ## Navigation between Views
 
 Each _View_ doesn't know the final route path it will be mounted at, as it is defined by the application that integrates it. Most noticeable, the _View_ doesn't know the path of other _Views_ it wants to navigate to.
 
-To allow _Views_ to navigate to other _Views_, the **App Shell Navigation** provides a `useHvNavigation` hook that returns a `navigate` function.
+To allow _Views_ to navigate to other _Views_, the **App Shell Navigation** provides a `useHvNavigation` hook that returns a `navigate` function. The hook also returns `getViewRoute` function, that receives a _View_'s bundle id and optional parameters to compose a returning URL.
 
 Example: Add the following code to `pages/Hello.tsx`:
 
-```typescript
+```tsx
+import { Link } from "react-router-dom";
 import { useHvNavigation } from "@hitachivantara/app-shell-navigation";
 
 export default function Hello() {
-  const { navigate } = useHvNavigation();
+  const { getViewRoute } = useHvNavigation();
+
+  const routeUrl = getViewRoute({
+    viewBundle: "/pages/Persons/Detail",
+    pathParams: { id: 123 },
+  });
 
   return (
     <div>
       <h1>Hello World!</h1>
-      <button
-        onClick={() =>
-          navigate({ viewBundle: "/pages/Persons/Detail", pathParams: { id: 123 } })
-        }
-      >
-        Go to Person 123
-      </button>
+      <Link to={routeUrl}>Go to Person 123</Link>
     </div>
   );
 }
 ```
-
-The hook also returns `getViewRoute` function, that receives a _View_'s bundle id and optional parameters to compose a returning URL. Use it when you need to get a _View_'s URL without navigating to it.
 
 Check the [API Reference](./api-reference) for more information and other navigation related functions.
 

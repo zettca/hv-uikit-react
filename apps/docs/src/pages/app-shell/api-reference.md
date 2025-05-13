@@ -54,8 +54,6 @@ This method accepts two arguments, being:
 
 Searches for the route of a _View_ on the App Shell configuration. It accepts a `string` or a `ViewDestination` object as argument, together with the search mode, and returns a `string` with the compiled path or undefined if the bundle doesn't exist.
 
-Example of the `getViewRoute` using the `ViewDestination` object to navigate through a `<Link>` component can be seen on the [default-app](../client/samples/default-app/src/components/assetInventory/CardView/CardView.tsx).
-
 ### useHvLocation
 
 This hook provides access to the `location` object, just like the `useLocation` hook from react-router, but extended with the `views` property, which is an array of the _Views_ rendered on the current page.

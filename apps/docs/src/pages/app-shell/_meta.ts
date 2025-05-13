@@ -12,11 +12,10 @@ export default {
     title: "Concepts",
     type: "separator",
   },
-  routing: "Views and Routes",
+  routing: "Routing",
   navigation: "Navigation",
   notifications: "Notifications",
   "header-actions": "Header Actions",
-  state: "Sharing State",
 
   "api-reference": "API Reference",
 
@@ -26,7 +25,6 @@ export default {
   },
   localization: "Localization",
   theming: "Theming",
-  styling: "Styling",
   "other-apps": "Registering other Application Bundles",
   "assets-and-apis": "Static Assets and API Calls",
   "dev-guidelines": "Development Guidelines",
