@@ -2,8 +2,7 @@ import nextra from "nextra";
 import rehypeMdxCodeProps from "rehype-mdx-code-props";
 
 const withNextra = nextra({
-  theme: "nextra-theme-docs",
-  themeConfig: "./theme.config.tsx",
+  // contentDirBasePath: "content",
   defaultShowCopyCode: true,
   search: {
     codeblocks: false,

@@ -1,3 +1,5 @@
+"use client";
+
 import { Children, isValidElement, useCallback, useState } from "react";
 import jsxToString from "react-element-to-jsx-string";
 import { CodeEditor } from "react-live-runner";

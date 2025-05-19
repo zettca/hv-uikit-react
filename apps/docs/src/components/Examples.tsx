@@ -5,11 +5,11 @@ import {
   HvTypography,
 } from "@hitachivantara/uikit-react-core";
 
-import charts from "../pages/examples/charts.mdx?raw";
-import dnd from "../pages/examples/dnd.mdx?raw";
-import inputs from "../pages/examples/inputs.mdx?raw";
-import kpis from "../pages/examples/kpis.mdx?raw";
-import tables from "../pages/examples/tables.mdx?raw";
+import charts from "../content/examples/charts.mdx?raw";
+import dnd from "../content/examples/dnd.mdx?raw";
+import inputs from "../content/examples/inputs.mdx?raw";
+import kpis from "../content/examples/kpis.mdx?raw";
+import tables from "../content/examples/tables.mdx?raw";
 
 /**
  * Extracts the number of CodeBlock components in the given file content.

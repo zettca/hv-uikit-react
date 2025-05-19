@@ -1,3 +1,5 @@
+import type { MetaRecord } from "nextra";
+
 export default {
   index: {
     type: "page",
@@ -17,4 +19,4 @@ export default {
   dnd: {
     type: "page",
   },
-};
+} satisfies MetaRecord;

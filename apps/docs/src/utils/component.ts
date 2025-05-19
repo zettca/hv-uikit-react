@@ -1,7 +1,7 @@
 import { resolve } from "path";
 import { withDefaultConfig, type Props } from "react-docgen-typescript";
 
-export interface Meta {
+export interface ComponentMeta {
   component: string;
   source: string;
   package: string;
@@ -64,15 +64,23 @@ const getParsedDocgen = (path: string) => {
   return parser.parse(resolve("../..", path));
 };
 
-export const getComponentData = async (
-  componentName: string,
-  packageName: string,
-  classes: Record<string, string>,
-  subComponents: string[] = [],
+export interface ComponentDataParams {
+  componentName: string;
+  packageName?: string;
+  classes?: Record<string, string>;
+  subComponents?: string[];
+  includeInheritedProps?: boolean;
+}
+
+export const getComponentData = async ({
+  componentName,
+  packageName = "core",
+  classes = {},
+  subComponents = [],
   includeInheritedProps = false,
-): Promise<Meta> => {
+}: ComponentDataParams): Promise<ComponentMeta> => {
   const componentLocation = `packages/${packageName}/src/${componentName}/${componentName}.tsx`;
-  const source = `https://github.com/lumada-design/hv-uikit-react/blob/master/${componentLocation}`;
+  const source = `https://github.com/lumada-design/hv-uikit-react/blob/master${componentLocation}`;
 
   const parsed = getParsedDocgen(componentLocation);
 
