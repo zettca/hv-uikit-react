@@ -110,7 +110,7 @@ export const getComponentData = async ({
   return {
     component: name,
     source,
-    package: packageName || "",
+    package: packageName,
     docgen: cleanedDocgen || {},
     classes,
     subComponents: subComponents || [],

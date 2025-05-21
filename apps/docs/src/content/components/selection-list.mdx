@@ -1,8 +1,8 @@
 import { Callout } from "nextra/components";
 import {
+  selectionListClasses as classes,
   HvListItem,
   HvSelectionList,
-  selectionListClasses,
 } from "@hitachivantara/uikit-react-core";
 
 import { getComponentData } from "../../utils/component";
@@ -10,16 +10,7 @@ import { getComponentData } from "../../utils/component";
 import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
-export const getStaticProps = async ({ params }) => {
-  const meta = await getComponentData(
-    "SelectionList",
-    "core",
-    selectionListClasses,
-  );
-  return { props: { ssg: { meta } } };
-};
-
-<Header />
+<Header params={{ name: "SelectionList", classes }} />
 
 <Playground
   Component={HvSelectionList}

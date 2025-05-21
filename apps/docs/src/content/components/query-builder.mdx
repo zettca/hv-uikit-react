@@ -1,22 +1,13 @@
 import {
+  queryBuilderClasses as classes,
   HvQueryBuilder,
-  queryBuilderClasses,
 } from "@hitachivantara/uikit-react-core";
 
 import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 import { getComponentData } from "../../utils/component";
 
-export const getStaticProps = async ({ params }) => {
-  const meta = await getComponentData(
-    "QueryBuilder",
-    "core",
-    queryBuilderClasses,
-  );
-  return { props: { ssg: { meta } } };
-};
-
-<Header />
+<Header params={{ name: "QueryBuilder", classes }} />
 
 ### How to use
 

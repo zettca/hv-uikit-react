@@ -1,5 +1,5 @@
 import {
-  checkBoxGroupClasses,
+  checkBoxGroupClasses as classes,
   HvCheckBox,
   HvCheckBoxGroup,
 } from "@hitachivantara/uikit-react-core";
@@ -9,16 +9,7 @@ import { getComponentData } from "../../utils/component";
 import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
-export const getStaticProps = async ({ params }) => {
-  const meta = await getComponentData(
-    "CheckBoxGroup",
-    "core",
-    checkBoxGroupClasses,
-  );
-  return { props: { ssg: { meta } } };
-};
-
-<Header />
+<Header params={{ name: "CheckBoxGroup", classes }} />
 
 <Playground
   Component={HvCheckBoxGroup}

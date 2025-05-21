@@ -4,7 +4,7 @@ import { Children, isValidElement, useCallback, useState } from "react";
 import jsxToString from "react-element-to-jsx-string";
 import { CodeEditor } from "react-live-runner";
 
-import { ComponentDataParams, ComponentMeta } from "../../utils/component";
+import { ComponentMeta } from "../../utils/component";
 import { Controls, type Control } from "./Controls";
 import { DocsProvider } from "./DocsProvider";
 
@@ -13,7 +13,6 @@ export interface PlaygroundProps {
   componentName: string;
   componentProps?: Record<string, unknown>;
   meta: ComponentMeta;
-  params: ComponentDataParams;
   controls: Record<string, Control>;
   children?: React.ReactNode;
   decorator?: (children: React.ReactNode) => React.ReactNode;

@@ -1,6 +1,6 @@
 import { Callout } from "nextra/components";
 import {
-  formElementClasses,
+  formElementClasses as classes,
   HvAdornment,
   HvBaseInput,
   HvFormElement,
@@ -15,12 +15,11 @@ import { getComponentData } from "../../utils/component";
 import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
-export const getStaticProps = async ({ params }) => {
-  const meta = await getComponentData(
-    "FormElement",
-    "core",
-    formElementClasses,
-    [
+<Header
+  params={{
+    name: "FormElement",
+    classes,
+    subComponents: [
       "Adornment",
       "CharCounter",
       "InfoMessage",
@@ -28,11 +27,8 @@ export const getStaticProps = async ({ params }) => {
       "WarningText",
       "Suggestions",
     ],
-  );
-  return { props: { ssg: { meta } } };
-};
-
-<Header />
+  }}
+/>
 
 <Callout type="warning">
   You probably don't need to use this component directly. Instead, please check

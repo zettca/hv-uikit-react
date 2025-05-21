@@ -1,8 +1,8 @@
 import { Callout } from "nextra/components";
 import {
+  simpleGridClasses as classes,
   HvPanel,
   HvSimpleGrid,
-  simpleGridClasses,
 } from "@hitachivantara/uikit-react-core";
 
 import { getComponentData } from "../../utils/component";
@@ -10,12 +10,7 @@ import { getComponentData } from "../../utils/component";
 import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
-export const getStaticProps = async ({ params }) => {
-  const meta = await getComponentData("SimpleGrid", "core", simpleGridClasses);
-  return { props: { ssg: { meta } } };
-};
-
-<Header />
+<Header params={{ name: "SimpleGrid", classes }} />
 
 <Callout type="info">
   Please check the [`HvGrid`](/components/grid) component documentation for more
