@@ -3,6 +3,7 @@
 import { Children, isValidElement, useCallback, useState } from "react";
 import jsxToString from "react-element-to-jsx-string";
 import { CodeEditor } from "react-live-runner";
+import { clsx } from "clsx";
 
 import { ComponentMeta } from "../../utils/component";
 import { Controls, type Control } from "./Controls";
@@ -15,7 +16,7 @@ export interface PlaygroundProps {
   meta?: ComponentMeta;
   controls: Record<string, Control>;
   children?: React.ReactNode;
-  decorator?: (children: React.ReactNode) => React.ReactNode;
+  decoratorClassName?: string;
 }
 
 const parseChildren = (child: React.ReactNode) =>
@@ -66,7 +67,7 @@ export const Playground = ({
   componentProps,
   controls = {},
   children,
-  decorator,
+  decoratorClassName,
 }: PlaygroundProps) => {
   // Initialize dynamic props with default values from controls
   const [dynamicProps, setDynamicProps] = useState<Record<string, unknown>>(
@@ -108,8 +109,13 @@ export const Playground = ({
       {/* Component preview and controls */}
       <div className="grid grid-cols-[2fr_1fr] border rounded-t-round">
         {/* Preview Area */}
-        <DocsProvider className="grid place-items-center p-sm h-full">
-          {decorator ? decorator(componentElement) : componentElement}
+        <DocsProvider
+          className={clsx(
+            "grid place-items-center p-sm h-full",
+            decoratorClassName,
+          )}
+        >
+          {componentElement}
         </DocsProvider>
 
         {/* Controls Area */}
