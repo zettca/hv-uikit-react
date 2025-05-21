@@ -4,14 +4,10 @@ import {
   HvBlades,
 } from "@hitachivantara/uikit-react-lab";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
-<Header params={{ name: "Blades", packageName: "lab", classes }} />
-
-<Playground
+<Header
+  params={{ name: "Blades", packageName: "lab", classes }}
   Component={HvBlades}
   componentName="HvBlades"
   controls={{
@@ -33,7 +29,7 @@ import { Header } from "../../components/Header";
   <HvBlade label="4">
     <div className="flex items-center p-xs">Content 4</div>
   </HvBlade>
-</Playground>
+</Header>
 
 ### Controlled
 

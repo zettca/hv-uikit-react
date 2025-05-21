@@ -5,21 +5,15 @@ import {
   HvSimpleGrid,
 } from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
-
-<Header params={{ name: "SimpleGrid", classes }} />
 
 <Callout type="info">
   Please check the [`HvGrid`](/components/grid) component documentation for more
   advanced grid configurations.
 </Callout>
 
-<br />
-
-<Playground
+<Header
+  params={{ name: "SimpleGrid", classes }}
   Component={HvSimpleGrid}
   componentName="HvSimpleGrid"
   controls={{
@@ -34,7 +28,7 @@ import { Header } from "../../components/Header";
   {[...Array(6).keys()].map((i) => (
     <HvPanel>Item {i + 1}</HvPanel>
   ))}
-</Playground>
+</Header>
 
 ### Breakpoints
 

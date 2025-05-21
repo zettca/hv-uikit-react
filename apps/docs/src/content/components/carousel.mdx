@@ -4,16 +4,10 @@ import {
   HvCarouselSlide,
 } from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
 <Header
   params={{ name: "Carousel", classes, subComponents: ["CarouselSlide"] }}
-/>
-
-<Playground
   Component={HvCarousel}
   componentName="HvCarousel"
   controls={{
@@ -33,7 +27,7 @@ import { Header } from "../../components/Header";
       alt={`landscape ${i + 1}`}
     />
   ))}
-</Playground>
+</Header>
 
 ### Thumbnails
 

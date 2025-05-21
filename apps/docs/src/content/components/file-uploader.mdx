@@ -3,9 +3,6 @@ import {
   HvFileUploader,
 } from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
 <Header
@@ -14,9 +11,6 @@ import { Header } from "../../components/Header";
     classes,
     subComponents: ["DropZone", "FileList"],
   }}
-/>
-
-<Playground
   Component={HvFileUploader}
   componentName="HvFileUploader"
   controls={{

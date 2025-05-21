@@ -4,14 +4,10 @@ import {
   HvRadioGroup,
 } from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
-<Header params={{ name: "RadioGroup", classes }} />
-
-<Playground
+<Header
+  params={{ name: "RadioGroup", classes }}
   Component={HvRadioGroup}
   componentName="HvRadioGroup"
   controls={{
@@ -29,7 +25,7 @@ import { Header } from "../../components/Header";
   <HvRadio label="Bar Chart" value="1" />
   <HvRadio label="Line Chart" value="2" />
   <HvRadio label="Pie Chart" value="3" />
-</Playground>
+</Header>
 
 ### Controlled
 

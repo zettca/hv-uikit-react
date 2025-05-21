@@ -7,14 +7,10 @@ import {
   HvSelect,
 } from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
-<Header params={{ name: "Select", classes }} />
-
-<Playground
+<Header
+  params={{ name: "Select", classes }}
   Component={HvSelect}
   componentName="HvSelect"
   controls={{
@@ -39,7 +35,7 @@ import { Header } from "../../components/Header";
     <HvOption value="pl">Poland</HvOption>
     <HvOption value="sp">Spain</HvOption>
   </HvOptionGroup>
-</Playground>
+</Header>
 
 <Callout type="info">
   If you need a search filter or multi-select checkboxes, consider using

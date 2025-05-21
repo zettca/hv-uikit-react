@@ -3,14 +3,10 @@ import {
   HvBlade,
 } from "@hitachivantara/uikit-react-lab";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
-<Header params={{ name: "Blade", packageName: "lab", classes }} />
-
-<Playground
+<Header
+  params={{ name: "Blade", packageName: "lab", classes }}
   Component={HvBlade}
   componentName="HvBlade"
   controls={{
@@ -34,7 +30,7 @@ import { Header } from "../../components/Header";
   decorator={(component) => <div className="flex w-full">{component}</div>}
 >
   <div className="p-xs">The answer to all things is 42.</div>
-</Playground>
+</Header>
 
 ### Content
 

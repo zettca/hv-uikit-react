@@ -4,14 +4,10 @@ import {
   HvCheckBoxGroup,
 } from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
-<Header params={{ name: "CheckBoxGroup", classes }} />
-
-<Playground
+<Header
+  params={{ name: "CheckBoxGroup", classes }}
   Component={HvCheckBoxGroup}
   componentName="HvCheckBoxGroup"
   controls={{
@@ -29,7 +25,7 @@ import { Header } from "../../components/Header";
   <HvCheckBox label="Bar Chart" value="1" />
   <HvCheckBox label="Line Chart" value="2" />
   <HvCheckBox label="Pie Chart" value="3" />
-</Playground>
+</Header>
 
 ### Controlled
 

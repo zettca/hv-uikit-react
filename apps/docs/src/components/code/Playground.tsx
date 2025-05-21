@@ -12,7 +12,7 @@ export interface PlaygroundProps {
   Component: React.ComponentType<{ children?: React.ReactNode }>;
   componentName: string;
   componentProps?: Record<string, unknown>;
-  meta: ComponentMeta;
+  meta?: ComponentMeta;
   controls: Record<string, Control>;
   children?: React.ReactNode;
   decorator?: (children: React.ReactNode) => React.ReactNode;

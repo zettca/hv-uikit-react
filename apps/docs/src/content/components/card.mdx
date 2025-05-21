@@ -3,9 +3,6 @@ import {
   HvCard,
 } from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
 <Header
@@ -116,6 +113,7 @@ export default function Demo() {
     <div className="flex flex-row gap-sm w-full">
       {storages.map((p, idx) => (
         <StorageCard
+          key={idx}
           selected={checked === idx}
           title={p.name}
           icon={p.icon}

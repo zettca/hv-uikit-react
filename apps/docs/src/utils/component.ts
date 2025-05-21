@@ -36,23 +36,14 @@ function cleanUndefinedValues(obj: unknown): unknown {
   return obj;
 }
 
-function filterInheritedProps(
-  props: Props,
-  componentName: string,
-  includeInheritedProps = false,
-): Props {
-  return includeInheritedProps
-    ? props
-    : Object.fromEntries(
-        Object.entries(props).filter(([, prop]) => {
-          const shouldInclude = prop.parent
-            ? prop.parent?.fileName?.includes(componentName)
-            : prop.declarations?.some((d) =>
-                d.fileName?.includes(componentName),
-              );
-          return shouldInclude;
-        }),
-      );
+function filterInheritedProps(props: Props, componentName: string): Props {
+  return Object.fromEntries(
+    Object.entries(props).filter(([, prop]) => {
+      return prop.parent
+        ? prop.parent?.fileName?.includes(componentName)
+        : prop.declarations?.some((d) => d.fileName?.includes(componentName));
+    }),
+  );
 }
 
 const parser = withDefaultConfig({
@@ -69,7 +60,7 @@ export interface ComponentDataParams {
   packageName?: string;
   classes?: Record<string, string>;
   subComponents?: string[];
-  includeInheritedProps?: boolean;
+  showAllProps?: boolean;
 }
 
 export const getComponentData = async ({
@@ -77,7 +68,7 @@ export const getComponentData = async ({
   packageName = "core",
   classes = {},
   subComponents = [],
-  includeInheritedProps = false,
+  showAllProps = false,
 }: ComponentDataParams): Promise<ComponentMeta> => {
   const componentLocation = `packages/${packageName}/src/${name}/${name}.tsx`;
   const source = `https://github.com/lumada-design/hv-uikit-react/blob/master${componentLocation}`;
@@ -85,11 +76,9 @@ export const getComponentData = async ({
   const parsed = getParsedDocgen(componentLocation);
 
   const cleanedDocgen = cleanUndefinedValues(parsed[0]) as Docgen;
-  cleanedDocgen.props = filterInheritedProps(
-    cleanedDocgen.props,
-    name,
-    includeInheritedProps,
-  );
+  if (!showAllProps) {
+    cleanedDocgen.props = filterInheritedProps(cleanedDocgen.props, name);
+  }
 
   const parsedSubComponents: Record<string, Docgen> = {};
   for (const subComponent of subComponents) {

@@ -1,13 +1,12 @@
-import { HvLoading, loadingClasses } from "@hitachivantara/uikit-react-core";
+import {
+  loadingClasses as classes,
+  HvLoading,
+} from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
-<Header params={{ name: "Loading", classes }} />
-
-<Playground
+<Header
+  params={{ name: "Loading", classes }}
   Component={HvLoading}
   componentName="HvLoading"
   controls={{

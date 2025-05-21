@@ -5,14 +5,10 @@ import {
   HvSelectionList,
 } from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
-<Header params={{ name: "SelectionList", classes }} />
-
-<Playground
+<Header
+  params={{ name: "SelectionList", classes }}
   Component={HvSelectionList}
   componentName="HvSelectionList"
   controls={{
@@ -33,7 +29,7 @@ import { Header } from "../../components/Header";
   <HvListItem value="carrot">🥕 Carrot</HvListItem>
   <HvListItem value="dragonfruit">🐉 Dragonfruit</HvListItem>
   <HvListItem value="eggplant">🍆 Eggplant</HvListItem>
-</Playground>
+</Header>
 
 <Callout type="info">
   If you need single selection, consider using

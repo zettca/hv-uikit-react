@@ -1,15 +1,8 @@
 import {
   scrollToVerticalClasses as classes,
-  HvContainer,
-  HvInput,
-  HvPanel,
   HvScrollToVertical,
-  HvTypography,
 } from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
 <Header
@@ -18,9 +11,6 @@ import { Header } from "../../components/Header";
     classes,
     subComponents: ["VerticalScrollListItem"],
   }}
-/>
-
-<Playground
   Component={HvScrollToVertical}
   componentName="HvScrollToVertical"
   controls={{

@@ -4,14 +4,10 @@ import {
   HvStack,
 } from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
-<Header params={{ name: "Stack", classes }} />
-
-<Playground
+<Header
+  params={{ name: "Stack", classes }}
   Component={HvStack}
   componentName="HvStack"
   controls={{
@@ -23,7 +19,7 @@ import { Header } from "../../components/Header";
   {[...Array(4).keys()].map((index) => (
     <HvPanel key={index}>{index + 1}</HvPanel>
   ))}
-</Playground>
+</Header>
 
 ### Custom direction
 

@@ -1,12 +1,10 @@
 import { Callout } from "nextra/components";
-import { HvSearchInput, inputClasses } from "@hitachivantara/uikit-react-core";
+import {
+  inputClasses as classes,
+  HvSearchInput,
+} from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
-
-<Header params={{ name: "SearchInput", classes }} />
 
 <Callout type="info">
   The `HvSearchInput` component shares the same API as the `HvInput` component.
@@ -14,9 +12,8 @@ import { Header } from "../../components/Header";
   documentation.
 </Callout>
 
-<br />
-
-<Playground
+<Header
+  params={{ name: "SearchInput", classes }}
   Component={HvSearchInput}
   componentName="HvSearchInput"
   controls={{

@@ -4,14 +4,10 @@ import {
   HvPanel,
 } from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
-<Header params={{ name: "LoadingContainer", classes }} />
-
-<Playground
+<Header
+  params={{ name: "LoadingContainer", classes }}
   Component={HvLoadingContainer}
   componentName="HvLoadingContainer"
   controls={{
@@ -28,4 +24,4 @@ import { Header } from "../../components/Header";
   }}
 >
   <HvPanel className="grid place-items-center h-200px">My content</HvPanel>
-</Playground>
+</Header>

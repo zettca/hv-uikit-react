@@ -1,15 +1,12 @@
-import { HvSnackbar, snackbarClasses } from "@hitachivantara/uikit-react-core";
+import {
+  snackbarClasses as classes,
+  HvSnackbar,
+} from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
 <Header
   params={{ name: "Snackbar", classes, subComponents: ["SnackbarContent"] }}
-/>
-
-<Playground
   Component={HvSnackbar}
   componentName="HvSnackbar"
   controls={{

@@ -1,14 +1,13 @@
 import { Callout } from "nextra/components";
-import { HvNumberInput, inputClasses } from "@hitachivantara/uikit-react-core";
+import {
+  inputClasses as classes,
+  HvNumberInput,
+} from "@hitachivantara/uikit-react-core";
 
-import { getComponentData } from "../../utils/component";
-
-import { Playground } from "../../components/code/Playground";
 import { Header } from "../../components/Header";
 
-<Header params={{ name: "NumberInput", classes }} />
-
-<Playground
+<Header
+  params={{ name: "NumberInput", classes }}
   Component={HvNumberInput}
   componentName="HvNumberInput"
   controls={{
