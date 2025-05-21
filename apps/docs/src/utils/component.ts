@@ -65,7 +65,7 @@ const getParsedDocgen = (path: string) => {
 };
 
 export interface ComponentDataParams {
-  componentName: string;
+  name: string;
   packageName?: string;
   classes?: Record<string, string>;
   subComponents?: string[];
@@ -73,13 +73,13 @@ export interface ComponentDataParams {
 }
 
 export const getComponentData = async ({
-  componentName,
+  name,
   packageName = "core",
   classes = {},
   subComponents = [],
   includeInheritedProps = false,
 }: ComponentDataParams): Promise<ComponentMeta> => {
-  const componentLocation = `packages/${packageName}/src/${componentName}/${componentName}.tsx`;
+  const componentLocation = `packages/${packageName}/src/${name}/${name}.tsx`;
   const source = `https://github.com/lumada-design/hv-uikit-react/blob/master${componentLocation}`;
 
   const parsed = getParsedDocgen(componentLocation);
@@ -87,13 +87,13 @@ export const getComponentData = async ({
   const cleanedDocgen = cleanUndefinedValues(parsed[0]) as Docgen;
   cleanedDocgen.props = filterInheritedProps(
     cleanedDocgen.props,
-    componentName,
+    name,
     includeInheritedProps,
   );
 
   const parsedSubComponents: Record<string, Docgen> = {};
   for (const subComponent of subComponents) {
-    const subComponentLocation = `packages/${packageName}/src/${componentName}/${subComponent}/${subComponent}.tsx`;
+    const subComponentLocation = `packages/${packageName}/src/${name}/${subComponent}/${subComponent}.tsx`;
 
     const parsedSubComponent = getParsedDocgen(subComponentLocation);
     const cleanedSubComponentDocgen = cleanUndefinedValues(
@@ -101,14 +101,14 @@ export const getComponentData = async ({
     ) as Docgen;
     cleanedSubComponentDocgen.props = filterInheritedProps(
       cleanedSubComponentDocgen.props,
-      componentName,
+      name,
     );
 
     parsedSubComponents[subComponent] = cleanedSubComponentDocgen;
   }
 
   return {
-    component: componentName,
+    component: name,
     source,
     package: packageName || "",
     docgen: cleanedDocgen || {},
