@@ -1,3 +1,5 @@
+"use client";
+
 export * from "./Blade";
 export * from "./Blades";
 export * from "./Dashboard";

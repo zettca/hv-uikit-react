@@ -1,3 +1,5 @@
+"use client";
+
 export * from "./context/EmotionContext";
 export * from "./context/ThemeContext";
 export * from "./hooks/useEmotionCache";

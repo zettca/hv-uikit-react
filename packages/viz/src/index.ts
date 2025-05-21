@@ -1,3 +1,5 @@
+"use client";
+
 export * from "./BaseChart";
 export * from "./BarChart";
 export * from "./Boxplot";

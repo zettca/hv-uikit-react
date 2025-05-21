@@ -69,6 +69,8 @@ async function main() {
   const allDirs = ["icons", ...subDirs];
 
   const indexFile = `
+"use client";
+
 export * from "./IconBase";
 export * from "./IconSprite";
 export * from "./IconContainer";
