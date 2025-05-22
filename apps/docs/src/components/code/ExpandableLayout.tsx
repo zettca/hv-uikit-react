@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { CodeEditor, useLiveRunner, type Scope } from "react-live-runner";
+import { useLiveRunner, type Scope } from "react-live-runner";
 import { clsx } from "clsx";
 
+import { CodeEditor } from "./CodeEditor";
 import { DocsContainer } from "./DocsProvider";
 import { ExpandableControls } from "./ExpandableControls";
 
@@ -51,16 +52,12 @@ export const ExpandableLayout = ({ scope, code }: ExpandableLayoutProps) => {
 
       {/* Code Editor Section */}
       <div
-        className="max-h-400px overflow-auto rounded-b-inherit -mt-xxs transition-max-height border-color-inherit"
+        className="overflow-auto -mt-xxs transition-max-height"
         style={{
           maxHeight: isExpanded ? 400 : 0,
         }}
       >
-        <CodeEditor
-          value={editorCode}
-          onChange={onChange}
-          className="font-mono text-[.85em] rounded-b-inherit border border-color-inherit"
-        />
+        <CodeEditor value={editorCode} onChange={onChange} className="border" />
       </div>
     </section>
   );

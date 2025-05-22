@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CodeEditor, useLiveRunner, type Scope } from "react-live-runner";
+import { useLiveRunner, type Scope } from "react-live-runner";
 import { Check, Code, Copy } from "@phosphor-icons/react";
 import {
   HvDialog,
@@ -8,6 +8,7 @@ import {
   HvIconButton,
 } from "@hitachivantara/uikit-react-core";
 
+import { CodeEditor } from "./CodeEditor";
 import { DocsContainer } from "./DocsProvider";
 
 type PopupLayoutProps = {
@@ -70,7 +71,7 @@ export const PopupLayout = ({ id, scope, code }: PopupLayoutProps) => {
           <CodeEditor
             value={editorCode}
             onChange={onChange}
-            className="font-mono text-[.85em] rounded-round border border-color-inherit"
+            className="rounded-round border"
           />
         </HvDialogContent>
       </HvDialog>

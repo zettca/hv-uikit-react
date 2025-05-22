@@ -2,10 +2,10 @@
 
 import { Children, isValidElement, useCallback, useState } from "react";
 import jsxToString from "react-element-to-jsx-string";
-import { CodeEditor } from "react-live-runner";
 import { clsx } from "clsx";
 
 import { ComponentMeta } from "../../utils/component";
+import { CodeEditor } from "./CodeEditor";
 import { Controls, type Control } from "./Controls";
 import { DocsProvider } from "./DocsProvider";
 
@@ -138,9 +138,11 @@ export const Playground = ({
       </div>
 
       {/* Code editor */}
-      <div className="max-h-100 overflow-auto rounded-b-round border border-t-0 max-h-250px">
-        <CodeEditor readOnly className="font-mono text-[.85em]" value={code} />
-      </div>
+      <CodeEditor
+        readOnly
+        value={code}
+        className="max-h-250px overflow-auto border border-t-0"
+      />
     </section>
   );
 };
