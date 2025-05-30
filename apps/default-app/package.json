@@ -11,11 +11,11 @@
   },
   "dependencies": {
     "@emotion/styled": "^11.10.5",
-    "@hitachivantara/app-shell-events": "*",
-    "@hitachivantara/app-shell-navigation": "*",
-    "@hitachivantara/app-shell-shared": "*",
-    "@hitachivantara/uikit-react-core": "*",
-    "@hitachivantara/uikit-react-icons": "*",
+    "@hitachivantara/app-shell-events": "workspace:*",
+    "@hitachivantara/app-shell-navigation": "workspace:*",
+    "@hitachivantara/app-shell-shared": "workspace:*",
+    "@hitachivantara/uikit-react-core": "workspace:*",
+    "@hitachivantara/uikit-react-icons": "workspace:*",
     "@mui/material": "^5.12.3",
     "@types/react-table": "^7.7.14",
     "clsx": "^2.0.0",
@@ -28,8 +28,8 @@
     "react-router-dom": "^6.9.0"
   },
   "devDependencies": {
-    "@hitachivantara/app-shell-vite-plugin": "*",
-    "@hitachivantara/uikit-uno-preset": "*",
+    "@hitachivantara/app-shell-vite-plugin": "workspace:*",
+    "@hitachivantara/uikit-uno-preset": "workspace:*",
     "@types/node": "^20.9.0",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",

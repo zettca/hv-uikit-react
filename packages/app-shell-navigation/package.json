@@ -23,7 +23,7 @@
     "prepublishOnly": "npm run build && npx clean-publish"
   },
   "dependencies": {
-    "@hitachivantara/app-shell-shared": "^1.5.5",
+    "@hitachivantara/app-shell-shared": "workspace:^",
     "path-to-regexp": "^8.1.0"
   },
   "peerDependencies": {

@@ -21,7 +21,7 @@
     "prepublishOnly": "npm run build && npx clean-publish"
   },
   "peerDependencies": {
-    "@hitachivantara/uikit-react-core": "^5.72.0",
+    "@hitachivantara/uikit-react-core": "workspace:^",
     "react": "^18.2.0"
   },
   "devDependencies": {

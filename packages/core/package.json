@@ -41,9 +41,9 @@
   "dependencies": {
     "@emotion/cache": "^11.11.0",
     "@emotion/serialize": "^1.1.2",
-    "@hitachivantara/uikit-react-shared": "^5.4.5",
-    "@hitachivantara/uikit-react-utils": "^0.2.38",
-    "@hitachivantara/uikit-styles": "^5.48.1",
+    "@hitachivantara/uikit-react-shared": "workspace:^",
+    "@hitachivantara/uikit-react-utils": "workspace:^",
+    "@hitachivantara/uikit-styles": "workspace:^",
     "@internationalized/date": "^3.2.0",
     "@mui/base": "5.0.0-beta.68",
     "@popperjs/core": "^2.11.8",

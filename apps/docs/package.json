@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@emotion/css": "^11.11.0",
-    "@hitachivantara/uikit-react-core": "*",
-    "@hitachivantara/uikit-react-icons": "*",
-    "@hitachivantara/uikit-react-viz": "*",
+    "@hitachivantara/uikit-react-core": "workspace:*",
+    "@hitachivantara/uikit-react-icons": "workspace:*",
+    "@hitachivantara/uikit-react-viz": "workspace:*",
     "@phosphor-icons/react": "^2.1.7",
     "clsx": "^2.1.1",
     "next": "^15.3.2",
@@ -27,7 +27,7 @@
     "react-markdown": "^9.0.3"
   },
   "devDependencies": {
-    "@hitachivantara/uikit-uno-preset": "*",
+    "@hitachivantara/uikit-uno-preset": "workspace:*",
     "@types/node": "^20.11.6",
     "@types/react": "^18.2.43",
     "@unocss/postcss": "^66.0.0",

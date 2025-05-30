@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
-    "@hitachivantara/uikit-styles": "^5.48.1"
+    "@hitachivantara/uikit-styles": "workspace:^"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

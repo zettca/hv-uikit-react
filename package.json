@@ -50,7 +50,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
-    "@hitachivantara/uikit-config": "*",
+    "@hitachivantara/uikit-config": "workspace:*",
     "@hookform/resolvers": "^3.3.2",
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "@iconify-json/ph": "^1.2.1",
@@ -134,7 +134,7 @@
     },
     "storybook": "$storybook"
   },
-  "packageManager": "npm@10.8.1+sha256.b8807aebb9656758e2872fa6e7c564b506aa2faa9297439a478d471d2fe32483",
+  "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af",
   "prettier": "@hitachivantara/uikit-config/prettier",
   "license-compliance": {
     "extends": "@hitachivantara/uikit-config/licenses"
