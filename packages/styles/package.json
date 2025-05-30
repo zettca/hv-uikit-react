@@ -24,9 +24,7 @@
     "url": "https://github.com/lumada-design/hv-uikit-react/issues"
   },
   "scripts": {
-    "build": "npm run clean && vite build",
-    "clean": "npx rimraf dist package",
-    "prepublishOnly": "npm run build && npx clean-publish"
+    "build": "vite build"
   },
   "dependencies": {
     "csstype": "^3.1.3"
@@ -40,7 +38,6 @@
   ],
   "publishConfig": {
     "access": "public",
-    "directory": "package",
     "main": "dist/cjs/index.cjs",
     "module": "dist/esm/index.mjs",
     "types": "dist/types/index.d.ts",
@@ -51,16 +48,5 @@
         "import": "./dist/esm/index.mjs"
       }
     }
-  },
-  "clean-publish": {
-    "withoutPublish": true,
-    "tempDir": "package",
-    "fields": [
-      "main",
-      "type"
-    ],
-    "files": [
-      "tsconfig.json"
-    ]
   }
 }

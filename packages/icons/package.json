@@ -27,12 +27,10 @@
   "scripts": {
     "optimize": "svgo -r -f assets assets",
     "convert": "tsx scripts/svgToReact.ts && tsx scripts/svgToSprite.ts",
-    "prebuild": "npm run clean && npm run convert",
+    "prebuild": "rimraf dist sprites && npm run convert",
     "build": "vite build",
     "postbuild": "npx cpy \"sprites\" \"dist\"",
-    "clean": "npx rimraf dist sprites package",
-    "prepare": "npm run convert",
-    "prepublishOnly": "npm run build && npx clean-publish"
+    "prepare": "npm run convert"
   },
   "peerDependencies": {
     "@emotion/react": "^11.11.1",
@@ -60,7 +58,6 @@
   ],
   "publishConfig": {
     "access": "public",
-    "directory": "package",
     "main": "dist/cjs/index.cjs",
     "module": "dist/esm/index.js",
     "types": "dist/types/index.d.ts",
@@ -71,16 +68,5 @@
         "import": "./dist/esm/index.js"
       }
     }
-  },
-  "clean-publish": {
-    "withoutPublish": true,
-    "tempDir": "package",
-    "fields": [
-      "main",
-      "type"
-    ],
-    "files": [
-      "tsconfig.json"
-    ]
   }
 }

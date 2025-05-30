@@ -16,9 +16,7 @@
   },
   "bugs": "https://github.com/lumada-design/hv-uikit-react/issues",
   "scripts": {
-    "build": "npm run clean && vite build",
-    "clean": "npx rimraf dist package",
-    "prepublishOnly": "npm run build && npx clean-publish"
+    "build": "vite build"
   },
   "peerDependencies": {
     "@hitachivantara/uikit-react-core": "workspace:^",
@@ -32,7 +30,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "directory": "package",
+    "main": "dist/esm/index.js",
     "module": "dist/esm/index.js",
     "types": "./dist/types/index.d.ts",
     "exports": {
@@ -43,15 +41,5 @@
       },
       "./package.json": "./package.json"
     }
-  },
-  "clean-publish": {
-    "withoutPublish": true,
-    "tempDir": "package",
-    "fields": [
-      "main"
-    ],
-    "files": [
-      "tsconfig.json"
-    ]
   }
 }

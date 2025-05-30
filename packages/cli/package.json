@@ -25,12 +25,10 @@
     "url": "https://github.com/lumada-design/hv-uikit-react/issues"
   },
   "scripts": {
-    "clean": "npx rimraf package",
     "prepare": "npx cpy ../../templates src",
     "pretest": "node src/index.js create uikit-app -t Form,ListView",
     "test": "cd uikit-app",
-    "posttest": "npx rimraf uikit-app",
-    "prepublishOnly": "npm run clean && npx clean-publish"
+    "posttest": "npx rimraf uikit-app"
   },
   "dependencies": {
     "chalk": "^5.2.0",
@@ -57,11 +55,6 @@
     "src"
   ],
   "publishConfig": {
-    "access": "public",
-    "directory": "package"
-  },
-  "clean-publish": {
-    "withoutPublish": true,
-    "tempDir": "package"
+    "access": "public"
   }
 }

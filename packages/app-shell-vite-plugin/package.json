@@ -15,13 +15,11 @@
   },
   "bugs": "https://github.com/lumada-design/hv-uikit-react/issues",
   "scripts": {
-    "build": "npm run clean && tsc -p tsconfig.json && rollup --config",
+    "build": "tsc -p tsconfig.json && rollup --config",
     "dev": "tsc-watch --noClear -p tsconfig.json",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "clean": "npx rimraf dist package",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run build && npx clean-publish"
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
@@ -69,13 +67,5 @@
       "types": "./dist/index.d.ts"
     },
     "./package.json": "./package.json"
-  },
-  "clean-publish": {
-    "withoutPublish": true,
-    "tempDir": "package",
-    "fields": [],
-    "files": [
-      "tsconfig.json"
-    ]
   }
 }
