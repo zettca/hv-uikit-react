@@ -1,0 +1,25 @@
+{
+  "$schema": "../../node_modules/oxlint/configuration_schema.json",
+  "extends": ["./oxlint.json"],
+  "categories": {
+    "perf": "off", // TODO: enable
+    // "restriction": "error" // TODO: enable
+    "suspicious": "error"
+  },
+  "rules": {
+    // #region Suspicious
+    "react/react-in-jsx-scope": "off",
+
+    "import/no-duplicates": "off",
+    "import/no-unassigned-import": "off",
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
+    // #endregion
+
+    // #region Restriction
+
+    // #endregion
+
+    "TODO-REMOVE": "off"
+  }
+}
